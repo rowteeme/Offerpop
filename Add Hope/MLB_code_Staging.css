@@ -1,0 +1,157 @@
+a, img, a img{
+border:0;
+}
+#clear{
+clear:both;
+}
+#infographicContainer{
+	width:810px;
+	height:442px;
+	overflow:hidden;
+}
+#op-cache + h2{
+display:none;
+}
+#topDescription{
+width:400px;
+position:absolute;
+top:200px;
+left:375px;
+}
+h2{
+font-family:Arial;
+font-size:19px;
+font-weight:bold;
+color:#eb743b;
+text-align:left;
+}
+h3{
+color:#eb743b;
+margin:0;
+float:left;
+margin-top:5px;
+}
+h4{
+color:#eb743b;
+margin: 5px 0px;
+}
+p{
+color:#5b5b5b;
+font-family:arial;
+font-size:13px;
+}
+p span{
+color:#006ab0;
+font-family:arial;
+font-weight:bold;
+}
+select{
+background:url('https://s3.amazonaws.com/com.offerpop.datastore/438279/NuWRfe.jpg') no-repeat top right;
+}
+#stateSelection {
+margin: 0;
+background-color: #eb743b;
+margin-left: 50px;
+border: none;
+-webkit-appearance: none;
+width: 215px;
+height: 25px;
+border-radius: 0px;
+color: white;
+text-transform: uppercase;
+padding-left: 10px;
+font-size: 14px;
+}
+hr {
+border-top: 1px dotted #006ab0;
+border-bottom: 0px;
+border-right: 0px;
+border-left: 0px;
+color: #fff;
+background-color: #fff;
+height: 1px;
+width:400px;
+}
+.infographics{
+padding-left: 35px;
+padding-bottom: 25px;
+}
+#loadingContainer {
+padding-left: 390px;
+padding-top: 115px;
+width:810px;
+height:442px;
+}
+#banksHR{
+border-top: 1px dotted #7e7671;
+border-bottom: 0px;
+border-right: 0px;
+border-left: 0px;
+color: #fff;
+background-color: #fff;
+height: 1px;
+width:810px;
+float:left;
+}
+#infoSocial{
+width:810px;
+}
+.infoSocialImg{
+float:left;
+}
+#midBanner{
+width:800px;
+text-align:center;
+}
+#foodBankState{
+color:#006ab0;
+font-size:20px;
+text-align:center;
+margin-top:0;
+display:none;
+}
+#foodBankState span{
+font-weight:normal !important;
+}
+#foodBanks{
+width:800px;
+}
+.leftDiv{
+width:500px;
+float:left;	
+margin-left: 20px;
+}
+.rightDiv{
+width:240px;
+float:right;
+text-align:right;
+}
+.foodBankItem p {
+margin: 0;
+}
+#legal{
+margin-bottom: 10px;
+}
+#legal span{
+color:darkorange;
+font-size:22px;
+}
+
+@-moz-document url-prefix() {
+#stateSelection {
+	-moz-appearance:window;
+	background-image: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/NuWRfe.jpg');
+	background-repeat: no-repeat;	
+	background-position: right center;
+	margin-left:-5px;
+}
+
+.css-select-moz{
+    background-image: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/NuWRfe.jpg');
+    background-repeat: no-repeat;
+    background-position: right center;
+	background-color:#eb743b;
+	margin-left:25px !important;
+	padding:5px;
+ 	}
+} 
