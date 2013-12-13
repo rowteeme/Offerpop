@@ -24,7 +24,7 @@ jQuery(function($){
 			  name: 'Unilever USA',
 			  link: 'http://bit.ly/' + bitlyLink,
 			  caption: 'In ' + stateNameShare + ', ' + stateCaption + ' children don’t have enough to eat.',
-			  description: 'In ' + stateNameShare + ', ' + statePercentShare + '% of kids are food insecure and face periods without enough to eat. To help, Unilever is donating two million meals to Feeding America. Do your part by learning about food insecurity in your state and what you can do about it. #letsaddhope',
+			  description: 'In ' + stateNameShare + ', ' + statePercentShare + '% of kids are food insecure and face periods without enough to eat. To help, Unilever is donating two million meals. Do your part by learning about food insecurity in your state and what you can do about it. #letsaddhope',
 			  picture: shareImage,
 			}, function(response){});
 
@@ -148,7 +148,7 @@ var stateData = {
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/alabama.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/alabama.jpg"
 			,"fbCaption": "1 in 4"
-			,"percent" : "27"
+			,"percent" : "26"
 			,"foodBank" : {
 					 "one" : {
 						 "name" : "Community Food Bank of Central Alabama"
@@ -274,8 +274,8 @@ var stateData = {
 			 "state" : "Arizona"
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/arizona.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/arizona.jpg"
-			,"fbCaption": "2 in 5"
-			,"percent" : "29"
+			,"fbCaption": "2 in 7"
+			,"percent" : "30"
 			,"foodBank" : {
 					"one" : {
 						 "name" : "United Food Bank"
@@ -571,8 +571,8 @@ var stateData = {
 			 "state" : "Connecticut"
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/connecticut.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/connecticut.jpg"
-			,"fbCaption": "1 in 6"
-			,"percent" : "19"
+			,"fbCaption": "1 in 5"
+			,"percent" : "20"
 			,"foodBank" : {
 					"one" : {
 						 "name" : "Foodshare"
@@ -600,7 +600,7 @@ var stateData = {
 			 "state" : "District Of Columbia"
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/district_of_columbia.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/district_of_columbia.jpg"
-			,"fbCaption": "2 in 5"
+			,"fbCaption": "1 in 3"
 			,"percent" : "30"
 			,"foodBank" : {
 					"one" : {
@@ -638,7 +638,7 @@ var stateData = {
 			 "state" : "Florida"
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/florida.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/florida.jpg"
-			,"fbCaption": "1 in 6"
+			,"fbCaption": "1 in 4"
 			,"percent" : "28"
 			,"foodBank" : {
 					"one" : {
@@ -727,8 +727,8 @@ var stateData = {
 			 "state" : "Georgia"
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/georgia.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/georgia.jpg"
-			,"fbCaption": "1 in 4"
-			,"percent" : "28"
+			,"fbCaption": "2 in 7"
+			,"percent" : "29"
 			,"foodBank" : {
 					"one" : {
 						 "name" : "Food Bank of Northeast Georgia"
@@ -807,7 +807,7 @@ var stateData = {
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/hawaii.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/hawaii.jpg"
 			,"fbCaption": "1 in 5"
-			,"percent" : "22"
+			,"percent" : "24"
 			,"foodBank" : {
 					"one" : {
 						 "name" : "Hawaii Foodbank, INC."
@@ -825,8 +825,8 @@ var stateData = {
 			 "state" : "Iowa"
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/iowa.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/iowa.jpg"
-			,"fbCaption": "1 in 5"
-			,"percent" : "20"
+			,"fbCaption": "1 in 6"
+			,"percent" : "19"
 			,"foodBank" : {
 					"one" : {
 						 "name" : "Food Bank of Iowa"
@@ -894,7 +894,7 @@ var stateData = {
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/illinois.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/illinois.jpg"
 			,"fbCaption": "1 in 5"
-			,"percent" : "22"
+			,"percent" : "23"
 			,"foodBank" : {
 					"one" : {
 						 "name" : "Greater Chicago Food Depository"
@@ -1081,7 +1081,7 @@ var stateData = {
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/kentucky.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/kentucky.jpg"
 			,"fbCaption": "1 in 5"
-			,"percent" : "23"
+			,"percent" : "22"
 			,"foodBank" : {
 					"one" : {
 						 "name" : "Feeding America, Kentucky's Heartland"
@@ -1109,8 +1109,8 @@ var stateData = {
 			 "state" : "Louisiana"
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/louisiana.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/louisiana.jpg"
-			,"fbCaption": "1 in 4"
-			,"percent" : "23"
+			,"fbCaption": "1 in 5"
+			,"percent" : "24"
 			,"foodBank" : {
 					"one" : {
 						 "name" : "Food Bank Central Louisiana"
@@ -1208,7 +1208,7 @@ var stateData = {
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/maryland.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/maryland.jpg"
 			,"fbCaption": "1 in 6"
-			,"percent" : "18"
+			,"percent" : "19"
 			,"foodBank" : {
 					"one" : {
 						 "name" : "Maryland Food Bank"
@@ -1227,7 +1227,7 @@ var stateData = {
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/maine.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/maine.jpg"
 			,"fbCaption": "1 in 5"
-			,"percent" : "23"
+			,"percent" : "24"
 			,"foodBank" : {
 					"one" : {
 						 "name" : "Good Shepherd Food Bank"
@@ -1245,8 +1245,8 @@ var stateData = {
 			 "state" : "Michigan"
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/michigan2.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/michigan.jpg"
-			,"fbCaption": "1 in 4"
-			,"percent" : "25"
+			,"fbCaption": "1 in 5"
+			,"percent" : "24"
 			,"foodBank" : {
 					"one" : {
 						 "name" : "Food Gatherers"
@@ -1452,8 +1452,8 @@ var stateData = {
 			 "state" : "Mississippi"
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/mississippi.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/mississippi.jpg"
-			,"fbCaption": "2 in 5"
-			,"percent" : "28"
+			,"fbCaption": "1 in 4"
+			,"percent" : "27"
 			,"foodBank" : {
 					"one" : {
 						 "name" : "Mississippi Food Network"
@@ -1472,7 +1472,7 @@ var stateData = {
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/montana.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/montana.jpg"
 			,"fbCaption": "1 in 5"
-			,"percent" : "21"
+			,"percent" : "22"
 			,"foodBank" : {
 					"one" : {
 						 "name" : "Montana Food Bank Network"
@@ -1491,7 +1491,7 @@ var stateData = {
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/nebraska.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/nebraska.jpg"
 			,"fbCaption": "1 in 5"
-			,"percent" : "22"
+			,"percent" : "21"
 			,"foodBank" : {
 					"one" : {
 						 "name" : "Food Bank of Lincoln, INC."
@@ -1549,7 +1549,7 @@ var stateData = {
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/new_hampshire.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/new_hampshire.jpg"
 			,"fbCaption": "1 in 7"
-			,"percent" : "14"
+			,"percent" : "15"
 			,"foodBank" : {
 					"one" : {
 						 "name" : "New Hampshire Food Bank"
@@ -1606,8 +1606,8 @@ var stateData = {
 			 "state" : "New Mexico"
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/new_mexico.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/new_mexico.jpg"
-			,"fbCaption": "2 in 5"
-			,"percent" : "29"
+			,"fbCaption": "1 in 3"
+			,"percent" : "31"
 			,"foodBank" : {
 					"one" : {
 						 "name" : "Roadrunner Food Bank"
@@ -1626,7 +1626,7 @@ var stateData = {
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/new_york.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/new_york.jpg"
 			,"fbCaption": "1 in 5"
-			,"percent" : "21"
+			,"percent" : "22"
 			,"foodBank" : {
 					"one" : {
 						 "name" : "Food Bank of Western New York"
@@ -1725,7 +1725,7 @@ var stateData = {
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/north_carolina.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/north_carolina.jpg"
 			,"fbCaption": "1 in 4"
-			,"percent" : "28"
+			,"percent" : "27"
 			,"foodBank" : {
 					"one" : {
 						 "name" : "Manna Food Bank"
@@ -1803,8 +1803,8 @@ var stateData = {
 			 "state" : "North Dakota"
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/north_dakota.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/north_dakota.jpg"
-			,"fbCaption": "1 in 5"
-			,"percent" : "11"
+			,"fbCaption": "1 in 10"
+			,"percent" : "10"
 			,"foodBank" : {
 					"one" : {
 						 "name" : "Great Plains Food Bank"
@@ -1952,7 +1952,7 @@ var stateData = {
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/oklahoma.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/oklahoma.jpg"
 			,"fbCaption": "1 in 4"
-			,"percent" : "27"
+			,"percent" : "25"
 			,"foodBank" : {
 					"one" : {
 						 "name" : "Regional Food Bank of Oklahoma"
@@ -1980,8 +1980,8 @@ var stateData = {
 			 "state" : "Oregon"
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/oregon.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/oregon.jpg"
-			,"fbCaption": "2 in 5"
-			,"percent" : "27"
+			,"fbCaption": "2 in 7"
+			,"percent" : "29"
 			,"foodBank" : {
 					"one" : {
 						 "name" : "Oregon Food Bank"
@@ -2010,7 +2010,7 @@ var stateData = {
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/pennsylvania.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/pennsylvania.jpg"
 			,"fbCaption": "1 in 5"
-			,"percent" : "20"
+			,"percent" : "21"
 			,"foodBank" : {
 					"one" : {
 						 "name" : "Second Harvest Food Bank of Lehigh Valley and NE Pennsylvania"
@@ -2185,7 +2185,7 @@ var stateData = {
 			 "state" : "Tennessee"
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/tennessee.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/tennessee.jpg"
-			,"fbCaption": "2 in 5"
+			,"fbCaption": "1 in 4"
 			,"percent" : "25"
 			,"foodBank" : {
 					"one" : {
@@ -2245,7 +2245,7 @@ var stateData = {
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/texas.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/texas.jpg"
 			,"fbCaption": "1 in 4"
-			,"percent" : "27"
+			,"percent" : "28"
 			,"foodBank" : {
 					"one" : {
 						 "name" : "Food Bank of West Central Texas"
@@ -2414,7 +2414,7 @@ var stateData = {
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/utah.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/utah.jpg"
 			,"fbCaption": "1 in 5"
-			,"percent" : "22"
+			,"percent" : "21"
 			,"foodBank" : {
 					"one" : {
 						 "name" : "Utah Food Bank"
@@ -2432,8 +2432,8 @@ var stateData = {
 			 "state" : "Vermont"
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/vermont.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/vermont.jpg"
-			,"fbCaption": "1 in 5"
-			,"percent" : "21"
+			,"fbCaption": "1 in 6"
+			,"percent" : "19"
 			,"foodBank" : {
 					"one" : {
 						 "name" : "Vermont Food Bank"
@@ -2452,7 +2452,7 @@ var stateData = {
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/virginia.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/virginia.jpg"
 			,"fbCaption": "1 in 6"
-			,"percent" : "16"
+			,"percent" : "17"
 			,"foodBank" : {
 					"one" : {
 						 "name" : "Fredericksburg Area Food Bank"
@@ -2520,8 +2520,8 @@ var stateData = {
 			 "state" : "Washington"
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/washington.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/washington.jpg"
-			,"fbCaption": "1 in 4"
-			,"percent" : "21"
+			,"fbCaption": "1 in 5"
+			,"percent" : "24"
 			,"foodBank" : {
 					"one" : {
 						 "name" : "Food Lifeline"
@@ -2550,7 +2550,7 @@ var stateData = {
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/west_virginia.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/west_virginia.jpg"
 			,"fbCaption": "1 in 5"
-			,"percent" : "21"
+			,"percent" : "22"
 			,"foodBank" : {
 					"one" : {
 						 "name" : "Mountaineer Food Bank"
@@ -2608,7 +2608,7 @@ var stateData = {
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/wyoming.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/wyoming.jpg"
 			,"fbCaption": "1 in 6"
-			,"percent" : "22"
+			,"percent" : "18"
 			,"foodBank" : {
 
 			} 
