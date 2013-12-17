@@ -36,7 +36,7 @@ jQuery(function($){
 			   ,stateNameShare = stateData[currentState].state
 			   ,statePercentShare = stateData[currentState].percent;
 
-		$(this).attr('href', 'https://twitter.com/share?url=http%3A//bit.ly/' + bitlyLink + '&text=' + statePercentShare + '%25%20of%20children%20in%20' + stateNameShare + '%20don%27t%20have%20enough%20to%20eat.%20Help%20%40MakeLifeBetter%20share%20the%20facts%20about%20hunger%20%23letsaddhope');
+		$(this).attr('href', 'https://twitter.com/share?url=http%3A//bit.ly/' + bitlyLink + '&text=' + statePercentShare + '%25%20of%20children%20in%20' + stateNameShare + '%20don%27t%20have%20enough%20to%20eat.%20Help%20%40unileverusa%20share%20the%20facts%20about%20hunger%20%23letsaddhope');
 
 	});
 
@@ -138,7 +138,7 @@ var stateData = {
 			,"info" : "http://opop.cachefly.net/RobLum/Graphics/united_states2.png"
 			,"shareImg" : "http://opop.cachefly.net/RobLum/Graphics/Share_Images/united_states2.jpg"
 			,"fbCaption": "1 in 5"
-			,"percent" : "25"
+			,"percent" : "20"
 			,"foodBank" : {
 					
 			} 			
