@@ -40,6 +40,18 @@ jQuery(function($){
 
 	});
 
+	//Google Analytics Event Tracking
+	//===============================
+
+		$('#stateSelection').change(function(){
+			var currentState = this.value
+				,stateName = JSON.stringify(stateData[currentState].state).replace(/ /g,'');
+			track("StateSelection", stateName + "Click");
+		});
+
+	//===============================
+	//Google Analytics Event Tracking - End
+
 	//Change content based on dropdown
 	$('#stateSelection').on('change', function(){
 		var currentState = this.value
