@@ -46,7 +46,7 @@ jQuery(function($){
 		$('#stateSelection').change(function(){
 			var currentState = this.value
 				,stateName = JSON.stringify(stateData[currentState].state).replace(/ /g,'');
-			track("StateSelection", stateName + "Click");
+			//track("StateSelection", stateName + "Click");
 		});
 
 	//===============================
