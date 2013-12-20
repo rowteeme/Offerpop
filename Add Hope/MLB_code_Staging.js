@@ -11,35 +11,6 @@ jQuery(function($){
 		$('#topDescription').css('top','275px');
 	}
 
-	//Dynamic FB Share - Infographic
-	$('#stateFB').click(function(){
-		var currentState = $('#stateSelection').val()
-			,shareImage = stateData[currentState].shareImg
-			,stateNameShare = stateData[currentState].state
-			,stateCaption = stateData[currentState].fbCaption
-			,statePercentShare = stateData[currentState].percent;
-
-		FB.ui({
-			  method: 'feed',
-			  name: 'Unilever USA',
-			  link: 'http://bit.ly/' + bitlyLink,
-			  caption: 'In ' + stateNameShare + ', ' + stateCaption + ' children don’t have enough to eat.',
-			  description: 'In ' + stateNameShare + ', ' + statePercentShare + '% of kids are food insecure and face periods without enough to eat. To help, Unilever is donating two million meals. Do your part by learning about food insecurity in your state and what you can do about it. #letsaddhope',
-			  picture: shareImage,
-			}, function(response){});
-
-	});
-
-	//Dynamic Twitter Share - Infographic
-	$('#stateTW').click(function(){
-			var currentState = $('#stateSelection').val()
-			   ,stateNameShare = stateData[currentState].state
-			   ,statePercentShare = stateData[currentState].percent;
-
-		$(this).attr('href', 'https://twitter.com/share?url=http%3A//bit.ly/' + bitlyLink + '&text=' + statePercentShare + '%25%20of%20children%20in%20' + stateNameShare + '%20don%27t%20have%20enough%20to%20eat.%20Help%20%40unileverusa%20share%20the%20facts%20%23letsaddhope');
-
-	});
-
 	//Google Analytics Event Tracking
 	//===============================
 
@@ -55,6 +26,42 @@ jQuery(function($){
 
 	//===============================
 	//Google Analytics Event Tracking - End
+
+	//Dynamic FB Share - Infographic
+	$('#stateFB').click(function(){
+		var currentState = $('#stateSelection').val()
+			,shareImage = stateData[currentState].shareImg
+			,stateNameShare = stateData[currentState].state
+			,stateCaption = stateData[currentState].fbCaption
+			,statePercentShare = stateData[currentState].percent
+			,stateName = JSON.stringify(stateData[currentState].state).replace(/ /g,'');
+
+		FB.ui({
+			  method: 'feed',
+			  name: 'Unilever USA',
+			  link: 'http://bit.ly/' + bitlyLink,
+			  caption: 'In ' + stateNameShare + ', ' + stateCaption + ' children don’t have enough to eat.',
+			  description: 'In ' + stateNameShare + ', ' + statePercentShare + '% of kids are food insecure and face periods without enough to eat. To help, Unilever is donating two million meals. Do your part by learning about food insecurity in your state and what you can do about it. #letsaddhope',
+			  picture: shareImage,
+			}, function(response){
+				if( response && response.post_id) {
+					GA_track("FacebookSelection", stateName + "Click");
+				} else {}
+			});
+	});
+
+	//Dynamic Twitter Share - Infographic
+	$('#stateTW').click(function(){
+			var currentState = $('#stateSelection').val()
+			   ,stateNameShare = stateData[currentState].state
+			   ,statePercentShare = stateData[currentState].percent
+			   ,stateName = JSON.stringify(stateData[currentState].state).replace(/ /g,'');
+
+		$(this).attr('href', 'https://twitter.com/share?url=http%3A//bit.ly/' + bitlyLink + '&text=' + statePercentShare + '%25%20of%20children%20in%20' + stateNameShare + '%20don%27t%20have%20enough%20to%20eat.%20Help%20%40unileverusa%20share%20the%20facts%20%23letsaddhope');
+
+			GA_track("TwitterSelection", stateName + "Click");
+
+	});
 
 	//Change content based on dropdown
 	$('#stateSelection').on('change', function(){
