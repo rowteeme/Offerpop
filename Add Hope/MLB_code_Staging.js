@@ -43,10 +43,14 @@ jQuery(function($){
 	//Google Analytics Event Tracking
 	//===============================
 
+		function GA_track(category, action) {
+			ga("send", "event", category, action);
+		}
+
 		$('#stateSelection').change(function(){
 			var currentState = this.value
 				,stateName = JSON.stringify(stateData[currentState].state).replace(/ /g,'');
-			//track("StateSelection", stateName + "Click");
+			GA_track("StateSelection", stateName + "Click");
 		});
 
 	//===============================
