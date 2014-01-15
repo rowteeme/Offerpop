@@ -16,11 +16,31 @@ jQuery(function($){
 			console.log(displayText);
 			var messageCase;
 			switch(displayText){
-				case "\"Congratulations\"" :
-				messageCase = "#congratulationsWrapper";
+				case "\"50GC\"" :
+				messageCase = "#gCardWrapper";
 				break;
 
-				case "\"You didn't win...\"" : 
+				case "\"FLAGFBSET\"" : 
+				messageCase = "#flagFbSetWrapper";
+				break;
+
+				case "\"FBBOWL\"" : 
+				messageCase = "#fbBowlWrapper";
+				break;
+
+				case "\"FBTRAY\"" : 
+				messageCase = "#fbTrayWrapper";
+				break;
+
+				case "\"FPC\"" : 
+				messageCase = "#fpcWrapper";
+				break;
+
+				case "\"DC\"" : 
+				messageCase = "#dcWrapper";
+				break;
+
+				case "\"LOSS\"" : 
 				messageCase = "#sorryWrapper";
 				break;
 
