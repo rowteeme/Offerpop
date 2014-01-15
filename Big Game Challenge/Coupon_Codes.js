@@ -43,7 +43,8 @@ jQuery(function($){
 				break;
 
 			}
-			$(messageCase).appendTo('#actual_code');
+			var prize = $(messageCase);
+			$('#actual_code').html(prize);		
 			$(messageCase).css('display','block');
 		}
 
