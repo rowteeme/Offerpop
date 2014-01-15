@@ -55,9 +55,9 @@ jQuery(function($){
 	});
 
 	//Facebook Share Copy
-	$('<img id="facebookShare" src="https://opop.cachefly.net/RobLum/Misc/facebook_share_bgc_011314.png">').appendTo('.winMessage');
+	$('<a href="#"><img id="facebookShare" src="https://opop.cachefly.net/RobLum/Misc/facebook_share_bgc_011314.png"></a>').appendTo('.winMessage');
 			
-			$('#facebookShare').click(function(){
+			$('#facebookShare').parent().click(function(){
 				FB.ui({
 					method: 'feed',
 					link: bitLy,
