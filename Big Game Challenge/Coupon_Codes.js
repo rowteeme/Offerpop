@@ -15,6 +15,7 @@ jQuery(function($){
 
 		//Display Win or Loss Message
 		var displayMessage = function (displayText){
+			$('#instructions').css('display','none');
 			var messageCase;
 			switch(displayText){
 				case "\"50GC\"" :
@@ -55,7 +56,7 @@ jQuery(function($){
 	});
 
 	//Facebook Share Copy
-	$('<a href="#"><img id="facebookShare" src="https://opop.cachefly.net/RobLum/Misc/facebook_share_bgc_011314.png"></a>').appendTo('.winMessage');
+	$('<a href="#"><img id="facebookShare" src="https://opop.cachefly.net/RobLum/Misc/facebook_share_bgc_011314.png"></a>').appendTo('#socialContainer');
 			
 			$('#facebookShare').parent().click(function(){
 				FB.ui({
@@ -68,8 +69,7 @@ jQuery(function($){
 			});
 
 	//Twitter Share Copy
-	$('<a target="_blank" href="http://twitter.com/share?text=I%20just%20took%20%40unileverusa%E2%80%99s%20Big%20Game%20Challenge%2C%20INSTANTLY%20won%20a%20prize%20%26%20entered%20to%20win%20a%2055%22%20TV.%20Take%20the%20Challenge%3A&url=' + bitLy + '"><img src="https://opop.cachefly.net/RobLum/Misc/twitter_share_bgc_011314.png"></a>').appendTo('.winMessage');
+	$('<a target="_blank" href="http://twitter.com/share?text=I%20just%20took%20%40unileverusa%E2%80%99s%20Big%20Game%20Challenge%2C%20INSTANTLY%20won%20a%20prize%20%26%20entered%20to%20win%20a%2055%22%20TV.%20Take%20the%20Challenge%3A&url=' + bitLy + '"><img src="https://opop.cachefly.net/RobLum/Misc/twitter_share_bgc_011314.png"></a>').appendTo('#socialContainer');
 			
 	
 });
-
