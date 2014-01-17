@@ -61,7 +61,7 @@ jQuery(document).ready(function($) {
 		qc4 = 'choice_87674';
 
 		//Create the bottom section and its buttons
-		$('#dropbox').append('<div id="bottom"><a href="http://bit.ly/1j9tExV" target="_self"><div id="reset"></div></a><a href="javascript:void(0);"><div class="next"></div></a><a href="javascript:void(0);"><div id="skip"></div></a></div>');
+		$('#dropbox').append('<div id="bottom"><a href="#" target="_self"><div id="reset"></div></a><a href="javascript:void(0);"><div class="next"></div></a><a href="javascript:void(0);"><div id="skip"></div></a></div>');
 
 		//Applies our droppable function to all the dropboxes. 
 		_droppable_('#dropbox1');
@@ -78,9 +78,9 @@ jQuery(document).ready(function($) {
                                 $('.QuizChoice img').draggable('disable');
                                 $('#dropbox .QuizChoice img').css('opacity', 1);
 
-                                        jQuery('.next').click( function() {
-                                                jQuery('#'+ qc1 +' a').trigger('click');
-                                        });
+                                jQuery('.next').click( function() {
+                                    jQuery('#'+ qc1 +' a').trigger('click');
+                                });
                         }
                 }
 
