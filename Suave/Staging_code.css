@@ -40,10 +40,11 @@ body {
 
 #dropbox .QuizChoice {
 	background: url('https://s3.amazonaws.com/com.offerpop.datastore/534886/3b5Nl7.jpg') no-repeat;
-	margin: 165px 18px 0 2px !important;
+	margin: 165px 18px 10px 250px !important;
 }
 
 #bottom {
+	clear:both;
 	position: relative !important;
 	height: 1px;
 }
@@ -62,7 +63,7 @@ body {
 	background: url('https://opop.cachefly.net/RobLum/Suave/next_button.jpg') no-repeat;
 	height: 32px;
 	width: 133px;
-	margin: 345px 136px 0 -160px;
+	margin: 0px 136px 0 50px;
 }
 
 #skip {

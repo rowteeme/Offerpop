@@ -2,8 +2,8 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
 <script src="https://opop.cachefly.net/Rotimi/jquery.ui.touch-punch.min.js"></script>
-<script>
 
+<script>
 jQuery(document).ready(function($) {
 
 		//Droppable function that assigns a drop event to any dropbox ID taken as a parameter.
@@ -49,7 +49,6 @@ jQuery(document).ready(function($) {
 		//Create the Dropbox container div for the five Dropboxes
 		$('#question_choice_87674').after('<div id="dropbox"><div class="QuizChoice"></div></div>');
 
-
 		//Create IDs for each Dropbox Location
 		$('#dropbox .QuizChoice').attr('id', function(i) {
 			return 'dropbox'+(i+1);
@@ -61,41 +60,29 @@ jQuery(document).ready(function($) {
 		qc3 = 'choice_87673';
 		qc4 = 'choice_87674';
 
-		//Create an array to contain all the quiz choices
-		var qc = {
-			qc_1 : $('#QuizChoice1').attr('id'),
-			qc_2 : $('#QuizChoice2').attr('id'),
-			qc_3 : $('#QuizChoice3').attr('id'),
-			qc_4 : $('#QuizChoice4').attr('id')
-		};
-
-
 		//Create the bottom section and its buttons
 		$('#dropbox').append('<div id="bottom"><a href="http://bit.ly/1j9tExV" target="_self"><div id="reset"></div></a><a href="javascript:void(0);"><div class="next"></div></a><a href="javascript:void(0);"><div id="skip"></div></a></div>');
 
 		//Applies our droppable function to all the dropboxes. 
 		_droppable_('#dropbox1');
 
-		//Create an array of all dropboxes.
-		//var dropboxes = [$('#dropbox1')];
-
-		jQuery('#skip').click( function () {
-			jQuery('#' + qc4 +' a').trigger('click');
-			//console.log('User skipped the Drag & Drop Section');
-		});
+				jQuery('#skip').click( function () {
+                        jQuery('#' + qc4 +' a').trigger('click');
+                        //console.log('User skipped the Drag & Drop Section');
+                });
 
 
-		var checkdrop = function() {
-			if ($('#dropbox .QuizChoice img').length === 1) {
-				//Disables draggables once 5 images have been dropped. Makes sure the opacity is 100%
-				$('.QuizChoice img').draggable('disable');
-				$('#dropbox .QuizChoice img').css('opacity', 1);
+                var checkdrop = function() {
+                        if ($('#dropbox .QuizChoice img').length === 1) {
+                                //Disables draggables once 5 images have been dropped. Makes sure the opacity is 100%
+                                $('.QuizChoice img').draggable('disable');
+                                $('#dropbox .QuizChoice img').css('opacity', 1);
 
-					jQuery('.next').click( function() {
-						jQuery('#'+ qc1 +' a').trigger('click');
-					});
-			}
-		}
+                                        jQuery('.next').click( function() {
+                                                jQuery('#'+ qc1 +' a').trigger('click');
+                                        });
+                        }
+                }
 
 	});
 
