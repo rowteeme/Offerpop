@@ -67,9 +67,9 @@ jQuery(document).ready(function($) {
 		_droppable_('#dropbox1');
 
 				jQuery('#skip').click( function () {
-                        jQuery('#' + qc4 +' a').trigger('click');
-                        //console.log('User skipped the Drag & Drop Section');
-                });
+		                jQuery('#' + qc4 +' a').trigger('click');
+		                //console.log('User skipped the Drag & Drop Section');
+		        });
 
 
                 var checkdrop = function() {
