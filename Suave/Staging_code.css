@@ -3,7 +3,11 @@ body {
 	height: 1026px !important;
 	overflow: hidden !important;
 }
+.SField label, #CommentsWidget, .QHeader, .QQuestion, .QQuestionDivider, .QQuestionNumber, .CFooterDivider, .QChoiceCaption, .QChoiceSelect, .SField br, #facebook-profile-connect, .CTopNote, #question_choice_87674, .quiz_result_image, #page-info, #app_canvas_header, #signup-share{
+	display: none;
+}
 
+/* Drag & Drop Page */
 .QChoicesContainer {
 	background: url('https://opop.cachefly.net/RobLum/Suave/container.jpg') no-repeat;
 	height: 710px;
@@ -11,11 +15,16 @@ body {
 	margin: 160px 49px 0px 49px;
 	padding: 0 0 150px 0;
 }
-
-.QHeader, .QQuestion, .QQuestionDivider, .QQuestionNumber, .CFooterDivider, .QChoiceCaption, .QChoiceSelect, .SField br, #facebook-profile-connect, .Notes, .CTopNote, #question_choice_87674, #form_submit_button, .quiz_result_image, #page-info, #app_canvas_header{
-	display: none;
+#dropbox .QuizChoice {
+	background: url('https://opop.cachefly.net/RobLum/Suave/goldbox.jpg') no-repeat;
+	margin: 165px 18px 10px 250px !important;
+	width:170px !important;
+	height:200px !important;
 }
-
+#FanTab {
+	width: 810px;
+	padding: 0 0 20px 0;
+}
 .QuizChoice {
 	width: 170px !important;
 	height: 200px !important;
@@ -24,31 +33,21 @@ body {
 	text-align: center !important;
 	border: none !important;
 }
-
 .QuizChoice img { 
 	border: none !important;
 	cursor: pointer;
 }
-
 .QChoices {
 	padding: 0 0 0 22px;
 }
-
 .your_choice {
 	height: 7px !important;
 }
-
-#dropbox .QuizChoice {
-	background: url('https://s3.amazonaws.com/com.offerpop.datastore/534886/3b5Nl7.jpg') no-repeat;
-	margin: 165px 18px 10px 250px !important;
-}
-
 #bottom {
 	clear:both;
 	position: relative !important;
 	height: 1px;
 }
-
 #reset {
 	display: inline-block;
 	background: url('https://s3.amazonaws.com/com.offerpop.datastore/325688/umf27Z.png') no-repeat;
@@ -57,15 +56,13 @@ body {
 	margin: 0 118px 0 0;
 	padding: 0 0 12px 0;
 }
-
 .next {
 	display: inline-block;
 	background: url('https://opop.cachefly.net/RobLum/Suave/next_button.jpg') no-repeat;
 	height: 32px;
 	width: 133px;
-	margin: 0px 136px 0 50px;
+	margin: 0px 136px 0 40px;
 }
-
 #skip {
 	display: inline-block;
 	background: url('https://s3.amazonaws.com/com.offerpop.datastore/325688/vBbmvw.png') no-repeat;
@@ -74,179 +71,86 @@ body {
 	padding: 0 0 12px 0;
 }
 
-
+/* Form Page */
 .SBox {
     background: #fff;
-    height: 795px;
+    height: 725px;
     width: 650px;
     margin: 156px 80px;
+    padding:20px;
 }
-
-#frmSignUp {
-	padding: 47px 160px 0;
-	font-family: Arial, sans-serif;
+#formInstructions {
+	font-weight: bold;
 }
-
-#email, #firstname, #lastname  {
-	width: 200px !important;
-	float: right;
+#sfield_firstname{
+	display:block !important;	
 }
-
-#sfield_lastname, #sfield_firstname {
-	width: 400px !important;
-}
-
-.asterisk {
-	color: red;
-}
-
 .SField input {
 	padding: 2px 4px !important;
 	font-size: 9em;
+	width:300px !important;
 }
-
 .SField label {
 	font-weight: bold;
 	font-size: .9em;
 	color: #8f8e8e;
 	padding: 0 16px 0 0;
 }
-
 .SField {
 	margin: 0 0 2px 0 !important;
 }
-
 .SSubmit {
 	margin: 0 62px;
 }
-
-#custom-submit {
-	background: url('https://s3.amazonaws.com/com.offerpop.datastore/325688/H8mIjJ.png') no-repeat;
-	padding: 35px 100px !important;
-	border: none !important;
-	cursor: pointer;
-	margin: -5px 0;
+#frmSignUp {
+	padding: 10px 0 0;
+	font-family: Arial, sans-serif;
+}
+#frmSignUp .SField, #privacyText, .SDeclare {
+	width: 300px !important;
+}
+#privacyText{
+	padding-bottom:10px;
 }
 
-#post {
-	float: right;
-	margin: 0 100px 0 0;
+/* Thank You Page */
+#thankYouText {
+	font-family: sans-serif;
+	font-size: 18px;
+	font-weight: lighter;
+	color: #0a6d3f;
+	width: 500px;
+	margin:0 auto;
+	margin-top:30px;
 }
-
-#sfield_post {
-	padding: 0 0 12px 0;
-}
-
-.requestbutton {
-	padding: 0 !important;
-	border: none !important;
-	background: none !important;
-}
-
-.requestbutton:hover {
-	padding: 0 !important;
-	border: none !important;
-	background: none !important;
-	cursor: pointer;
-}
-
 #QuizShareAfterSubmission {
-	background: url('https://s3.amazonaws.com/com.offerpop.datastore/325688/0HUjok.png') no-repeat;
+	background: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/FYRJXd.jpg') no-repeat;
 	height: 471px;
+	width:715px;
 	margin: 160px 79px;
-	padding: 100px 0;
+	padding: 150px 0;
 }
-
-#CommentsWidget {
-	display: none;
-}
-
-.trip {
-	float: left;
-	padding: 0 20px;
-}
-
-.cta-photo {
-	display: block;
-	width: 163px;
-	height: 165px;
-}
-
-.cta {
-	display: block;
+.requestbutton, .requestbutton:hover {
+	padding: 0 !important;
+	border: none !important;
+	background: none !important;
 	cursor: pointer;
-	margin: 7px 0;
-	padding: 23px; 
 }
-
-#cta-photo1 {
-	background: url('https://s3.amazonaws.com/com.offerpop.datastore/325688/6HlvdV.png') no-repeat;
-}
-
-#cta-photo2 {
-	background: url('https://s3.amazonaws.com/com.offerpop.datastore/325688/GHl7Cg.png') no-repeat;
-}
-
-#cta-photo3 {
-	background: url('https://s3.amazonaws.com/com.offerpop.datastore/325688/oOcNqB.png') no-repeat;
-}
-
-#cta1 {
-	background: url('https://opop.cachefly.net/Rotimi/TourismBC/cta1.png') no-repeat;
-}
-
-#cta2 {
-	background: url('https://s3.amazonaws.com/com.offerpop.datastore/325688/Gt1oVn.png') no-repeat;
-}
-
-#cta3 {
-	background: url('https://s3.amazonaws.com/com.offerpop.datastore/325688/VU0WV0.png') no-repeat;
-}
-
 .did_not_signup {
 	padding: 40px 0 0 0; 
 }
 
-.disclaimer {
-	font-size: .88em;
-	margin: 80px 0;
-}
-
-#regulations {
-	height: 35px;
-	width: 191px;
-	margin: -78px 0 45px 0;
-}
-
-.regulations-link {
-	height: 35px;
-}
-
-
+/* Footer Elements */
 .CFooterDivider + div, #report_spam_div {
 	margin: 20px 0;
 }
-
-.offerpop {
-	display: none;
-}
-
 .CFooter {
 	margin: -10px 0 0 0;
 }
-
 .CFooter p {
 	text-align: center;
 	width: 810px;
 }
-
-#FanTab {
-	width: 810px;
-	padding: 0 0 20px 0;
-}
-
 .CShare {
 	margin: 4px 0 0 0 !important; 
 }
-
-</style>

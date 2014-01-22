@@ -6,6 +6,23 @@
 <script>
 jQuery(document).ready(function($) {
 
+		//Insert Form Instruction Text
+		$('<div id="formInstructions">Complete the entry form below for a chance to win a coupon for a full-sized Suave Professionals® Natural Infusion product</div>').prependTo('.SBox');
+
+		//Include Privacy Text in sign up form
+		$('<div id="privacyText">Helping you with your everyday needs is important to us. Therefore, from time to time, we may wish to send you information, samples or special offers that we feel may be of interest to you regarding Suave®, or other complementary brands from Unilever or other carefully selected companies. If you would rather not opt-in to receive such information, please uncheck the box below. For more information or to remove yourself from future contact, please visit our Privacy Policy.</div>').insertBefore('#sfield_optin1');
+
+		//Replace Share copy on Thank you page
+		$('#QuizShareAfterSubmission').html('<a onclick="popShare();return false;" class="requestbutton" title="Share with Friends"><img src="https://s3.amazonaws.com/com.offerpop.datastore/438279/urF3KK.png"></a>');
+
+		//Create the Dropbox container div for the five Dropboxes
+		$('#question_choice_87674').after('<div id="dropbox"><div class="QuizChoice"></div></div>');
+
+		//Create the bottom section and its buttons
+		$('#dropbox').append('<div id="bottom"><a href="#" target="_self"><div id="reset"></div></a><a href="javascript:void(0);"><div class="next"></div></a><a href="javascript:void(0);"><div id="skip"></div></a></div>');
+
+		$('<div id="thankYouText">Visit <a href="http://www.suave.com/" target="_blank">Suave.com</a> for more information on the NEW Suave Professionals® Natural Infusion collection.</div>').appendTo('#QuizShareAfterSubmission');
+
 		//Droppable function that assigns a drop event to any dropbox ID taken as a parameter.
 		function _droppable_(dropbox_element_id) {
 			$(dropbox_element_id).droppable( {
@@ -36,18 +53,16 @@ jQuery(document).ready(function($) {
 
 		//Enable Draggable QuizChoices
 		$('.QuizChoice img').draggable({
-			snapMode: "inner", 
-			snap: "#dropbox .QuizChoice", 
-			snapTolerance: 40, 
-			containment: ".QChoicesContainer", 
-			revert: "invalid", 
-			start: function(event, ui ) {
+			 snapMode: "inner" 
+			,snap: "#dropbox .QuizChoice"
+			,snapTolerance: 40
+			,containment: ".QChoicesContainer"
+			,revert: "invalid"
+			,start: function(event, ui ) {
 				$(this).css('z-index',1000); 
 			} 
 		});
 
-		//Create the Dropbox container div for the five Dropboxes
-		$('#question_choice_87674').after('<div id="dropbox"><div class="QuizChoice"></div></div>');
 
 		//Create IDs for each Dropbox Location
 		$('#dropbox .QuizChoice').attr('id', function(i) {
@@ -59,9 +74,6 @@ jQuery(document).ready(function($) {
 		qc2 = 'choice_87672';
 		qc3 = 'choice_87673';
 		qc4 = 'choice_87674';
-
-		//Create the bottom section and its buttons
-		$('#dropbox').append('<div id="bottom"><a href="#" target="_self"><div id="reset"></div></a><a href="javascript:void(0);"><div class="next"></div></a><a href="javascript:void(0);"><div id="skip"></div></a></div>');
 
 		//Applies our droppable function to all the dropboxes. 
 		_droppable_('#dropbox1');
@@ -77,14 +89,63 @@ jQuery(document).ready(function($) {
                                 //Disables draggables once 5 images have been dropped. Makes sure the opacity is 100%
                                 $('.QuizChoice img').draggable('disable');
                                 $('#dropbox .QuizChoice img').css('opacity', 1);
+                                var choice = $('#dropbox img').attr('id');
+                                switch (choice){
+                                	case 'QuizChoice1':
+                                	choice = qc1;
+                                	break;
+
+                                	case 'QuizChoice2':
+                                	choice = qc2;
+                                	break;
+
+                                	case 'QuizChoice3':
+                                	choice = qc3;
+                                	break;
+                                }
 
                                 jQuery('.next').click( function() {
-                                    jQuery('#'+ qc1 +' a').trigger('click');
+                                    jQuery('#'+ choice +' a').trigger('click');
                                 });
                         }
                 }
 
 	});
 
+</script>
+<script>
+jQuery(function($){
+	//Placeholders for Submit Form
+	$("#email").attr('placeholder', 'Email');
+	$("#firstname").attr('placeholder', 'First name');
+	$("#lastname").attr('placeholder', 'Last name');
+	$("#address").attr('placeholder', 'Street address');
+	$('#city').attr('placeholder', 'City');
+	$('#state').attr('placeholder', 'State');
+	$('#zip').attr('placeholder', 'Zip code');
+	$("#birthday").attr('placeholder', 'Birthday');
+	//Fix Placeholders
+	$('[placeholder]').parents('form').submit(function() {
+	  $(this).find('[placeholder]').each(function() {
+	    var input = $(this);
+	    if (input.val() == input.attr('placeholder')) {
+	      input.val('');
+	    }
+	  })
+	});
+	$('[placeholder]').focus(function() {
+	  var input = $(this);
+	  if (input.val() == input.attr('placeholder')) {
+	    input.val('');
+	    input.removeClass('placeholder');
+	  }
+	}).blur(function() {
+	  var input = $(this);
+	  if (input.val() == '' || input.val() == input.attr('placeholder')) {
+	    input.addClass('placeholder');
+	    input.val(input.attr('placeholder'));
+	  }
+	}).blur();
+});
 </script>
 <style>
