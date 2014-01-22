@@ -49,7 +49,7 @@ body {
 	height: 1px;
 }
 #reset {
-	display: inline-block;
+	display: none;
 	background: url('https://s3.amazonaws.com/com.offerpop.datastore/325688/umf27Z.png') no-repeat;
 	height: 9px;
 	width: 113px;
@@ -61,11 +61,11 @@ body {
 	background: url('https://opop.cachefly.net/RobLum/Suave/next_button.jpg') no-repeat;
 	height: 32px;
 	width: 133px;
-	margin: 0px 136px 0 40px;
+	margin: 0px 136px 0 270px;
 }
 #skip {
 	display: inline-block;
-	background: url('https://s3.amazonaws.com/com.offerpop.datastore/325688/vBbmvw.png') no-repeat;
+	background: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/C5hkrA.png') no-repeat;
 	width: 89px;
 	height: 9px;
 	padding: 0 0 12px 0;
@@ -99,9 +99,6 @@ body {
 .SField {
 	margin: 0 0 2px 0 !important;
 }
-.SSubmit {
-	margin: 0 62px;
-}
 #frmSignUp {
 	padding: 10px 0 0;
 	font-family: Arial, sans-serif;
@@ -118,7 +115,7 @@ body {
 	font-family: sans-serif;
 	font-size: 18px;
 	font-weight: lighter;
-	color: #0a6d3f;
+	color: #129658;
 	width: 500px;
 	margin:0 auto;
 	margin-top:30px;

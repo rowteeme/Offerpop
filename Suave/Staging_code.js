@@ -23,6 +23,10 @@ jQuery(document).ready(function($) {
 
 		$('<div id="thankYouText">Visit <a href="http://www.suave.com/" target="_blank">Suave.com</a> for more information on the NEW Suave Professionals® Natural Infusion collection.</div>').appendTo('#QuizShareAfterSubmission');
 
+		$('#optin1').prop('checked', true);
+		$('#optin2').prop('checked', true);
+		$('#optin3').prop('checked', true);
+
 		//Droppable function that assigns a drop event to any dropbox ID taken as a parameter.
 		function _droppable_(dropbox_element_id) {
 			$(dropbox_element_id).droppable( {
