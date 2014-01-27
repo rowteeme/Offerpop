@@ -1,0 +1,219 @@
+body {
+	background: url('https://opop.cachefly.net/RobLum/Suave/suave_background_v2.jpg') no-repeat;
+	height: 1026px !important;
+	overflow: hidden !important;
+}
+.SField label, #CommentsWidget, .QHeader, .QQuestion, .QQuestionDivider, .QQuestionNumber, .CFooterDivider, .QChoiceCaption, .QChoiceSelect, .SField br, #facebook-profile-connect, .CTopNote, #question_choice_89699, .quiz_result_image, #page-info, #app_canvas_header, #signup-share{
+	display: none;
+}
+.SField label[for=gender]{
+	display:inline-block !important;
+	width:20px;
+	color: #A7A7A7;
+}
+/* Drag & Drop Page */
+.QChoicesContainer {
+	background: url('https://opop.cachefly.net/RobLum/Suave/container_v2.jpg') no-repeat;
+	height: 710px;
+	width: 758px;
+	margin: 160px 49px 0px 49px;
+	padding: 0 0 150px 0;
+}
+#dropbox .QuizChoice {
+	background: url('https://opop.cachefly.net/RobLum/Suave/goldbox.jpg') no-repeat;
+	margin: 165px 18px 10px 250px !important;
+	width:170px !important;
+	height:200px !important;
+}
+#FanTab {
+	width: 810px;
+	padding: 0 0 20px 0;
+}
+.QuizChoice {
+	width: 170px !important;
+	height: 200px !important;
+	margin: 100px 60px 18px 10px !important;
+	float: left !important;
+	text-align: center !important;
+	border: none !important;
+}
+.QuizChoice img { 
+	border: none !important;
+	cursor: pointer;
+}
+.QChoices {
+	padding: 0 0 0 22px;
+}
+.your_choice {
+	height: 7px !important;
+}
+#bottom {
+	clear:both;
+	position: relative !important;
+	height: 1px;
+	top:-10px;
+}
+#reset {
+	height: 9px;
+	width: 113px;
+	margin: 0 118px 0 0;
+	padding: 0 0 12px 0;
+	position:relative;
+	top:30px;
+	text-decoration: underline;
+	color:#000;
+}
+.next {
+	display: inline-block;
+	background: url('https://opop.cachefly.net/RobLum/Suave/next_button.jpg') no-repeat;
+	height: 32px;
+	width: 133px;
+	margin: 0px 136px 0 270px;
+}
+#skip {
+	display: inline-block;
+	background: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/C5hkrA.png') no-repeat;
+	width: 89px;
+	height: 9px;
+	padding: 0 0 12px 0;
+}
+
+/* Form Page */
+.placeholder {
+	color: #A7A7A7;
+}
+.SBox {
+    background: #fff;
+    height: 745px;
+    width: 650px;
+    margin: 156px 80px;
+    padding:15px;
+}
+#formInstructions {
+	font-weight: bold;
+}
+#sfield_firstname{
+	display:block !important;	
+}
+.SField input {
+	padding: 2px 4px !important;
+	font-size: 9em;
+	width:300px !important;
+}
+.SField label {
+	font-weight: bold;
+	font-size: .9em;
+	color: #8f8e8e;
+	padding: 0 16px 0 0;
+}
+.SField {
+	margin: 0 0 2px 0 !important;
+}
+#frmSignUp {
+	padding: 10px 0 0;
+	font-family: Arial, sans-serif;
+}
+#frmSignUp .SField, #privacyText, .SDeclare {
+	width: 300px !important;
+}
+#privacyText{
+	padding-bottom:10px;
+}
+
+/* Thank You Page */
+#thankYouText {
+	font-family: sans-serif;
+	font-size: 18px;
+	font-weight: lighter;
+	color: #129658;
+	width: 500px;
+	margin:0 auto;
+	margin-top:30px;
+}
+#QuizShareAfterSubmission {
+	background: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/FYRJXd.jpg') no-repeat;
+	height: 471px;
+	width:715px;
+	margin: 160px 79px 90px 50px;
+	padding: 150px 0;
+}
+.requestbutton, .requestbutton:hover {
+	padding: 0 !important;
+	border: none !important;
+	background: none !important;
+	cursor: pointer;
+}
+.did_not_signup {
+	padding: 40px 0 0 0; 
+}
+
+/* Footer Elements */
+.CFooterDivider + div, #report_spam_div {
+	margin: 20px 0;
+}
+.CFooter {
+	margin: -10px 0 0 0;
+}
+.CFooter p {
+	text-align: center;
+	width: 810px;
+}
+.CShare {
+	margin: 4px 0 0 0 !important; 
+}
+#officialRules{
+	font-size:11px;
+	color:#888;
+}
+
+/* Error Handling */
+div.SDeclare label.Invalid {
+color: red !important;
+}
+.invalidBdayBox{
+	border:1px solid red !important;
+}
+#invalidBday{
+	color:red;
+	display:none;
+    float:right;
+}
+</style>
+<!--[if IE]>
+<style>
+a img, a, img{
+	border:0;
+	focus:0;
+}
+.SField label{
+	display:inline-block !important;
+	width:90px !important;
+	color: #000;
+}
+.SField label[for=gender]{
+	color:#000;
+}
+#birthday {
+	margin-left: 3px;
+}
+#frmSignUp .SField{
+	width:420px !important;
+}
+#invalidBday{
+	width:80px;
+	margin-left: 3px;
+}
+.invalidBdayBox{
+	float:right;
+}
+#privacyText{
+	clear:both;
+}
+label[for=birthday], #invalidBday{
+	float:left;
+}
+.SBox{
+	height:755px;
+}
+</style>
+<![endif]-->
