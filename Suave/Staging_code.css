@@ -1,15 +1,19 @@
 body {
-	background: url('https://opop.cachefly.net/RobLum/Suave/suave_background.jpg') no-repeat;
+	background: url('https://opop.cachefly.net/RobLum/Suave/suave_background_v2.jpg') no-repeat;
 	height: 1026px !important;
 	overflow: hidden !important;
 }
 .SField label, #CommentsWidget, .QHeader, .QQuestion, .QQuestionDivider, .QQuestionNumber, .CFooterDivider, .QChoiceCaption, .QChoiceSelect, .SField br, #facebook-profile-connect, .CTopNote, #question_choice_87674, .quiz_result_image, #page-info, #app_canvas_header, #signup-share{
 	display: none;
 }
-
+.SField label[for=gender]{
+	display:inline-block !important;
+	width:20px;
+	color: #A7A7A7;
+}
 /* Drag & Drop Page */
 .QChoicesContainer {
-	background: url('https://opop.cachefly.net/RobLum/Suave/container.jpg') no-repeat;
+	background: url('https://opop.cachefly.net/RobLum/Suave/container_v2.jpg') no-repeat;
 	height: 710px;
 	width: 758px;
 	margin: 160px 49px 0px 49px;
@@ -47,14 +51,17 @@ body {
 	clear:both;
 	position: relative !important;
 	height: 1px;
+	top:-10px;
 }
 #reset {
-	display: none;
-	background: url('https://s3.amazonaws.com/com.offerpop.datastore/325688/umf27Z.png') no-repeat;
 	height: 9px;
 	width: 113px;
 	margin: 0 118px 0 0;
 	padding: 0 0 12px 0;
+	position:relative;
+	top:30px;
+	text-decoration: underline;
+	color:#000;
 }
 .next {
 	display: inline-block;
@@ -72,12 +79,15 @@ body {
 }
 
 /* Form Page */
+.placeholder {
+	color: #A7A7A7;
+}
 .SBox {
     background: #fff;
-    height: 725px;
+    height: 745px;
     width: 650px;
     margin: 156px 80px;
-    padding:20px;
+    padding:15px;
 }
 #formInstructions {
 	font-weight: bold;
@@ -124,7 +134,7 @@ body {
 	background: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/FYRJXd.jpg') no-repeat;
 	height: 471px;
 	width:715px;
-	margin: 160px 79px;
+	margin: 160px 79px 90px 50px;
 	padding: 150px 0;
 }
 .requestbutton, .requestbutton:hover {
@@ -151,3 +161,59 @@ body {
 .CShare {
 	margin: 4px 0 0 0 !important; 
 }
+#officialRules{
+	font-size:11px;
+	color:#888;
+}
+
+/* Error Handling */
+div.SDeclare label.Invalid {
+color: red !important;
+}
+.invalidBdayBox{
+	border:1px solid red !important;
+}
+#invalidBday{
+	color:red;
+	display:none;
+    float:right;
+}
+</style>
+<!--[if IE]>
+<style>
+a img, a, img{
+	border:0;
+	focus:0;
+}
+.SField label{
+	display:inline-block !important;
+	width:90px !important;
+	color: #000;
+}
+.SField label[for=gender]{
+	color:#000;
+}
+#birthday {
+	margin-left: 3px;
+}
+#frmSignUp .SField{
+	width:420px !important;
+}
+#invalidBday{
+	width:80px;
+	margin-left: 3px;
+}
+.invalidBdayBox{
+	float:right;
+}
+#privacyText{
+	clear:both;
+}
+label[for=birthday], #invalidBday{
+	float:left;
+}
+.SBox{
+	height:755px;
+}
+</style>
+<![endif]-->
