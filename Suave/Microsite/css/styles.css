@@ -47,6 +47,34 @@ body {
 /* CUSTOM CSS BELOW */
 /********************/
 /********************/
+
+/* Navigation Fixed Section */
+#navigation{
+  position:fixed;
+  font-family:arial;
+  font-weight:bold;
+  background:#e3d8b8;
+  top:290px;
+}
+#navigation ul{
+  margin:0;
+}
+#navigation li {
+  list-style-type: none;
+  line-height: 40px;
+  text-align:right;
+  padding: 0px 20px;
+}
+#navigation li a{
+  text-decoration:none;
+  color:#000;
+}
+#navigation li:hover, #navigation li:hover > a{
+  color:#006a3a;
+  background:#fff;
+}
+
+/* Header Text Section */
 .jumbotron {
   margin: 60px 0 0 0;
 }
@@ -96,22 +124,56 @@ body {
   margin-top:-41px;
   border:1px solid transparent;
 }
-#carousel-container .previous {
+#yt-controls{
+  margin-left:0px;
+}
+#yt-controls .previous {
   position: relative;
-  left: -48px;
+  left: 0px;
   top: -140px;
   text-decoration: none;
 }
-#carousel-container .next {
+#yt-controls .next {
   position: relative;
   top: -140px;
-  right: -680px;
+  right: -728px;
   text-decoration: none;
 }
 /* Sign Up App */
 
 /* Hashtag Gallery */
+#glam-gallery{
+  background:#9e772f;
+  margin:20px 0px 0px 0px;
+}
 
 /* Glam in 3 Steps */
+#glam-three-steps{
+  background:#9e772f;
+  margin:20px 0px 0px 0px;
+}
 
-
+/************************/
+/* CUSTOM MEDIA QUERIES */
+/************************/
+@media (max-width: 979px) {
+  #navigation{
+    display:none;
+  }
+}
+@media (max-width: 767px) {
+  #yt-carousel .span3{
+    width:39%;
+    margin:auto;
+  }
+  #carousel-container{
+    margin-top:0px;  
+  }
+  #carousel-container, #yt-carousel{
+    height:100%;
+  }
+  .yt-play{
+    top: -90px;
+    left: 90px;
+  }
+}
