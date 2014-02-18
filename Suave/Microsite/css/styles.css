@@ -55,6 +55,7 @@ body {
   font-weight:bold;
   background:#e3d8b8;
   top:290px;
+  z-index:999999;
 }
 #navigation ul{
   margin:0;
@@ -129,14 +130,14 @@ body {
 }
 #yt-controls .previous {
   position: relative;
-  left: 0px;
+  float:left;
   top: -140px;
   text-decoration: none;
 }
 #yt-controls .next {
   position: relative;
   top: -140px;
-  right: -728px;
+  float:right;
   text-decoration: none;
 }
 /* Sign Up App */
@@ -151,8 +152,74 @@ body {
 #glam-three-steps{
   background:#9e772f;
   margin:20px 0px 0px 0px;
+  padding:10px;
 }
-
+#glam-three-steps #header {
+  position: relative;
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  top: 20px;
+}
+#glam-three-steps #header h1{
+  color:#006a3a;
+}
+#three-controls{
+  margin-left:0px;
+}
+#three-image-container {
+  margin-top: -130px;
+  background:url('https://s3.amazonaws.com/com.offerpop.datastore/438279/dnzcg9.jpg') center 100%;
+}
+#three-controls .previous {
+  position: relative;
+  top: -130px;
+  float:left;
+  text-decoration: none;
+}
+#three-controls .next {
+  position: relative;
+  top: -130px;
+  float: right;
+  text-decoration: none;
+}
+#three-selection-container {
+  background: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/dnzcg9.jpg') center 100%;
+  margin: -105px 0px 0px 0px;
+}
+#three-selection-container .span3 {
+  margin-left: 20px;
+}
+#three-selection-container .span3 p{
+  text-align:center;
+  color: #fff;
+  background:#ba9a51;
+  margin-bottom:0px;
+}
+#ginger-thumb.active{
+  border:1px solid #4b280f;
+}
+#macadamia-thumb.active{
+  border:1px solid #eac200;
+} 
+#sewaweed-thumb.active{
+  border:1px solid #00682e;
+}
+#ginger-thumb.active p{
+  background: #4b280f;
+}
+#macadamia-thumb.active p{
+  background:#eac200;
+}
+#seaweed-thumb.active p{
+  background:#00682e;
+}
+#three-selection-container .span8{
+  width:68.81%;
+  border:1px solid #d1ad5b;
+  height:660px;
+  margin-bottom:20px;
+}
 /************************/
 /* CUSTOM MEDIA QUERIES */
 /************************/

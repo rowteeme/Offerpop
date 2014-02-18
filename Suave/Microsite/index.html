@@ -17,13 +17,6 @@
     <!--[if lt IE 9]>
       <script src="/Suave/css/js/html5shiv.js"></script>
     <![endif]-->
-
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/Suave/css/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/Suave/css/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/Suave/css/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="/Suave/css/ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="/Suave/css/ico/favicon.png">
   </head>
 
   <body><!-- BODY -->
@@ -62,7 +55,7 @@
                   <!-- new span -->
                   <div class="span3">
                     <div id="yt-border">
-                      <img class="yt-thumbnail" src="http://epsilon.naphi.com/Suave/img/youtube_image1.jpg">
+                      <img class="yt-thumbnail" src="http://epsilon.naphi.com/Suave/img/Youtube_Carousel/image1.jpg">
                     </div>
 
                     <img class="yt-play" src="https://s3.amazonaws.com/com.offerpop.datastore/438279/0RNVvs.png"><p>Mon amer bien tout avecter</p>
@@ -71,7 +64,7 @@
                   <!-- new span -->
                   <div class="span3">
                     <div id="yt-border">
-                      <img class="yt-thumbnail" src="http://epsilon.naphi.com/Suave/img/youtube_image2.jpg">
+                      <img class="yt-thumbnail" src="http://epsilon.naphi.com/Suave/img/Youtube_Carousel/image2.jpg">
                     </div>
 
                     <img class="yt-play" src="https://s3.amazonaws.com/com.offerpop.datastore/438279/0RNVvs.png"><p>Aujourdhui laissez avec montcler</p>
@@ -80,7 +73,7 @@
                   <!-- new span -->
                   <div class="span3">
                     <div id="yt-border">
-                      <img class="yt-thumbnail" src="http://epsilon.naphi.com/Suave/img/youtube_image3.jpg">
+                      <img class="yt-thumbnail" src="http://epsilon.naphi.com/Suave/img/Youtube_Carousel/image3.jpg">
                     </div>
 
                     <img class="yt-play" src="https://s3.amazonaws.com/com.offerpop.datastore/438279/0RNVvs.png"><p>S’il dejeuner lors quivent souvient</p>
@@ -89,7 +82,7 @@
                   <!-- new span -->
                   <div class="span3">
                     <div id="yt-border">
-                      <img class="yt-thumbnail" src="http://epsilon.naphi.com/Suave/img/youtube_image4.jpg">
+                      <img class="yt-thumbnail" src="http://epsilon.naphi.com/Suave/img/Youtube_Carousel/image4.jpg">
                     </div>
 
                     <img class="yt-play" src="https://s3.amazonaws.com/com.offerpop.datastore/438279/0RNVvs.png"><p>Et lors flajoler du comme</p>
@@ -121,23 +114,68 @@
 
             <!-- Start Glam in 3 Steps Container -->
             <div class="span12" id="glam-three-steps">
-              <div>
+                <div id="header">
+                  <h1>Get Glam in Three Steps</h1>
+                  <p>Infuse your hair with goodness with NEW Suave Professionals® Natural Infusion. Each collection is infused with specially-chosen exotic ingredients that deliver noticeable results and contains no parabens or dyes.</p>
+                </div>
 
+              <div id="three-image-container">
+                <img src="http://epsilon.naphi.com/Suave/img/Three_Step/ginger_large.jpg">
               </div>
+
+              <!-- Glam Three Step Controls -->
+              <div id="three-controls" class="span12">
+                      <a href="#" class="previous">
+                        <img src="https://s3.amazonaws.com/com.offerpop.datastore/438279/9dTtQD.png">
+                      </a>
+
+                      <a href="#" class="next">
+                        <img src="https://s3.amazonaws.com/com.offerpop.datastore/438279/CahHeP.png">
+                      </a>
+              </div>
+
+              <div id="three-selection-container" class="span12"> 
+                <div class="span3">
+                      <div id="ginger-thumb" class="active">
+                        <img src="http://epsilon.naphi.com/Suave/img/Three_Step/ginger_small_left.png">
+                        <p>with Awapuhi Ginger</p>
+                      </div>
+                      <div id="macadamia-thumb">
+                        <img src="http://epsilon.naphi.com/Suave/img/Three_Step/macadamia_small_left.png">
+                        <p>with Macadamia Oil</p>
+                      </div>
+                      <div id="seaweed-thumb">
+                        <img src="http://epsilon.naphi.com/Suave/img/Three_Step/seaweed_small_left.png">
+                        <p>with Seaweed</p>
+                      </div>
+                </div>
+
+                  <div class="span8">
+                    <div class="span6">
+
+                    </div>
+                    <div class="span6">
+
+                    </div>
+                  </div>
+              </div>
+
             </div>
 
           </div><!-- End of row-fluid marketing -->
 
-      <hr>
-
-        <!-- Footer Start -->
-        <div class="footer">
-          <p>Suave Professionals® Natural Infusion &copy; 2014</p>
-        </div>
-        <!-- Footer End -->
-
     </div> <!-- /container -->
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+jQuery(function($){
+  $('.next').click(function(){
+    $('#carousel-container').load('/Suave/ajax_load.html');
+    return false;
+  });
+
+});
+</script>
 
   </body>
 </html>
