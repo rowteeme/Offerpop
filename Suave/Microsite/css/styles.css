@@ -1,0 +1,117 @@
+body {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/mjnqh6.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.https://s3.amazonaws.com/com.offerpop.datastore/438279/mjnqh6.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://s3.amazonaws.com/com.offerpop.datastore/438279/mjnqh6.jpg', sizingMethod='scale')";
+  font-family:Belleza;
+}
+
+/* Custom container */
+.container-narrow {
+  margin: 0 auto;
+  max-width: 800px;
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  margin: 60px 0;
+  text-align: center;
+}
+.jumbotron h1 {
+  font-size: 72px;
+  line-height: 1;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 60px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+
+/********************/
+/* CUSTOM CSS BELOW */
+/********************/
+/********************/
+.jumbotron {
+  margin: 60px 0 0 0;
+}
+.jumbotron h1{
+  color:#006a3a;
+}
+.lead{
+  width:90%;
+  margin:auto;
+}
+.marketing {
+  margin: 30px 0;
+}
+/* Youtube Carousel Section */
+#carousel-container{
+  width: 88%;
+  height: 150px;
+  margin: 0 auto;
+  margin-top:20px;
+}
+#yt-large{
+  height:500px;
+}
+#yt-carousel{
+  background:url('https://s3.amazonaws.com/com.offerpop.datastore/438279/lrZZGy.jpg');
+  height: 190px;
+  width: 100%;
+  margin-left: 0px;
+}
+#yt-border {
+  border: 1px solid #4d8555;
+  height:100%;
+  width:100%;
+}
+.yt-play {
+  position: relative;
+  top: -65px;
+  left: 60px;
+  width:55px;
+}
+#yt-carousel p{
+  background:url('https://s3.amazonaws.com/com.offerpop.datastore/438279/ngIQ2e.jpg');
+  color:#fff;
+  height:45px;
+  width:100%;
+  text-align: center;
+  margin-top:-41px;
+  border:1px solid transparent;
+}
+#carousel-container .previous {
+  position: relative;
+  left: -48px;
+  top: -140px;
+  text-decoration: none;
+}
+#carousel-container .next {
+  position: relative;
+  top: -140px;
+  right: -680px;
+  text-decoration: none;
+}
+/* Sign Up App */
+
+/* Hashtag Gallery */
+
+/* Glam in 3 Steps */
+
+
