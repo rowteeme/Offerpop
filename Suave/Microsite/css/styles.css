@@ -385,6 +385,10 @@ body {
   }
 }
 @media (max-width: 767px) {
+  body{
+    padding-left:0px;
+    padding-right:0px;
+  }
   #yt-carousel .span3{
     width:39%;
     margin:auto;
@@ -404,6 +408,16 @@ body {
     left: 90px;
   }
   /* Three Step 767px CSS - Tablets */
+  #three-selection-container{
+    margin:-70px 0px 0px 0px;
+    padding-top:140px;
+  }
+  #three-selection-container .span3 {
+    margin-left: 0px;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+  }
   #glam-three-steps #header{
     background: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/dnzcg9.jpg') center 100%;
     margin-top: -20px;
@@ -412,6 +426,15 @@ body {
   }
   #three-image-container{
     margin-top:-50px;
+  }
+  #three-selection-container .span8#product-info-container{
+    width:90%;
+    margin:auto;
+    text-align:center;
+    height:100%;
+  }
+  #product-info-description{
+    margin:auto;
   }
 }
 @media (max-width: 480px) {
