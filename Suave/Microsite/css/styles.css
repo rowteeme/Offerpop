@@ -16,19 +16,8 @@ body {
   margin: 0 auto;
   max-width: 800px;
 }
-.container-narrow > hr {
-  margin: 30px 0;
-}
 
 /* Main marketing message and sign up button */
-.jumbotron {
-  margin: 60px 0;
-  text-align: center;
-}
-.jumbotron h1 {
-  font-size: 72px;
-  line-height: 1;
-}
 .jumbotron .btn {
   font-size: 21px;
   padding: 14px 24px;
@@ -47,14 +36,53 @@ body {
 /* CUSTOM CSS BELOW */
 /********************/
 /********************/
-
+/* Top Navigation Bar */
+.navbar-fixed-top, .navbar-fixed-bottom{
+  position:absolute;
+}
+#custom-nav-container {
+  width: 50%;
+  margin: auto;
+  position: relative;
+}
+.navbar-inverse .navbar-inner {
+  background: #fff;
+  border: 0px;
+}
+.brand {
+  position: absolute;
+  top: 0px;
+  left: -170px;
+}
+.navbar-inverse .nav > li > a, .navbar-inverse .nav > li > a:focus, .navbar-inverse .nav > li > a:hover{
+  color:#999;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: 400;
+  text-shadow:none;
+}
+.navbar .nav{
+  margin:20px 10px 0 0;
+  height:15px;
+}
+.navbar .nav > li:first-child {
+  border-left: 0px;
+}
+.navbar .nav > li {
+  height: 100%;
+  margin-top: -8px;
+  border-left: 1px solid #999;
+}
+.nav-collapse .nav a {
+  margin-top: -12px;
+}
 /* Navigation Fixed Section */
 #navigation{
   position:fixed;
   font-family:arial;
   font-weight:bold;
   background:#e3d8b8;
-  top:290px;
+  top:20%;
   z-index:999999;
 }
 #navigation ul{
@@ -78,9 +106,12 @@ body {
 /* Header Text Section */
 .jumbotron {
   margin: 60px 0 0 0;
+  text-align: center;
 }
 .jumbotron h1{
   color:#006a3a;
+  font-size: 72px;
+  line-height: 1;
 }
 .lead{
   width:90%;
@@ -143,7 +174,7 @@ body {
 /* Sign Up App */
 
 /* Hashtag Gallery */
-#glam-gallery{
+#glam-hashtag-gallery{
   background:#9e772f;
   margin:20px 0px 0px 0px;
 }
@@ -189,6 +220,7 @@ body {
 }
 #three-selection-container .span3 {
   margin-left: 20px;
+  width:21%;
 }
 #three-selection-container .span3 p{
   text-align:center;
@@ -196,14 +228,26 @@ body {
   background:#ba9a51;
   margin-bottom:0px;
 }
+.product-thumb{
+  opacity: .5;
+  background: #fff;
+  border: 1px solid #ba9a51;
+  margin-bottom:15px;
+}
 #ginger-thumb.active{
   border:1px solid #4b280f;
+  opacity: 1;
+  background: none;
 }
 #macadamia-thumb.active{
   border:1px solid #eac200;
+  opacity: 1;
+  background: none;
 } 
 #sewaweed-thumb.active{
   border:1px solid #00682e;
+  opacity: 1;
+  background: none;
 }
 #ginger-thumb.active p{
   background: #4b280f;
@@ -215,10 +259,84 @@ body {
   background:#00682e;
 }
 #three-selection-container .span8{
-  width:68.81%;
+  width:72%;
   border:1px solid #d1ad5b;
   height:660px;
   margin-bottom:20px;
+}
+#cta-container {
+  margin: 0 auto;
+  width: 95%;
+}
+#cta-container a.btn{
+  width: 31%;
+  background: #4b280f;
+  color: #fff;
+  padding: 0px;
+  text-shadow:none;
+  font-size:12px;
+}
+#cta-container img.arrow {
+  width: 8%;
+  margin-top: -3px;
+}
+.btn {
+  border-radius: 0px; 
+}
+#product-info{
+  font-family:arial;
+}
+#product-info h5{
+  color:#105a2c;
+  text-align:center;
+  margin-bottom:0px;
+  font-size:13px;
+}
+#product-info p{
+  color:#4b280f;
+  text-align:center;
+  font-size:17px;
+}
+#product-info p span {
+  font-size: 13px;
+}
+#product-info-tabs {
+  width: 95%;
+  margin: 0 auto;
+}
+#product-info-tabs a {
+  width: 31%;
+  padding: 0px;
+  font-size: 12px;
+  border: 0px;
+  background: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/iR5LKB.jpg');
+  text-shadow:none;
+}
+#product-info-description p, #product-info-description li {
+  text-align: left;
+}
+#product-info-description {
+  background: #fff;
+  padding: 10px;
+  width: 84%;
+  margin-left: 6px;
+}
+#product-info-description p {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 16px;
+}
+#product-info-description li {
+  font-size: 12px;
+}
+#product-info-youtube{
+  margin-top: 20px;
+}
+#product-info-youtube .span7{
+  width:57%;
+}
+#product-info-youtube .span4{
+  width:34%;
 }
 /************************/
 /* CUSTOM MEDIA QUERIES */
@@ -227,11 +345,53 @@ body {
   #navigation{
     display:none;
   }
+  .navbar-fixed-top, .navbar-fixed-bottom{
+    position:absolute;
+  }
+  .navbar-inverse .navbar-inner {
+    background: #fff;
+    border: 0px;
+  }
+  .navbar-inverse .nav > li > a, .navbar-inverse .nav > li > a:focus, .navbar-inverse .nav > li > a:hover{
+    color:#999;
+    font-family: Arial;
+    font-size: 11px;
+    font-weight: 400;
+    text-shadow:none;
+  }
+  .navbar .nav{
+    margin:20px 10px 0 0;
+    height:100%;
+  }
+  .navbar .nav > li {
+    border-left: 0px;
+  }
+  .nav-collapse .nav a {
+    margin-top: -12px;
+  }
+  .navbar .btn-navbar .icon-bar, .navbar .btn-navbar .icon-bar:hover, .navbar-inverse .btn-navbar:active{
+    background-color:#999;
+  }
+  .btn.btn-navbar, .btn.btn-navbar:hover, .navbar-inverse .btn-navbar:active, .navbar-inverse .btn-navbar:focus {
+    background: #fff;
+    border: 1px solid #999;
+  }
+  .navbar-inverse .nav-collapse .nav > li > a:hover{
+    background:#999;
+    color:#fff;
+  }
+  .navbar .btn-navbar{
+    margin-right:35px;
+  }
 }
 @media (max-width: 767px) {
   #yt-carousel .span3{
     width:39%;
     margin:auto;
+    display:none;
+  }
+  #yt-carousel .span3:first-child{
+    display:block;
   }
   #carousel-container{
     margin-top:0px;  
@@ -242,5 +402,34 @@ body {
   .yt-play{
     top: -90px;
     left: 90px;
+  }
+  /* Three Step 767px CSS - Tablets */
+  #glam-three-steps #header{
+    background: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/dnzcg9.jpg') center 100%;
+    margin-top: -20px;
+    padding-top:20px;
+    width:100%;
+  }
+  #three-image-container{
+    margin-top:-50px;
+  }
+}
+@media (max-width: 480px) {
+  .navbar .brand{
+    left:0px;
+  }
+  .navbar .nav {
+    text-align: center;
+    padding-top: 30%;
+  }
+  .jumbotron h1{
+    font-size:350%;
+  }
+  #yt-controls .previous, #yt-controls .next{
+    top:-110px;
+  }
+  /* Three Step 480px CSS - Smartphones */
+  #three-image-container{
+    margin-top:0px;
   }
 }
