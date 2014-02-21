@@ -4,7 +4,7 @@ jQuery(function($){
 		var sectionClicked = $(this).attr('id');
 		$('html, body').animate({
 			scrollTop:$('.container-narrow .' + sectionClicked).offset().top
-		}, 2000);
+		}, 1500);
 	});
 
 	//Initialize Youtube Large View Size & Resize Function
