@@ -435,6 +435,11 @@ body {
   }
   #product-info-description{
     margin:auto;
+    width:86%;
+  }
+  #product-info-youtube .span7 {
+    width: 90%;
+    margin: auto;
   }
 }
 @media (max-width: 480px) {
