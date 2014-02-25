@@ -1,14 +1,14 @@
 body {
-  padding-top: 20px;
-  padding-bottom: 40px;
-  background: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/mjnqh6.jpg') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.https://s3.amazonaws.com/com.offerpop.datastore/438279/mjnqh6.jpg', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://s3.amazonaws.com/com.offerpop.datastore/438279/mjnqh6.jpg', sizingMethod='scale')";
-  font-family:Belleza;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/mjnqh6.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.https://s3.amazonaws.com/com.offerpop.datastore/438279/mjnqh6.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://s3.amazonaws.com/com.offerpop.datastore/438279/mjnqh6.jpg', sizingMethod='scale')";
+    font-family:Belleza;
 }
 
 /* Custom container */
@@ -136,6 +136,15 @@ body {
   width: 100%;
   margin-left: 0px;
 }
+#yt-carousel p{
+  background:url('https://s3.amazonaws.com/com.offerpop.datastore/438279/ngIQ2e.jpg');
+  color:#fff;
+  height:45px;
+  width:100%;
+  text-align: center;
+  margin-top:-41px;
+  border:1px solid transparent;
+}
 #yt-border {
   border: 1px solid #4d8555;
   height:100%;
@@ -146,15 +155,6 @@ body {
   top: -65px;
   left: 60px;
   width:55px;
-}
-#yt-carousel p{
-  background:url('https://s3.amazonaws.com/com.offerpop.datastore/438279/ngIQ2e.jpg');
-  color:#fff;
-  height:45px;
-  width:100%;
-  text-align: center;
-  margin-top:-41px;
-  border:1px solid transparent;
 }
 #yt-controls{
   margin-left:0px;
@@ -220,7 +220,7 @@ body {
 }
 #three-selection-container .span3 {
   margin-left: 20px;
-  width:21%;
+  width:24%;
 }
 #three-selection-container .span3 p{
   text-align:center;
@@ -228,11 +228,20 @@ body {
   background:#ba9a51;
   margin-bottom:0px;
 }
+#ginger-thumb, #macadamia-thumb, #seaweed-thumb, .product-arrow{
+  float:left;
+}
+.product-arrow{
+  margin-top:10px;
+}
 .product-thumb{
   opacity: .5;
   background: #fff;
   border: 1px solid #ba9a51;
   margin-bottom:15px;
+  width:88%;
+  margin-left:-3%;
+  clear:both;
 }
 #ginger-thumb.active{
   border:1px solid #4b280f;
@@ -244,7 +253,7 @@ body {
   opacity: 1;
   background: none;
 } 
-#sewaweed-thumb.active{
+#seaweed-thumb.active{
   border:1px solid #00682e;
   opacity: 1;
   background: none;
@@ -263,18 +272,32 @@ body {
   border:1px solid #d1ad5b;
   height:660px;
   margin-bottom:20px;
+  margin-left:-0.5%;
 }
 #cta-container {
   margin: 0 auto;
   width: 95%;
+  margin-left:8%;
 }
 #cta-container a.btn{
   width: 31%;
-  background: #4b280f;
   color: #fff;
   padding: 0px;
   text-shadow:none;
   font-size:12px;
+  border:0px;
+  box-shadow: 0px 1px 3px 1px #ccc;
+  -webkit-box-shadow: 0px 1px 3px 1px #ccc;
+  -moz-box-shadow: 0px 1px 3px 1px #ccc;
+}
+#ginger-load #cta-container a.btn{
+  background: #4b280f;
+}
+#macadamia-load #cta-container a.btn{
+  background: #eac200;
+}
+#seaweed-load #cta-container a.btn{
+  background: #00682e;
 }
 #cta-container img.arrow {
   width: 8%;
@@ -306,14 +329,24 @@ body {
 }
 #product-info-tabs a {
   width: 31%;
-  padding: 0px;
+  padding: 10px 0px;
   font-size: 12px;
   border: 0px;
   background: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/iR5LKB.jpg');
   text-shadow:none;
+  line-height:15px;
 }
-#product-info-description p, #product-info-description li {
-  text-align: left;
+#ginger-load #product-info-tabs a.active{
+  background:url('https://s3.amazonaws.com/com.offerpop.datastore/438279/qImuUd.jpg');
+  color:#fff;
+}
+#macadamia-load #product-info-tabs a.active{
+  background:url('https://s3.amazonaws.com/com.offerpop.datastore/438279/YE8GHl.jpg');
+  color:#fff;
+}
+#seaweed-load #product-info-tabs a.active{
+  background:url('https://s3.amazonaws.com/com.offerpop.datastore/438279/tKdiHF.jpg');
+  color:#fff;
 }
 #product-info-description {
   background: #fff;
@@ -329,6 +362,9 @@ body {
 #product-info-description li {
   font-size: 12px;
 }
+#product-info-description p, #product-info-description li {
+  text-align: left;
+}
 #product-info-youtube{
   margin-top: 20px;
 }
@@ -336,7 +372,16 @@ body {
   width:57%;
 }
 #product-info-youtube .span4{
-  width:34%;
+  width:37%;
+}
+#tiny-youtube p {
+    font-size: 12px;
+    line-height: 13px;
+    font-family: arial;
+    font-weight: bold;
+}
+#tiny-youtube p span{
+    color:#105a2c;
 }
 /************************/
 /* CUSTOM MEDIA QUERIES */
@@ -385,62 +430,85 @@ body {
   }
 }
 @media (max-width: 767px) {
-  body{
-    padding-left:0px;
-    padding-right:0px;
-  }
-  #yt-carousel .span3{
-    width:39%;
-    margin:auto;
-    display:none;
-  }
-  #yt-carousel .span3:first-child{
-    display:block;
-  }
-  #carousel-container{
-    margin-top:0px;  
-  }
-  #carousel-container, #yt-carousel{
-    height:100%;
-  }
-  .yt-play{
-    top: -90px;
-    left: 90px;
-  }
-  /* Three Step 767px CSS - Tablets */
-  #three-selection-container{
-    margin:-70px 0px 0px 0px;
-    padding-top:140px;
-  }
-  #three-selection-container .span3 {
-    margin-left: 0px;
-    width: 90%;
-    text-align: center;
-    margin: auto;
-  }
-  #glam-three-steps #header{
-    background: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/dnzcg9.jpg') center 100%;
-    margin-top: -20px;
-    padding-top:20px;
-    width:100%;
-  }
-  #three-image-container{
-    margin-top:-50px;
-  }
-  #three-selection-container .span8#product-info-container{
-    width:90%;
-    margin:auto;
-    text-align:center;
-    height:100%;
-  }
-  #product-info-description{
-    margin:auto;
-    width:86%;
-  }
-  #product-info-youtube .span7 {
-    width: 90%;
-    margin: auto;
-  }
+    body{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    #yt-carousel .span3{
+        width:39%;
+        margin:auto;
+        display:none;
+    }
+    #yt-carousel .span3:first-child{
+        display:block;
+    }
+    #carousel-container{
+        margin-top:0px;  
+    }
+    #carousel-container, #yt-carousel{
+        height:100%;
+    }
+    .yt-play{
+        top: -90px;
+        left: 90px;
+    }
+    /* Three Step 767px CSS - Tablets */
+    #product-info-container{
+        clear:both;
+    }
+    #three-selection-container{
+        margin:-70px 0px 0px 0px;
+        padding-top:140px;
+    }
+    #three-selection-container .span3 {
+        margin-left: 0px;
+        width: 90%;
+        text-align: center;
+        margin: auto;
+    }
+    #glam-three-steps #header{
+        background: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/dnzcg9.jpg') center 100%;
+        margin-top: -20px;
+        padding-top:20px;
+        width:100%;
+    }
+    #three-controls .next, #three-controls .previous{
+        top:-110px;
+    }
+    .product-thumb{
+        width:100%;
+        margin-left:0px;
+    }
+    .product-arrow{
+        display:none;
+    }
+    #three-image-container{
+        margin-top:-50px;
+    }
+    #cta-container{
+        margin:0 auto;
+    }
+    #cta-container img.arrow{
+        width:5%;
+    }
+    #three-selection-container .span8#product-info-container{
+        width:90%;
+        margin:auto;
+        text-align:center;
+        height:100%;
+    }
+    #product-info-description{
+        margin:auto;
+        width:86%;
+    }
+    #product-info-youtube .span7 {
+        width: 90%;
+        margin: auto;
+    }
+    #product-info-youtube .span4 {
+        width: 90%;
+        margin: auto;
+    }
 }
 @media (max-width: 480px) {
   .navbar .brand{
@@ -459,5 +527,8 @@ body {
   /* Three Step 480px CSS - Smartphones */
   #three-image-container{
     margin-top:0px;
+  }
+  #three-controls .next, #three-controls .previous{
+    top:-50px;
   }
 }
