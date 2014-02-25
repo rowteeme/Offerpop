@@ -1,0 +1,72 @@
+#app_canvas_header, #FanTab > div.CHeader, #facebook-profile-connect, div.CFooterDivider, .CFooterDivider + div, div.CFooter, div.CShare{
+	display:none;
+}
+body{
+	background:url('https://s3.amazonaws.com/com.offerpop.datastore/438279/dnzcg9.jpg') center 100%;
+}
+#frmSignUp > div.SFields, #frmSignUp > div.SSubmit {
+	width: 90%;
+	margin: 0 auto;
+}
+div.SField input{
+	border:1px solid #d1bb8e;
+}
+#sfield_firstname, #firstname, #sfield_lastname, #lastname, #sfield_address, #address, #sfield_address2, #address2, #sfield_post, #post, #sfield_email, #email {
+	width: 300px;
+}
+#sfield_city, #city {
+	width: 150px;
+}
+#sfield_state, #state {
+	width: 136px;
+}
+#sfield_zip, #zip {
+	width: 150px;
+}
+#sfield_firstname, #sfield_lastname, #sfield_address, #sfield_address2, #sfield_city, #city, #sfield_state, #state, #sfield_zip, #zip, #sfield_email, #sfield_post {
+	display:inline-block;
+}
+#sfield_address2, #sfield_state, #sfield_zip, #sfield_post {
+	margin-left: 10px;
+}
+#sfield_optin1, #sfield_optin2 {
+	width: 100%;
+}
+
+@media (max-width: 767px) {
+	#FanTab {
+		width: 100%;
+	}
+	#sfield_firstname, #firstname, #sfield_lastname, #lastname, #sfield_address, #address, #sfield_address2, #address2, #sfield_post, #post, #sfield_email, #email, #sfield_city, #city, #sfield_state, #state, #sfield_zip, #zip {
+		width: 100%;
+		margin-left: 0px !important;
+	}
+}
+</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script>
+jQuery(function($){
+$('#sfield_email').insertAfter('#sfield_zip');
+});
+</script>
+<style>
+#errorMessage {
+    padding: 10px;
+    border: 1px solid red;
+    color: red;
+    width: 50%;
+    display:none;
+}
+.submit-fields #errorMessage {
+    margin: 0 auto;
+}
+#errorMessage span {
+    text-decoration:underline;
+}
+.s-box input.Invalid{
+    border:1px solid red !important;
+    background:pink !important;
+}
+</style>
+<script type="text/javascript" src="https://opop.cachefly.net/RobLum/Validation/Form_Validation_MI_v1.js"></script>
+<script type="text/javascript" src="https://opop.cachefly.net/RobLum/Validation/Form_Validation_Unilever.js"></script>

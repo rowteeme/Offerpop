@@ -172,6 +172,10 @@ body {
   text-decoration: none;
 }
 /* Sign Up App */
+#sign-up-app {
+  height: 100%;
+  margin-left:0px;
+}
 
 /* Hashtag Gallery */
 #glam-hashtag-gallery{
@@ -451,6 +455,10 @@ body {
     .yt-play{
         top: -90px;
         left: 90px;
+    }
+    /* iFramed Sign Up App CSS - Tablets */
+    #sign-up-app > iframe {
+      margin-top: -75px;
     }
     /* Three Step 767px CSS - Tablets */
     #product-info-container{
