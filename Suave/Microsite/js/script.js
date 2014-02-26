@@ -55,6 +55,23 @@ jQuery(document).ready(function($){
 			return false;
 		});
 
+		//Three Step Side Controls
+		$('body').on('click','.product-thumb',function(){
+			var productID = $(this).attr('id')
+				,findDash = productID.indexOf('-')
+				,changeTo = productID.slice(0,findDash);
+			$('#glam-three-steps').load('/Suave/three_step_ajax.html #' + changeTo + '-load');
+		});
+
+
+				//Step 1, Step 2, Step 3 Tabs in Product Info Container
+				$('body').on('click','#product-info-tabs .btn',function(){
+					var stepClicked = $(this).attr('id');
+					$('#product-info-tabs a, #product-info-description p, #product-info-description ul').removeClass('active');
+					$('#product-info-tabs a#' + stepClicked + ', #product-info-description p.' + stepClicked + ', #product-info-description ul.' + stepClicked).addClass('active');
+					return false;
+				});
+
 
 	});
 });

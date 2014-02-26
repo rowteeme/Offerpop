@@ -246,6 +246,7 @@ body {
   width:88%;
   margin-left:-3%;
   clear:both;
+  cursor:pointer;
 }
 #ginger-thumb.active{
   border:1px solid #4b280f;
@@ -358,6 +359,12 @@ body {
   width: 84%;
   margin-left: 6px;
 }
+#product-info-description p, #product-info-description ul{
+  display:none;
+}
+#product-info-description p.active, #product-info-description ul.active{
+  display:block;
+}
 #product-info-description p {
   font-size: 13px;
   font-weight: bold;
@@ -438,6 +445,10 @@ body {
         padding-left:0px;
         padding-right:0px;
     }
+    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top{
+      margin-left:0px;
+      margin-right:0px;
+    }
     #yt-carousel .span3{
         width:39%;
         margin:auto;
@@ -486,6 +497,7 @@ body {
     .product-thumb{
         width:100%;
         margin-left:0px;
+        cursor:pointer;
     }
     .product-arrow{
         display:none;
