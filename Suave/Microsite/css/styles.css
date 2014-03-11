@@ -76,7 +76,10 @@ body {
 .nav-collapse .nav a {
   margin-top: -12px;
 }
+
+/****************************/
 /* Navigation Fixed Section */
+/****************************/
 #navigation{
   position:fixed;
   font-family:arial;
@@ -103,7 +106,9 @@ body {
   background:#fff;
 }
 
+/***********************/
 /* Header Text Section */
+/***********************/
 .jumbotron {
   margin: 60px 0 0 0;
   text-align: center;
@@ -120,7 +125,10 @@ body {
 .marketing {
   margin: 30px 0;
 }
+
+/****************************/
 /* Youtube Carousel Section */
+/****************************/
 #carousel-container{
   width: 88%;
   height: 150px;
@@ -171,7 +179,10 @@ body {
   float:right;
   text-decoration: none;
 }
+
+/***************/
 /* Sign Up App */
+/***************/
 #sign-up-app {
   height: 1130px;
   margin-left:0px;
@@ -188,13 +199,18 @@ body {
   width:90%;
   margin:auto;
 }
+
+/*******************/
 /* Hashtag Gallery */
+/*******************/
 #glam-hashtag-gallery{
   background:#9e772f;
   margin:20px 0px 0px 0px;
 }
 
+/*******************/
 /* Glam in 3 Steps */
+/*******************/
 #glam-three-steps{
   background:#9e772f;
   margin:20px 0px 0px 0px;
@@ -322,6 +338,9 @@ body {
 .btn {
   border-radius: 0px; 
 }
+#product-info-container {
+padding-top: 10px;
+}
 #product-info{
   font-family:arial;
 }
@@ -405,6 +424,25 @@ body {
 #tiny-youtube p span{
     color:#105a2c;
 }
+
+/***************/
+/* GLAM 4 GOOD */
+/***************/
+#glam4good-section {
+  margin:20px 0px 0px 0px;
+}
+#glam4good-header {
+  background: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/qMG8oR.jpg') no-repeat;
+  background-size: 100% auto;
+}
+#glam4good-header p {
+  width: 70%;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+
+/************************/
 /************************/
 /* CUSTOM MEDIA QUERIES */
 /************************/
@@ -497,6 +535,7 @@ body {
     #three-selection-container{
         margin:-70px 0px 0px 0px;
         padding-top:140px;
+        padding-bottom: 30px;
     }
     #three-selection-container .span3 {
         margin-left: 0px;
@@ -508,7 +547,9 @@ body {
         background: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/dnzcg9.jpg') center 100%;
         margin-top: -20px;
         padding-top:20px;
-        width:100%;
+        width:90%;
+        padding-left:5%;
+        padding-right:5%;
     }
     #three-controls .next, #three-controls .previous{
         top:-110px;
@@ -535,6 +576,7 @@ body {
         margin:auto;
         text-align:center;
         height:100%;
+        margin-top:-30px;
     }
     #product-info-description{
         margin:auto;
