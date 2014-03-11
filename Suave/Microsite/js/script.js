@@ -29,6 +29,15 @@ jQuery(document).ready(function($){
 			    	return false;
 			  	});
 
+			/* RESIZE SIGN UP APP CONTINER FOR MOBILE */
+			/******************************************/
+			if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|OperaMini/i.test(navigator.userAgent)){
+				var signUpWidth = $('#sign-up-app').width();
+				if (signUpWidth < 480){
+					$('#sign-up-app').height('1880px');
+				}
+			}
+
 		//Three Step Section Scripts Below
 		//Load content for 3 Step Section on page load
 		$('#glam-three-steps').load('/Suave/three_step_ajax.html #ginger-load');

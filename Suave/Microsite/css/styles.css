@@ -173,10 +173,21 @@ body {
 }
 /* Sign Up App */
 #sign-up-app {
-  height: 100%;
+  height: 1130px;
   margin-left:0px;
+  background:url('https://s3.amazonaws.com/com.offerpop.datastore/438279/dnzcg9.jpg') center 100%;
 }
-
+/* Get a Coupon Section */
+#coupon-section {
+  background: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/dnzcg9.jpg') center 100%;
+  margin-left: 0px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+#coupon-section img{
+  width:90%;
+  margin:auto;
+}
 /* Hashtag Gallery */
 #glam-hashtag-gallery{
   background:#9e772f;
@@ -440,6 +451,11 @@ body {
     margin-right:35px;
   }
 }
+@media (max-width: 800px) {
+    #sign-up-app{
+      height:1400px;
+    }
+}
 @media (max-width: 767px) {
     body{
         padding-left:0px;
@@ -469,11 +485,14 @@ body {
     }
     /* iFramed Sign Up App CSS - Tablets */
     #sign-up-app > iframe {
-      margin-top: -75px;
+      margin-top: 0px;
     }
     /* Three Step 767px CSS - Tablets */
     #product-info-container{
         clear:both;
+    }
+    .product-thumb {
+        display: none;
     }
     #three-selection-container{
         margin:-70px 0px 0px 0px;
@@ -540,6 +559,11 @@ body {
   }
   .jumbotron h1{
     font-size:350%;
+  }
+  #sign-up-app {
+    margin-left: 0px;
+    overflow: hidden;
+    float:left;
   }
   #yt-controls .previous, #yt-controls .next{
     top:-110px;
