@@ -1,25 +1,34 @@
 jQuery(document).ready(function($){
 	jQuery(function(){
+
+		/*******************
+		*****SIDE NAVIGATION
+		*******************/
 		//Side Navigation Scroll To Animation
 		$('#navigation li a').click(function(){
-			var sectionClicked = $(this).attr('id');
+			var sectionClicked = $(this).attr('id')
+			,lastIndex = sectionClicked.length
+			,navID = sectionClicked.slice(4,lastIndex);
 			$('html, body').animate({
-				scrollTop:$('.container-narrow .' + sectionClicked).offset().top
+				scrollTop:$('.container-narrow .' + navID).offset().top
 			}, 1500);
 		});
 
+		/********************
+		*****YOUTUBE CAROUSEL
+		********************/
 		//Initialize Youtube Large View Size & Resize Function
 		var windowWidth = $(window).width(),
 		youtubeHeight = windowWidth * 0.75;
 		if (windowWidth < 767){
-			$('#yt-large').css('height', youtubeHeight);
+			$('#touch-of-glam').css('height', youtubeHeight);
 		}
 
 			$(window).resize(function(){
 				var windowWidth = $(window).width(),
 				youtubeHeight = windowWidth * 0.75;
 				if (youtubeHeight < 500){
-					$('#yt-large').css('height', youtubeHeight);
+					$('#touch-of-glam').css('height', youtubeHeight);
 				}
 			});
 
@@ -32,15 +41,17 @@ jQuery(document).ready(function($){
 			/* RESIZE SIGN UP APP CONTINER FOR MOBILE */
 			/******************************************/
 			if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|OperaMini/i.test(navigator.userAgent)){
-				var signUpWidth = $('#sign-up-app').width();
+				var signUpWidth = $('#get-a-sample').width();
 				if (signUpWidth < 480){
-					$('#sign-up-app').height('1880px');
+					$('#get-a-sample').height('1880px');
 				}
 			}
 
-		//Three Step Section Scripts Below
+		/**************
+		*****THREE STEP
+		***************/
 		//Load content for 3 Step Section on page load
-		$('#glam-three-steps').load('/Suave/three_step_ajax.html #ginger-load');
+		$('#our-products').load('/Suave/three_step_ajax.html #ginger-load');
 
 		var threeStepArray = ['ginger-load','macadamia-load','seaweed-load'];
 		//Three Step Controls
@@ -60,7 +71,7 @@ jQuery(document).ready(function($){
 					currentPosition = 2;
 				}
 			}
-			$('#glam-three-steps').load('/Suave/three_step_ajax.html #' + threeStepArray[currentPosition]);
+			$('#our-products').load('/Suave/three_step_ajax.html #' + threeStepArray[currentPosition]);
 			return false;
 		});
 
@@ -69,7 +80,7 @@ jQuery(document).ready(function($){
 			var productID = $(this).attr('id')
 				,findDash = productID.indexOf('-')
 				,changeTo = productID.slice(0,findDash);
-			$('#glam-three-steps').load('/Suave/three_step_ajax.html #' + changeTo + '-load');
+			$('#our-products').load('/Suave/three_step_ajax.html #' + changeTo + '-load');
 		});
 
 
@@ -81,6 +92,25 @@ jQuery(document).ready(function($){
 					return false;
 				});
 
+
+		/**************
+		*****GLAM 4 GOOD
+		***************/
+		//Initialize Glam4Good Header height and Resize
+		/*var glamWindowWidth = $(window).width()
+			,glamHeaderHeight = windowWidth * 0.1675;
+		if (glamWindowWidth < 825){
+			$('#glam4good-header').css('height', glamHeaderHeight);
+		}
+
+			$(window).resize(function(){
+				var glamWindowWidth = $(window).width()
+					,glamHeaderHeight = glamWindowWidth * 0.1675;
+				if (youtubeHeight < 500){
+					$('#glam4good-header').css('height', youtubeHeight);
+				}
+			});
+				*/
 
 	});
 });

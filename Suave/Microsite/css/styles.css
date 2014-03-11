@@ -135,7 +135,7 @@ body {
   margin: 0 auto;
   margin-top:20px;
 }
-#yt-large{
+#touch-of-glam{
   height:500px;
 }
 #yt-carousel{
@@ -183,19 +183,19 @@ body {
 /***************/
 /* Sign Up App */
 /***************/
-#sign-up-app {
+#get-a-sample {
   height: 1130px;
   margin-left:0px;
   background:url('https://s3.amazonaws.com/com.offerpop.datastore/438279/dnzcg9.jpg') center 100%;
 }
 /* Get a Coupon Section */
-#coupon-section {
+#get-a-coupon {
   background: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/dnzcg9.jpg') center 100%;
   margin-left: 0px;
   text-align: center;
   padding-bottom: 40px;
 }
-#coupon-section img{
+#get-a-coupon img{
   width:90%;
   margin:auto;
 }
@@ -203,7 +203,7 @@ body {
 /*******************/
 /* Hashtag Gallery */
 /*******************/
-#glam-hashtag-gallery{
+#glam-gallery{
   background:#9e772f;
   margin:20px 0px 0px 0px;
 }
@@ -211,19 +211,19 @@ body {
 /*******************/
 /* Glam in 3 Steps */
 /*******************/
-#glam-three-steps{
+#our-products{
   background:#9e772f;
   margin:20px 0px 0px 0px;
   padding:10px;
 }
-#glam-three-steps #header {
+#our-products #header {
   position: relative;
   width: 70%;
   text-align: center;
   margin: auto;
   top: 20px;
 }
-#glam-three-steps #header h1{
+#our-products #header h1{
   color:#006a3a;
 }
 #three-controls{
@@ -428,19 +428,35 @@ padding-top: 10px;
 /***************/
 /* GLAM 4 GOOD */
 /***************/
-#glam4good-section {
+#glam-4-good {
   margin:20px 0px 0px 0px;
 }
 #glam4good-header {
   background: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/qMG8oR.jpg') no-repeat;
   background-size: 100% auto;
+  height:134px;
+  padding-top:5%;
 }
 #glam4good-header p {
-  width: 70%;
+  width: 65%;
   margin-left: 20%;
-  margin-top: 5%;
+  font-size:16px;
 }
-
+#glam4good-container {
+  background: #9e772f;
+  margin: 0px;
+  padding: 10px;
+}
+#glam4good-content {
+  background: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/dnzcg9.jpg') center 100%;
+}
+#glam4good-container{
+  background: #9e772f;
+  margin: 0px;
+}
+#glam4good-content{
+  background: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/dnzcg9.jpg') center 100%;
+}
 
 /************************/
 /************************/
@@ -490,7 +506,7 @@ padding-top: 10px;
   }
 }
 @media (max-width: 800px) {
-    #sign-up-app{
+    #get-a-sample{
       height:1400px;
     }
 }
@@ -522,7 +538,7 @@ padding-top: 10px;
         left: 90px;
     }
     /* iFramed Sign Up App CSS - Tablets */
-    #sign-up-app > iframe {
+    #get-a-sample > iframe {
       margin-top: 0px;
     }
     /* Three Step 767px CSS - Tablets */
@@ -543,7 +559,7 @@ padding-top: 10px;
         text-align: center;
         margin: auto;
     }
-    #glam-three-steps #header{
+    #our-products #header{
         background: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/dnzcg9.jpg') center 100%;
         margin-top: -20px;
         padding-top:20px;
@@ -590,6 +606,22 @@ padding-top: 10px;
         width: 90%;
         margin: auto;
     }
+
+    /* Glam 4 Good */
+    #glam4good-header{
+      padding-top:4%;
+    }
+    #glam4good-header p{
+      font-size:13px;
+    }
+}
+@media (max-width: 550px){
+  #glam4good-header{
+    padding-top:3%;
+  }
+  #glam4good-header p{
+    line-height:14px;
+  }
 }
 @media (max-width: 480px) {
   .navbar .brand{
@@ -602,7 +634,7 @@ padding-top: 10px;
   .jumbotron h1{
     font-size:350%;
   }
-  #sign-up-app {
+  #get-a-sample {
     margin-left: 0px;
     overflow: hidden;
     float:left;
@@ -616,5 +648,14 @@ padding-top: 10px;
   }
   #three-controls .next, #three-controls .previous{
     top:-50px;
+  }
+
+  /* Glam 4 Good */
+  #glam4good-header{
+    padding-top:2%;
+  }
+  #glam4good-header p{
+    line-height:13px;
+    font-size:11px;
   }
 }
