@@ -101,7 +101,7 @@ body {
   text-decoration:none;
   color:#000;
 }
-#navigation li:hover, #navigation li:hover > a{
+#navigation li:hover, #navigation li:hover > a, #navigation li.active, #navigation li.active a{
   color:#006a3a;
   background:#fff;
 }
@@ -143,6 +143,8 @@ body {
   height: 190px;
   width: 100%;
   margin-left: 0px;
+  /* Temporarily Hidden */
+  display:none;
 }
 #yt-carousel p{
   background:url('https://s3.amazonaws.com/com.offerpop.datastore/438279/ngIQ2e.jpg');
