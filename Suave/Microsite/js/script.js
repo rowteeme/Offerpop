@@ -18,6 +18,7 @@ jQuery(document).ready(function($){
   			e.preventDefault();
 		});
 
+		//navigation object for updating active states
 		var nav = {
 			'section1' : {
 				'name' : 'touch-of-glam'
@@ -40,6 +41,7 @@ jQuery(document).ready(function($){
 			}
 		}
 
+		//scroll event to determine users location on page & update active states
 		$(window).scroll(function(){
 			var currentLocation = $(window).scrollTop();
 			if (currentLocation > nav.section6.location){
