@@ -5,13 +5,70 @@ jQuery(document).ready(function($){
 		*****SIDE NAVIGATION
 		*******************/
 		//Side Navigation Scroll To Animation
-		$('#navigation li a').click(function(){
+		$('#navigation li a').click(function(e){
 			var sectionClicked = $(this).attr('id')
 			,lastIndex = sectionClicked.length
 			,navID = sectionClicked.slice(4,lastIndex);
 			$('html, body').animate({
 				scrollTop:$('.container-narrow .' + navID).offset().top
 			}, 1500);
+			$('#navigation li').removeClass('active');
+			$(this).parent().addClass('active');
+			window.history.pushState('glam-section', 'updateURL', "/#" + navID);
+  			e.preventDefault();
+		});
+
+		var nav = {
+			'section1' : {
+				'name' : 'touch-of-glam'
+				,'location' : $('#touch-of-glam').offset().top
+			}, 'section2' : {
+				'name' : 'get-a-sample'
+				,'location' : $('#get-a-sample').offset().top
+			}, 'section3' : {
+				'name' : 'get-a-coupon'
+				,'location' : $('#get-a-coupon').offset().top
+			}, 'section4' : {
+				'name' : 'glam-gallery'
+				,'location' : $('#glam-gallery').offset().top
+			}, 'section5' : {
+				'name' : 'our-products'
+				,'location' : $('#our-products').offset().top
+			}, 'section6' : {
+				'name' : 'glam-4-good'
+				,'location' : $('#glam-4-good').offset().top
+			}
+		}
+
+		$(window).scroll(function(){
+			var currentLocation = $(window).scrollTop();
+			if (currentLocation > nav.section6.location){
+				window.history.pushState('glam-section', 'updateURL', '/#' + nav.section6.name);
+				$('#navigation li').removeClass('active');
+				$('#navigation li a#nav-' + nav.section6.name).parent().addClass('active');
+			} else if (currentLocation >= nav.section5.location){
+				window.history.pushState('glam-section', 'updateURL', '/#' + nav.section5.name);
+				$('#navigation li').removeClass('active');
+				$('#navigation li a#nav-' + nav.section5.name).parent().addClass('active');
+			} else if (currentLocation >= nav.section4.location){
+				window.history.pushState('glam-section', 'updateURL', '/#' + nav.section4.name);
+				$('#navigation li').removeClass('active');
+				$('#navigation li a#nav-' + nav.section4.name).parent().addClass('active');
+			} else if (currentLocation >= nav.section3.location){
+				window.history.pushState('glam-section', 'updateURL', '/#' + nav.section3.name);
+				$('#navigation li').removeClass('active');
+				$('#navigation li a#nav-' + nav.section3.name).parent().addClass('active');
+			} else if (currentLocation >= nav.section2.location){
+				window.history.pushState('glam-section', 'updateURL', '/#' + nav.section2.name);
+				$('#navigation li').removeClass('active');
+				$('#navigation li a#nav-' + nav.section2.name).parent().addClass('active');
+			} else if (currentLocation >= nav.section1.location){
+				window.history.pushState('glam-section', 'updateURL', '/#' + nav.section1.name);
+				$('#navigation li').removeClass('active');
+				$('#navigation li a#nav-' + nav.section1.name).parent().addClass('active');
+			} else {
+				window.history.pushState('glam-section','updateURL', '/');
+			}
 		});
 
 		/********************
@@ -43,7 +100,7 @@ jQuery(document).ready(function($){
 			if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|OperaMini/i.test(navigator.userAgent)){
 				var signUpWidth = $('#get-a-sample').width();
 				if (signUpWidth < 480){
-					$('#get-a-sample').height('1880px');
+					$('#get-a-sample').height('1850px');
 				}
 			}
 
@@ -97,20 +154,47 @@ jQuery(document).ready(function($){
 		*****GLAM 4 GOOD
 		***************/
 		//Initialize Glam4Good Header height and Resize
-		/*var glamWindowWidth = $(window).width()
+		var glamWindowWidth = $(window).width()
 			,glamHeaderHeight = windowWidth * 0.1675;
 		if (glamWindowWidth < 825){
 			$('#glam4good-header').css('height', glamHeaderHeight);
 		}
 
 			$(window).resize(function(){
-				var glamWindowWidth = $(window).width()
+				var glamWindowWidth = $('#glam4good-header').width()
 					,glamHeaderHeight = glamWindowWidth * 0.1675;
-				if (youtubeHeight < 500){
-					$('#glam4good-header').css('height', youtubeHeight);
-				}
+					$('#glam4good-header').css('height', glamHeaderHeight);
 			});
-				*/
+		//END Glam4Good Header Sizing
+
+		/************
+		*****PARALLAX
+		************/		
+		//PARALLAX SCROLLING 
+		$window = $(window);	          
+	     	var $bgobj = $('body'); // assigning the object
+	      	
+	      	$(window).scroll(function() {     
+				// Scroll the background at var speed
+				// the yPos is a negative value because we're scrolling it UP!			
+				var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
+				// Put together our final background position
+				var coords = '50% '+ yPos + 'px';
+				// Move the background
+				$bgobj.css({ backgroundPosition: coords });
+			}); // window scroll Ends
+
+
+		/************
+		*****MISC
+		************/		
+		//Direct user to "sign up app" when sample is clicked in product tour
+		$('body').on('click','#ginger-sign-up-scroll',function(){
+			$('html, body').animate({
+				scrollTop:$('.container-narrow .get-a-sample').offset().top
+			}, 1500);
+		});
+
 
 	});
 });
