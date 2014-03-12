@@ -18,60 +18,65 @@ jQuery(document).ready(function($){
   			e.preventDefault();
 		});
 
+		//********************************************
+		//Load in Ginger Product to "Three Step" section & then get offset for url updates
 		//navigation object for updating active states
-		var nav = {
-			'section1' : {
-				'name' : 'touch-of-glam'
-				,'location' : $('#touch-of-glam').offset().top
-			}, 'section2' : {
-				'name' : 'get-a-sample'
-				,'location' : $('#get-a-sample').offset().top
-			}, 'section3' : {
-				'name' : 'get-a-coupon'
-				,'location' : $('#get-a-coupon').offset().top
-			}, 'section4' : {
-				'name' : 'glam-gallery'
-				,'location' : $('#glam-gallery').offset().top
-			}, 'section5' : {
-				'name' : 'our-products'
-				,'location' : $('#our-products').offset().top
-			}, 'section6' : {
-				'name' : 'glam-4-good'
-				,'location' : $('#glam-4-good').offset().top
+		$('#our-products').load('/Suave/three_step_ajax.html #ginger-load', function(){
+				var nav = {
+				'section1' : {
+					'name' : 'touch-of-glam'
+					,'location' : $('#touch-of-glam').offset().top
+				}, 'section2' : {
+					'name' : 'get-a-sample'
+					,'location' : $('#get-a-sample').offset().top
+				}, 'section3' : {
+					'name' : 'get-a-coupon'
+					,'location' : $('#get-a-coupon').offset().top
+				}, 'section4' : {
+					'name' : 'glam-gallery'
+					,'location' : $('#glam-gallery').offset().top
+				}, 'section5' : {
+					'name' : 'our-products'
+					,'location' : $('#our-products').offset().top
+				}, 'section6' : {
+					'name' : 'glam-4-good'
+					,'location' : $('#glam-4-good').offset().top
+				}
 			}
-		}
 
-		//scroll event to determine users location on page & update active states
-		$(window).scroll(function(){
-			var currentLocation = $(window).scrollTop();
-			if (currentLocation > nav.section6.location){
-				window.history.pushState('glam-section', 'updateURL', '/#' + nav.section6.name);
-				$('#navigation li').removeClass('active');
-				$('#navigation li a#nav-' + nav.section6.name).parent().addClass('active');
-			} else if (currentLocation >= nav.section5.location){
-				window.history.pushState('glam-section', 'updateURL', '/#' + nav.section5.name);
-				$('#navigation li').removeClass('active');
-				$('#navigation li a#nav-' + nav.section5.name).parent().addClass('active');
-			} else if (currentLocation >= nav.section4.location){
-				window.history.pushState('glam-section', 'updateURL', '/#' + nav.section4.name);
-				$('#navigation li').removeClass('active');
-				$('#navigation li a#nav-' + nav.section4.name).parent().addClass('active');
-			} else if (currentLocation >= nav.section3.location){
-				window.history.pushState('glam-section', 'updateURL', '/#' + nav.section3.name);
-				$('#navigation li').removeClass('active');
-				$('#navigation li a#nav-' + nav.section3.name).parent().addClass('active');
-			} else if (currentLocation >= nav.section2.location){
-				window.history.pushState('glam-section', 'updateURL', '/#' + nav.section2.name);
-				$('#navigation li').removeClass('active');
-				$('#navigation li a#nav-' + nav.section2.name).parent().addClass('active');
-			} else if (currentLocation >= nav.section1.location){
-				window.history.pushState('glam-section', 'updateURL', '/#' + nav.section1.name);
-				$('#navigation li').removeClass('active');
-				$('#navigation li a#nav-' + nav.section1.name).parent().addClass('active');
-			} else {
-				window.history.pushState('glam-section','updateURL', '/');
-			}
+			//scroll event to determine users location on page & update active states
+			$(window).scroll(function(){
+				var currentLocation = $(window).scrollTop();
+				if (currentLocation >= nav.section6.location){
+					window.history.pushState('glam-section', 'updateURL', '/#' + nav.section6.name);
+					$('#navigation li').removeClass('active');
+					$('#navigation li a#nav-' + nav.section6.name).parent().addClass('active');
+				} else if (currentLocation >= nav.section5.location){
+					window.history.pushState('glam-section', 'updateURL', '/#' + nav.section5.name);
+					$('#navigation li').removeClass('active');
+					$('#navigation li a#nav-' + nav.section5.name).parent().addClass('active');
+				} else if (currentLocation >= nav.section4.location){
+					window.history.pushState('glam-section', 'updateURL', '/#' + nav.section4.name);
+					$('#navigation li').removeClass('active');
+					$('#navigation li a#nav-' + nav.section4.name).parent().addClass('active');
+				} else if (currentLocation >= nav.section3.location){
+					window.history.pushState('glam-section', 'updateURL', '/#' + nav.section3.name);
+					$('#navigation li').removeClass('active');
+					$('#navigation li a#nav-' + nav.section3.name).parent().addClass('active');
+				} else if (currentLocation >= nav.section2.location){
+					window.history.pushState('glam-section', 'updateURL', '/#' + nav.section2.name);
+					$('#navigation li').removeClass('active');
+					$('#navigation li a#nav-' + nav.section2.name).parent().addClass('active');
+				} else if (currentLocation >= nav.section1.location){
+					window.history.pushState('glam-section', 'updateURL', '/#' + nav.section1.name);
+					$('#navigation li').removeClass('active');
+					$('#navigation li a#nav-' + nav.section1.name).parent().addClass('active');
+				} else {
+					window.history.pushState('glam-section','updateURL', '/');
+				}
+			});
 		});
+		
 
 		/********************
 		*****YOUTUBE CAROUSEL
@@ -97,6 +102,7 @@ jQuery(document).ready(function($){
 			    	return false;
 			  	});
 
+			/******************************************/
 			/* RESIZE SIGN UP APP CONTINER FOR MOBILE */
 			/******************************************/
 			if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|OperaMini/i.test(navigator.userAgent)){
@@ -110,8 +116,6 @@ jQuery(document).ready(function($){
 		*****THREE STEP
 		***************/
 		//Load content for 3 Step Section on page load
-		$('#our-products').load('/Suave/three_step_ajax.html #ginger-load');
-
 		var threeStepArray = ['ginger-load','macadamia-load','seaweed-load'];
 		//Three Step Controls
 		$('body').on('click','#three-controls a',function(){

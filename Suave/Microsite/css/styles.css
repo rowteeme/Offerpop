@@ -1,7 +1,8 @@
 body {
     padding-top: 20px;
     padding-bottom: 40px;
-    background: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/mjnqh6.jpg') no-repeat center center fixed; 
+    background: #b88430 url('https://s3.amazonaws.com/com.offerpop.datastore/438279/DdCRt2.jpg') no-repeat center center fixed; 
+    background-position: 50% 0px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -448,17 +449,52 @@ padding-top: 10px;
   background: #9e772f;
   margin: 0px;
   padding: 10px;
+  float:left;
 }
 #glam4good-content {
   background: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/dnzcg9.jpg') center 100%;
+  float:left;
 }
-#glam4good-container{
-  background: #9e772f;
-  margin: 0px;
+#glam4good-left .span12, #glam4good-right .span12{
+  padding:10px;
+  font-family:arial;
 }
-#glam4good-content{
-  background: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/dnzcg9.jpg') center 100%;
+#glam4good-left {
+  margin: 10px 0px 0px 5px;
 }
+#glam4good-right {
+  margin: 10px 0px 0px 5px;
+}
+#about-mary-stephenson {
+  border: 1px solid #b5812b;
+  background: #fff;
+  width:95%;
+}
+#about-mary-stephenson p{
+  color:#9a6e25;
+}
+#mary-description{
+  margin-left: 10px;
+  width: 65%;
+}
+#glam4good-body-header h3 {
+  font-family: Belleza;
+}
+#glam4good-body-header > h3, #glam4good-body-header h5{
+  color: #006a3a;
+}
+#about-mary-stephenson h3{
+  color:#006a3a;
+  font-family:Belleza;
+  line-height: 23px;
+  margin-top:0px;
+}
+#glam4good-body-header p, #about-mary-stephenson p {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+
 
 /************************/
 /************************/
@@ -616,6 +652,21 @@ padding-top: 10px;
     #glam4good-header p{
       font-size:13px;
     }
+    #glam4good-left {
+      margin: 0px;
+      text-align: center;
+    }
+    #about-mary-stephenson{
+      width:73%;
+    }
+    #about-mary-stephenson, #mary-description{
+      margin:auto;
+    }
+    #glam4good-body-header {
+      text-align: center;
+      padding: 20px;
+    }
+
 }
 @media (max-width: 550px){
   #glam4good-header{
