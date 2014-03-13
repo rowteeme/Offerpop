@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		
+		<!-- Meta information -->
+		<meta charset="utf-8">
+		
+		<title>Shiner - Demo 4 - Layered composition - A jQuery Plugin by pixelentity</title>
+		
+		<!-- load jQuery -->
+		<script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+		
+		<!-- load plugin code -->
+		<script type="text/javascript" src="js/pe.shiner/jquery.pixelentity.shiner.min.js"></script>
+		
+		<!-- page style -->
+		<style>
+			body {
+			background-color: white;
+			}
+			
+			div.wrapper {
+			width: 200px;
+			margin: 50px auto 0px auto;
+			position:relative;
+			}
+			
+			.composition, .composition > img
+			{
+				width:200px;
+				height:200px;
+				position:absolute;
+				top:0;
+				left:0;
+			}
+			
+			.peShiner{
+				z-index:2;
+			}
+			
+			img.layer1{
+				z-index:1;
+			}
+			
+			img.layer3{
+				z-index:3;
+			}
+			
+			.peShiner img{
+				position:absolute;
+				top:0;
+				left:0;
+			}
+			
+			
+		</style>
+
+		<!-- initialize the plugin -->
+		<script>
+			jQuery(document).ready(function () {
+			$(".peShiner").peShiner({glow:0});
+			})
+		</script>
+		
+	</head>
+    
+	<body>
+		
+		<div class="wrapper">
+			
+			<!--
+			This is an example of a 3 layer composition
+			the middle layer only is getting the shiner effect applied to it
+			the other 2 layers are only to make up the effect
+			layer 1 = frame
+			layer 3 = logo
+			use this method for creating compositions where one items only gets a shine
+			-->
+			
+			<div class="composition">
+				<!--layer 3 - top-->
+				<img src="img/example04/layer3.png" alt="" class="layer3" />
+				
+				<!--layer 2 - middle - shiner effect-->
+				<div class="peShiner">
+					<img src="img/example04/layer2.png" data-color="blueHL" /></a>
+				</div>
+			
+				<!--later 3 - bottom-->
+				<img src="img/example04/layer1.png" alt="" class="layer1" />
+			</div>
+			
+		</div>
+	</body>
+	
+</html>

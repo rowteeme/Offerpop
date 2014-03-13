@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		
+		<!-- Meta information -->
+		<meta charset="utf-8">
+		
+		<title>Shiner - Demo 1 - A jQuery Plugin by pixelentity</title>
+		
+		<!-- load jQuery -->
+		<script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+		
+		<!-- load plugin code -->
+		<script type="text/javascript" src="js/pe.shiner/jquery.pixelentity.shiner.min.js"></script>
+		
+		<!-- page style -->
+		<style>
+			body {
+			background-color: black;
+			}
+			
+			div.wrapper {
+			width: 600px;
+			margin: 50px auto 0px auto;
+			}
+		</style>
+
+		<!-- initialize the plugin -->
+		<script>
+			jQuery(document).ready(function () {
+			$(".peShiner").peShiner();
+			})
+		</script>
+		
+	</head>
+    
+	<body>
+		
+		<div class="wrapper">
+			
+			<div class="peShiner">
+				<a href="#"><img src="img/example01/area51.png" data-color="limeHL" /></a>
+			</div>
+			
+			<div class="peShiner">
+				<a href="#"><img src="img/example01/heavy.png" data-color="purpleHL" /></a>
+			</div>
+			
+			<div class="peShiner">
+				<a href="#"><img src="img/example01/text1.png" data-color="monoHL" /></a>
+			</div>
+			
+			<div class="peShiner">
+				<a href="#"><img src="img/example01/maxpro.png" data-color="white" /></a>
+			</div>
+			
+			<div class="peShiner">
+				<a href="#"><img src="img/example01/block.png" data-color="blueHL" /></a>
+			</div>
+			
+		</div>
+	</body>
+	
+</html>

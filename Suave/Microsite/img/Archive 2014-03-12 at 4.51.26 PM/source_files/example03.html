@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		
+		<!-- Meta information -->
+		<meta charset="utf-8">
+		
+		<title>Shiner - Demo 3 - A jQuery Plugin by pixelentity</title>
+		
+		<!-- load jQuery -->
+		<script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+		
+		<!-- load plugin code -->
+		<script type="text/javascript" src="js/pe.shiner/jquery.pixelentity.shiner.min.js"></script>
+		
+		<!-- page style -->
+		<style>
+			body {
+			background-color: white;
+			}
+			
+			div.wrapper {
+			width: 790px;
+			margin: 250px auto 0px auto;
+			}
+			
+			div.peShiner {
+			width: 167px;
+			height: 298px;
+			float: left;
+			margin: 1px 30px 0px 0px;
+			}
+
+		</style>
+		
+		<!-- initialize the plugin -->
+		<script>
+			jQuery(document).ready(function () {
+			$(".peShiner").peShiner({glow:0,hover:true});
+			})
+		</script>
+		
+	</head>
+    
+	<body>
+		
+		<div class="wrapper">
+
+			<div class="peShiner">
+				<a href="#"><img src="img/example03/thumb.png" /></a>
+			</div>
+			<div class="peShiner">
+				<a href="#"><img src="img/example03/thumb.png" /></a>
+			</div>
+			<div class="peShiner">
+				<a href="#"><img src="img/example03/thumb.png" /></a>
+			</div>
+			<div class="peShiner">
+				<a href="#"><img src="img/example03/thumb.png" /></a>
+			</div>
+			
+		</div>
+	</body>
+	
+</html>

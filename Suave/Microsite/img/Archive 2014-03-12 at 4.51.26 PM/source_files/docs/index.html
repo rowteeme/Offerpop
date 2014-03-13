@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+
+    <head>      
+		<meta charset="utf-8">
+		<title>Shiner - HTML5 Canvas Effect jQuery Plugin Documentation - pixelentity</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/syntax.css" />
+		<link rel="stylesheet" href="css/docs_style.css" />
+	</head>
+	
+    <body>
+	
+		<!--header section-->
+		<div class="header">
+			
+			<!--logo-->
+			<a href="http://pixelentity.com" class="logo"><img src="img/logo.png" alt="logo" /></a>
+			
+			<!--introduction text-->
+			<div class="intro">				
+				<p>Hi there and thank you for buying a premium digital product from Pixelentity. In order to get the most out of your purchase, please make sure to carefully read all of the information contained in this page. Use the table of contents at the top of this page to jump to a relevant section.</p>
+			</div>
+			<!--end introduction text-->
+			
+			<span class="title">Shiner - HTML5 Canvas Effect jQuery Plugin</span>
+			
+		</div>
+		
+		<!--end header section-->
+		<div class="toc" id="toc">
+			<h1>TABLE OF CONTENTS</h1>
+			<!-- toc -->
+<a class="section" href="#sec1_0"><span>1</span> Getting Started</a><a class="subsection" href="#sec1_1"><span>1.1</span>Download Package Contents</a><a class="subsection" href="#sec1_2"><span>1.2</span>Uploading the plugin</a><a class="section" href="#sec2_0"><span>2</span> Quick usage</a><a class="section" href="#sec3_0"><span>3</span> Mouse Over Mode</a><a class="section" href="#sec4_0"><span>4</span> Effect Customization</a><a class="subsection" href="#sec4_1"><span>4.1</span>Global Options</a><a class="subsection" href="#sec4_2"><span>4.2</span>Configuration options</a><a class="subsection" href="#sec4_3"><span>4.3</span>Per Image Options</a><a class="section" href="#sec5_0"><span>5</span> Advanced Use</a><a class="subsection" href="#sec5_1"><span>5.1</span>Creating a Layered Composition Using CSS</a><a class="subsection" href="#sec5_2"><span>5.2</span>Plugin API</a><a class="subsection" href="#sec5_3"><span>5.3</span>Using API With Multiple Effect Instances</a>		</div>
+		
+		<!-- docs -->		
+<div class="bbcode-body">
+<br/>
+<h1><a name="sec1_0">1</a> Getting Started<a class="top" href="#toc">top</a></h1>
+<h2><a name="sec1_1">1.1</a> Download Package Contents</h2>
+<br/>
+Once you have downloaded and unzipped the plugin package you will be faced with a list of files and folders. An explanation of these is as follows. Any item not mentioned here should be ignored for the moment.<br/>
+<br>
+<b>Folders</b>
+<br/>
+<table><tr><td class="option">docs</td><td class="value">This is the help documentation. To view simply open <i>index.html</i> found inside this folder<td></tr><tr><td class="option">img</td><td class="value">Examples images for the plugin are found here<td></tr><tr><td class="option">js</td><td class="value">This folder holds all javascript sources for the plugin<td></tr></table><b>Files</b>
+<br/>
+<table><tr><td class="option">examples1-3.html</td><td class="value">This are the plugin examples from the Codecanyon preview.<td></tr></table>
+<h2><a name="sec1_2">1.2</a> Uploading the plugin</h2>
+<br/>
+The download package contains 3 examples which you&#39;re free to use as a starting point. Each of the examples has a slightly different structure and layout.<br/>
+<br>
+<b>Files/Folders To Place On Server</b>
+<br/>
+<ol style="list-style-type: decimal">
+	<li>example1-2.html<br/>
+	</li>
+	<li>css (folder)<br/>
+	</li>
+	<li>img (folder)<br/>
+	</li>
+	<li>js (folder)</li>
+</ol>
+With the above files on your server, you should be able to test the plugin on your site.<br/>
+<div class="alert">Some of the above folders may include a <i>src</i> subfolder, those contain uncompressed javascript sources and unminified css rules which must not be uploaded on yours server: they are not needed in production sites and must not be redistributed or made available for download. These are included in the download package if, for some reason, you need to alter the plugin code in order to change or add to the default features</div>
+<h1><a name="sec2_0">2</a> Quick usage<a class="top" href="#toc">top</a></h1>Plugin usage is really simple, the first thing you need to do is to load jQuery and the plugin code by adding the following script line in your page head section<div class="highlight"><pre><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;js/jquery-1.7.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;js/pe.shiner/jquery.pixelentity.shiner.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</pre></div>
+<div class="note">If you are already using jQuery in your page, omit the first script line in the above block and make sure you add the plugin code <b>after</b> jQuery. <b>This plugin has been designed to work with version 1.6 or 1.7 of jQuery</b>.</div><div class="alert">If you are using an older version of jQuery then that stated above, the plugin may not function correctly.</div>
+<br/>
+Next,add the images/logos to which you wish to add the shiner effect. Each image will need to be wrapped in a div with a class of <i>peShiner</i> like shown here below. This example also shows an image with a link, but the link is optional and can be omitted if not needed.<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;peShiner&quot;</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;yourpage.html&quot;</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">&quot;img/logo.png&quot;</span> <span class="nt">/&gt;&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+Now all that is left is to activate the plugin by adding the following script tag into the <i>head</i> section of the containing HTML page.<div class="highlight"><pre><span class="nt">&lt;script&gt;</span>
+    <span class="nx">jQuery</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.peShiner&quot;</span><span class="p">).</span><span class="nx">peShiner</span><span class="p">();</span>
+    <span class="p">})</span>
+<span class="nt">&lt;/script&gt;</span>
+</pre></div>
+<br/>
+<h1><a name="sec3_0">3</a> Mouse Over Mode<a class="top" href="#toc">top</a></h1>The effect can be configured so that it only appears when the user rolls over the image/logo with their mouse. This mode can be activated by setting the <i>hover</i> configuration option value to <i>true</i>. Once the plugin has been activated and setup (See the previous section), to enable this <i>hover</i> mode just make the following change to the script which was added to the head section of the HTML page:<div class="highlight"><pre><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.peShiner&quot;</span><span class="p">).</span><span class="nx">peShiner</span><span class="p">({</span><span class="nx">hover</span><span class="o">:</span><span class="kc">true</span><span class="p">});</span>
+</pre></div>
+This is an example of how you can alter global defaults for the plugin (apply to all images in the HTML page which are using the shiner efvect). The <i>hover</i> setting is just one of many available parameters, we&#39;ll cover all of these in the next section.<br/>
+<h1><a name="sec4_0">4</a> Effect Customization<a class="top" href="#toc">top</a></h1>
+<h2><a name="sec4_1">4.1</a> Global Options</h2>
+As mentioned in the previous section, the Shiner plugin&#39;s behaviour can be customized <i>globally</i> by setting parameters when it is activated in the head section of the HTML page. Such a plugin call, while setting all global configuration values would look like this:<div class="highlight"><pre><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.peShiner&quot;</span><span class="p">).</span><span class="nx">peShiner</span><span class="p">({</span>
+    <span class="nx">hover</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nx">duration</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="nx">angle</span><span class="o">:</span> <span class="mi">15</span><span class="p">,</span>
+    <span class="nx">size</span><span class="o">:</span> <span class="mi">100</span><span class="p">,</span>
+    <span class="nx">color</span><span class="o">:</span> <span class="s2">&quot;monoHL&quot;</span><span class="p">,</span>
+    <span class="nx">glow</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="nx">repeat</span><span class="o">:</span> <span class="mf">0.5</span><span class="p">,</span>
+    <span class="nx">reverse</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nx">delay</span><span class="o">:</span> <span class="mi">0</span>
+<span class="p">});</span>
+</pre></div>
+<div class="note">You&#39;re not forced to set all the options, if a a parameter is not set by you, it will keep its default value. See the table below for an explanation of these parameters and their default values, where applicable.</div>
+<h2><a name="sec4_2">4.2</a> Configuration options</h2>
+<table><tr><td class="option">hover</td><td class="value">
+Controls mouse over mode: by default is set to <b>false</b> and the effect will start as soon as the image/logo is loaded - Enabled this hover mode by setting option to <b>true</b>, in which case the effect will only display when the mouse hovers over logo/image<td></tr><tr><td class="option">duration</td><td class="value">
+Effect duration in seconds, decimal numbers can also be used like <b>1.5</b><td></tr><tr><td class="option">angle</td><td class="value">
+Shiner bar angle in degress, <b>default</b> is 15 with 0 meaning a vertical bar<td></tr><tr><td class="option">size</td><td class="value">
+Shiner bar size in pixels, <b>default</b> size is 100px<td></tr><tr><td class="option">color</td><td class="value">
+Shiner bar color gradient, <b>default</b> is monoHL, but you can choose from the following presets:<br/>
+<br>
+fire<br/>
+fireHL<br/>
+lime<br/>
+limeHL<br/>
+ocean<br/>
+oceanHL<br/>
+purple<br/>
+purpleHL<br/>
+sepia<br/>
+sepiaHL<br/>
+mono<br/>
+monoHL<br/>
+steel<br/>
+white<br/>
+black<br/>
+red<br/>
+redHL<br/>
+green<br/>
+greenHL<br/>
+blue<br/>
+blueHL<td></tr><tr><td class="option">glow</td><td class="value">
+Glow effect size in pixel, this can add an optional small glow around the image/logo, the value can be set to 0, 1, 2 where 0 = now glow and 2 = max glow. The <b>default</b> is 2. Setting glow to 1-2 will also add a 1-2px margin to the image in order to make it visible, this will need to be taken into account in your page layout so that the plugin doesn&#39;t interfere with your layout. If this additional margin is having undesidered effects on the page layout, just set this parameter to 0<td></tr><tr><td class="option">repeat</td><td class="value">
+By default, the effect loops and it shows again after a 0.5 seconds pause - to make it loop every 2 seconds, set this option value to 2. The looping behaviour can be disabled by setting the value to -1<td></tr><tr><td class="option">reverse</td><td class="value">
+When set to <i>true</i>, the effect will reverse direction on each iteration, left -&gt; right, right -&gt; left and so on in an over &amp; back effect.<b>default</b> is false.<td></tr><tr><td class="option">delay</td><td class="value">
+Delay works like the <i>repeat</i> option but is used only when the <i>reverse</i> option is set to <i>true</i>. In which case, the effect runs like this:<br/>
+<br>
+left -&gt; right (pause for <b>delay</b> seconds) right -&gt; left (pause for <b>repeat</b> seconds)<br/>
+<br>
+So basically, you have 2 individual options to controls pause duration in both forward and reverse directions. The <b>default</b> delay is 0<td></tr><tr><td class="option">gradientFunction</td><td class="value">
+This parameter changes the way the gradient is generated. Accepted values are as follows:<br/>
+<br>
+easeInQuad<br/>
+easeOutQuad<br/>
+easeInOutQuad<br/>
+easeInCubic<br/>
+easeOutCubic<br/>
+easeInOutCubic<br/>
+easeInOutQuint<br/>
+easeInExpo<br/>
+easeOutExpo<br/>
+easeInOutExpo.<br/>
+<br>
+<b>default</b> is linear.<td></tr></table>
+<h2><a name="sec4_3">4.3</a> Per Image Options</h2>
+<br/>
+You can apply the Shiner effect to multiple elements in a page at the same time. In the previous section we looked at how to change parameters globally, which affect all elements in the page which have the effect applied. However there are cases in which you would want to control the parameters of the effect on an image by image basis. This can be done by setting options directly in the individual elment&#39;s markup using custom <b>data</b> attributes. By using these settings each image may have a different configuration of the Shiner effect applied to it as shown here below:<div class="highlight"><pre><span class="c">&lt;!--image 1--&gt;</span>
+<br/>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;peShiner&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;img/logo1.png&quot;</span> <span class="na">data-color=</span><span class="s">&quot;limeHL&quot;</span> <span class="na">data-glow=</span><span class="s">&quot;0&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<br/>
+<br>
+<span class="c">&lt;!--image 2--&gt;</span>
+<br/>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;peShiner&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;img/logo2.png&quot;</span> <span class="na">data-color=</span><span class="s">&quot;purpleHL&quot;</span> <span class="na">data-angle=</span><span class="s">&quot;45&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+In the above example we have 2 logos, the first one will use a <i>limeHL</i> color grandient with a <i>glow</i> value of 0. The second logo will use a <i>purpleHL</i> gradient and have a Shiner bar <i>angle</i> of 45 degrees. Data attributes may be added to specify all of the parameters which are available in the global parameters section (Refer to that section above for a list and description of each parameter).<div class="note">Data attributes are formed by simply prefixing any of the global parameters with <b>data-</b> and then setting the parameter&#39;s value inside of inverted commas just like a normal HTML attribute, like this <b>data-reverse=&quot;true&quot;</b></div>
+<h1><a name="sec5_0">5</a> Advanced Use<a class="top" href="#toc">top</a></h1>
+<h2><a name="sec5_1">5.1</a> Creating a Layered Composition Using CSS</h2>
+<br/>
+In the download package the file <i>example04.html</i> contains an example of using the Shiner effect item as part of a layered composition of graphical elements, like what is seen in the iTunes logo example in the online preview. Basically what this means is that image layers are stacked on top of each other so that it looks like one complete image, while the shiner effect gets applied to only one layer, in this case, the colored background layer. This composition is made up of 3 layers.<br/>
+<br>
+<ol style="list-style-type: decimal">
+	<li>Top Layer - logo.<br/>
+	</li>
+	<li>Middle Layer - logo coloured background with Shiner effect applied<br/>
+	</li>
+	<li>Bottom Layer - frame or sourround.</li>
+</ol>
+The markup for this layered composiotion looks like this:<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;composition&quot;</span><span class="nt">&gt;</span>
+                <span class="c">&lt;!--layer 3 - top--&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;img/example04/layer3.png&quot;</span> <span class="na">alt=</span><span class="s">&quot;&quot;</span> <span class="na">class=</span><span class="s">&quot;layer3&quot;</span> <span class="nt">/&gt;</span>
+<br>
+                <span class="c">&lt;!--layer 2 - middle - shiner effect--&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;peShiner&quot;</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;img/example04/layer2.png&quot;</span> <span class="na">data-color=</span><span class="s">&quot;blueHL&quot;</span> <span class="nt">/&gt;&lt;/a&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+<br>
+                <span class="c">&lt;!--later 3 - bottom--&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;img/example04/layer1.png&quot;</span> <span class="na">alt=</span><span class="s">&quot;&quot;</span> <span class="na">class=</span><span class="s">&quot;layer1&quot;</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+</pre></div>
+To make sure all of the elements are aligned correctly, each image should be exactly the same size and the elements making up the layer should be absolutely positioned using CSS. In the example provided in the download package, the image size is 200x200px and the CSS to correctly stack the elements looks like this:<div class="highlight"><pre><span class="c">/*set width , height &amp; position*/</span>
+<br/>
+<span class="nc">.composition</span><span class="o">,</span> <span class="nc">.composition</span> <span class="o">&gt;</span> <span class="nt">img</span><span class="o">,</span> <span class="nc">.peShiner</span> <span class="nt">img</span>
+            <span class="p">{</span>
+                <span class="k">width</span><span class="o">:</span><span class="m">200px</span><span class="p">;</span>
+                <span class="k">height</span><span class="o">:</span><span class="m">200px</span><span class="p">;</span>
+                <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span>
+                <span class="k">top</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+                <span class="k">left</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+            <span class="p">}</span>
+<br/>
+<span class="c">/*set z-index values so items will stack correctly*/</span>
+<br/>
+<span class="nt">img</span><span class="nc">.layer1</span><span class="p">{</span>
+                <span class="k">z-index</span><span class="o">:</span><span class="m">1</span><span class="p">;</span>
+            <span class="p">}</span>
+<br/>
+<span class="nc">.peShiner</span><span class="p">{</span>
+                <span class="k">z-index</span><span class="o">:</span><span class="m">2</span><span class="p">;</span>
+            <span class="p">}</span>
+<br/>
+<span class="nt">img</span><span class="nc">.layer3</span><span class="p">{</span>
+                <span class="k">z-index</span><span class="o">:</span><span class="m">3</span><span class="p">;</span>
+            <span class="p">}</span>
+</pre></div>
+<br/>
+<h2><a name="sec5_2">5.2</a> Plugin API</h2>
+<br/>
+The plugin comes with very simple API that allows it to control the bahaviour of the plugin using external javascript, which may be needed in cases of advanced use. An example of such use might be; Showing the effect in response to a user&#39;s actions on another active element in your page. 
+<br/>
+To control the Shiner effect&#39;s behaviour, the first step is to get the API object:<div class="highlight"><pre><span class="kd">var</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.peShiner&quot;</span><span class="p">).</span><span class="nx">peShiner</span><span class="p">({</span><span class="nx">api</span><span class="o">:</span><span class="kc">true</span><span class="p">}));</span>
+</pre></div>
+By setting &quot;api&quot; to &quot;true&quot;, the plugin will return its API object instead of the standard jQuery object. You can then use this API object as follows:<div class="highlight"><pre><span class="c1">// pause the effect</span>
+<span class="nx">api</span><span class="p">.</span><span class="nx">pause</span><span class="p">();</span>
+<br/>
+<span class="c1">// resume the effect</span>
+<span class="nx">api</span><span class="p">.</span><span class="nx">resume</span><span class="p">();</span>
+</pre></div>
+<div class="note">if <i>pause();</i> is called when the effect is already running, the current transition will be completed before the pause takes effect</div>The Shiner effect can also be activated, in the head section of the HTML page, in a <i>paused</i> state like this:<div class="highlight"><pre><span class="kd">var</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.peShiner&quot;</span><span class="p">).</span><span class="nx">peShiner</span><span class="p">({</span><span class="nx">api</span><span class="o">:</span><span class="kc">true</span><span class="p">,</span> <span class="nx">paused</span><span class="o">:</span><span class="kc">true</span><span class="p">}));</span>
+</pre></div>
+<br/>
+<h2><a name="sec5_3">5.3</a> Using API With Multiple Effect Instances</h2>
+<br/>
+If you have the plugin applied to multiple elements within the same page, you must get the API objects one at a time for these API calls to function correctly. To do this we recommend giving each Shiner element a unique ID like this:<div class="highlight"><pre><span class="c">&lt;!--element 1--&gt;</span>
+<br/>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;peShiner&quot;</span> <span class="na">id=</span><span class="s">&quot;shiner1&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;img/logo1.png&quot;</span> <span class="na">data-color=</span><span class="s">&quot;limeHL&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<br/>
+<span class="c">&lt;!--element 2--&gt;</span>
+<br/>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;peShiner&quot;</span> <span class="na">id=</span><span class="s">&quot;shiner2&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;img/logo2.png&quot;</span> <span class="na">data-color=</span><span class="s">&quot;purpleHL&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+Then access the API object like this:<div class="highlight"><pre><span class="kd">var</span> <span class="nx">api1</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#shiner1&quot;</span><span class="p">).</span><span class="nx">peShiner</span><span class="p">({</span><span class="nx">api</span><span class="o">:</span><span class="kc">true</span><span class="p">,</span> <span class="nx">paused</span><span class="o">:</span><span class="kc">true</span><span class="p">}));</span>
+<br/>
+<span class="kd">var</span> <span class="nx">api2</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#shiner2&quot;</span><span class="p">).</span><span class="nx">peShiner</span><span class="p">({</span><span class="nx">api</span><span class="o">:</span><span class="kc">true</span><span class="p">,</span> <span class="nx">paused</span><span class="o">:</span><span class="kc">true</span><span class="p">}));</span>
+</pre></div>
+</div>
+		
+		
+		<!--footer section-->
+		<div class="footer">
+			<div class="outro">
+				
+				<!--useful links section-->
+				<div class="links">
+					<span>USEFUL LINKS</span>
+					<ul>
+						<li><a href="http://support.pixelentity.com">Support Forums</a> The fastest way to get help</li>
+						<li><a href="http://pixelentity.com">Pixelentity.com </a> Free PSD Design Resources</li>
+						<li><a href="http://themeforest.net/user/pixelentity/follow">Follow Pixelentity</a> Add our items to your homepage.</li>
+						<li><a href="http://themeforest.net/user/pixelentity/follow">Pixelentity on Twitter</a> Get informed of new releases & updates</li>	
+					</ul>
+				</div>
+				
+				<!--getting support section-->
+				<p class="tagline"><span>STILL NEED HELP? - GETTING SUPPORT</span>If having read through all of the information in this page you are still experiencing problems, feel free to contact us. We provide free support* to our buyers via our support forums <i>(See link on right)</i>. Head on over there, read the FAQs, register <i>(using your purchase code)</i> and post your question in the appropriate forum.<br/><br/> *<b>Please note that support requests will not be answered if they relate to information available on this page.</b><br/><br/>Best regards, The Pixelentity Team</p>
+				
+			</div>
+			
+			<!--copyright details-->
+			<p class="copyright">Copyright &copy 2011+ Pixelentity. All rights reserved.</p>
+			
+		</div>
+		<!--end footer section-->
+		
+    </body>
+</html>
