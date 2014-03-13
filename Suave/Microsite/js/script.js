@@ -1,5 +1,7 @@
 jQuery(document).ready(function($){
 	jQuery(function(){
+		//Need to update bitly link for Sign Up Share copy
+		var bitly = '1gzGxfO';
 
 		/*******************
 		*****SIDE NAVIGATION
@@ -82,20 +84,45 @@ jQuery(document).ready(function($){
 		*****YOUTUBE CAROUSEL
 		********************/
 		//Initialize Youtube Large View Size & Resize Function
-		var windowWidth = $(window).width(),
-		youtubeHeight = windowWidth * 0.75;
-		if (windowWidth < 767){
-			$('#touch-of-glam').css('height', youtubeHeight);
+		var domLoadResize = function(event){
+			var windowWidth = $(window).width();
+			if ( $('#touch-of-glam img').is(':visible')){
+				var imageHeight = windowWidth * 0.375;
+					if (event && imageHeight < 300){
+						$('#touch-of-glam').css('height', imageHeight);
+					} else if (windowWidth < 800){
+						$('#touch-of-glam').css('height', imageHeight);
+					}
+			} else if ($('#touch-of-glam iframe').is(':visible')){
+				var youtubeHeight = windowWidth * 0.75;
+					if (event && youtubeHeight < 500){
+						$('#touch-of-glam').css('height', youtubeHeight);
+					} else if (windowWidth >= 800){
+						youtubeHeight = 500;
+						$('#touch-of-glam').css('height', youtubeHeight);
+					} else if (windowWidth < 800){
+						$('#touch-of-glam').css('height', youtubeHeight);
+					}
+			}
 		}
 
+		domLoadResize();
+
+			//Responsive event for Youtube or Image Container
 			$(window).resize(function(){
-				var windowWidth = $(window).width(),
-				youtubeHeight = windowWidth * 0.75;
-				if (youtubeHeight < 500){
-					$('#touch-of-glam').css('height', youtubeHeight);
-				}
+				domLoadResize('resized');
 			});
 
+			//Swap image for youtube video and resize container
+			$('#touch-of-glam img').click(function(){
+				$(this).fadeOut();
+				$('#touch-of-glam iframe').fadeIn('slow',domLoadResize);
+				var youtubeLink = $('#touch-of-glam iframe').attr('src');
+				$('#touch-of-glam iframe').attr('src',youtubeLink + '&rel=0&autoplay=1');
+			});
+
+				/************************/
+				/*  Temporarily Hidden  */
 				//Youtube Carousel Script
 				$('#yt-controls .next').click(function(){
 			    	$('#carousel-container').load('/Suave/youtube_carousel_ajax.html #youtube');
@@ -111,6 +138,68 @@ jQuery(document).ready(function($){
 					$('#get-a-sample').height('1850px');
 				}
 			}
+
+			var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+          	var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+
+          	$(window).on(messageEvent, function (e) {
+  				var data = e.originalEvent.data;
+				if (data === 'resize') {
+					$('#get-a-sample').addClass('after-sign-up')
+				}
+          	});
+
+          	/******************/
+          	/* Touch to Share */
+          	/******************/
+			var startTime, endTime
+			,$touchGif = $('#touch-gif img');
+
+			if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|OperaMini/i.test(navigator.userAgent)){
+				var eventStart = 'touchstart'
+				,eventEnd = 'touchend';
+			} else{
+				var eventStart = 'mousedown'
+				,eventEnd = 'mouseup';
+			}
+
+			    $touchGif.on(eventStart, function () {
+			        var currentLink = $touchGif.attr('src');
+			        if (currentLink.indexOf('x4VLtX') > -1){
+			            return true;
+			        } else{
+			            $touchGif.attr('src','https://s3.amazonaws.com/com.offerpop.datastore/438279/kZkbxi.gif');
+			            startTime = new Date().getTime();
+			        }
+			    });
+
+			    $touchGif.on(eventEnd, function () {
+			        endTime = new Date().getTime();
+			        if (endTime - startTime < 1000) {
+			            $touchGif.attr('src','https://s3.amazonaws.com/com.offerpop.datastore/438279/5msNih.png');
+			        }
+			        else if (endTime - startTime > 1000){
+			            $touchGif.animate({'opacity':'0.6'}, 'fast');
+			            $touchGif.attr('src','https://s3.amazonaws.com/com.offerpop.datastore/438279/x4VLtX.png');
+						$('#social-container').fadeIn();
+			       }
+			    });
+
+	          	//Update Share copy
+				// $('#s-facebook').click(function(){
+				// FB.ui({
+				//   method: 'feed',
+				//   link: 'https://developers.facebook.com/docs/dialogs/',
+				//   caption: 'An example caption',
+				// }, function(response){});
+				// });
+
+
+				$('#s-twitter').parent().attr('href','http://twitter.com/share?text=Suave%20Professionals&url=http%3A//bit.ly/' + bitly);
+
+				$('#s-email').parent().attr('href','mailto:?body=Suave%20Professionals%20http%3A//bit.ly/' + bitly + '&subject=Suave%20Professionals');
+
+
 
 		/**************
 		*****THREE STEP
@@ -161,7 +250,7 @@ jQuery(document).ready(function($){
 		***************/
 		//Initialize Glam4Good Header height and Resize
 		var glamWindowWidth = $(window).width()
-			,glamHeaderHeight = windowWidth * 0.1675;
+			,glamHeaderHeight = glamWindowWidth * 0.1675;
 		if (glamWindowWidth < 825){
 			$('#glam4good-header').css('height', glamHeaderHeight);
 		}
