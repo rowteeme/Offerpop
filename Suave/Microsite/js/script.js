@@ -1,7 +1,5 @@
 jQuery(document).ready(function($){
 	jQuery(function(){
-		//Need to update bitly link for Sign Up Share copy
-		var bitly = '1gzGxfO';
 
 		/*******************
 		*****SIDE NAVIGATION
@@ -125,7 +123,7 @@ jQuery(document).ready(function($){
 				/*  Temporarily Hidden  */
 				//Youtube Carousel Script
 				$('#yt-controls .next').click(function(){
-			    	$('#carousel-container').load('/Suave/youtube_carousel_ajax.html #youtube');
+			    	$('#carousel-container').hide().load('/Suave/youtube_carousel_ajax.html #youtube').fadeIn();
 			    	return false;
 			  	});
 
@@ -195,12 +193,6 @@ jQuery(document).ready(function($){
 				// });
 
 
-				$('#s-twitter').parent().attr('href','http://twitter.com/share?text=Suave%20Professionals&url=http%3A//bit.ly/' + bitly);
-
-				$('#s-email').parent().attr('href','mailto:?body=Suave%20Professionals%20http%3A//bit.ly/' + bitly + '&subject=Suave%20Professionals');
-
-
-
 		/**************
 		*****THREE STEP
 		***************/
@@ -266,18 +258,18 @@ jQuery(document).ready(function($){
 		*****PARALLAX
 		************/		
 		//PARALLAX SCROLLING 
-		$window = $(window);	          
+			$window = $(window);	          
 	     	var $bgobj = $('body'); // assigning the object
 	      	
 	      	$(window).scroll(function() {     
 				// Scroll the background at var speed
-				// the yPos is a negative value because we're scrolling it UP!			
+				// the yPos is a negative value because we're scrolling it UP!	
 				var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
 				// Put together our final background position
 				var coords = '50% '+ yPos + 'px';
 				// Move the background
 				$bgobj.css({ backgroundPosition: coords });
-			}); // window scroll Ends
+			});
 
 
 		/************
