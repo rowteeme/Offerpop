@@ -1,6 +1,7 @@
 jQuery(document).ready(function($){
 	jQuery(function(){
 
+
 		/*******************
 		*****SIDE NAVIGATION
 		*******************/
@@ -14,67 +15,7 @@ jQuery(document).ready(function($){
 			}, 1500);
 			$('#navigation li').removeClass('active');
 			$(this).parent().addClass('active');
-			window.history.pushState('glam-section', 'updateURL', "/#" + navID);
   			e.preventDefault();
-		});
-
-		//********************************************
-		//Load in Ginger Product to "Three Step" section & then get offset for url updates
-		//navigation object for updating active states
-		$('#our-products').load('/Suave/three_step_ajax.html #ginger-load', function(){
-				var nav = {
-				'section1' : {
-					'name' : 'touch-of-glam'
-					,'location' : $('#touch-of-glam').offset().top
-				}, 'section2' : {
-					'name' : 'get-a-sample'
-					,'location' : $('#get-a-sample').offset().top
-				}, 'section3' : {
-					'name' : 'get-a-coupon'
-					,'location' : $('#get-a-coupon').offset().top
-				}, 'section4' : {
-					'name' : 'glam-gallery'
-					,'location' : $('#glam-gallery').offset().top
-				}, 'section5' : {
-					'name' : 'our-products'
-					,'location' : $('#our-products').offset().top
-				}, 'section6' : {
-					'name' : 'glam-4-good'
-					,'location' : $('#glam-4-good').offset().top
-				}
-			}
-
-			//scroll event to determine users location on page & update active states
-			$(window).scroll(function(){
-				var currentLocation = $(window).scrollTop();
-				if (currentLocation >= nav.section6.location){
-					window.history.pushState('glam-section', 'updateURL', '/#' + nav.section6.name);
-					$('#navigation li').removeClass('active');
-					$('#navigation li a#nav-' + nav.section6.name).parent().addClass('active');
-				} else if (currentLocation >= nav.section5.location){
-					window.history.pushState('glam-section', 'updateURL', '/#' + nav.section5.name);
-					$('#navigation li').removeClass('active');
-					$('#navigation li a#nav-' + nav.section5.name).parent().addClass('active');
-				} else if (currentLocation >= nav.section4.location){
-					window.history.pushState('glam-section', 'updateURL', '/#' + nav.section4.name);
-					$('#navigation li').removeClass('active');
-					$('#navigation li a#nav-' + nav.section4.name).parent().addClass('active');
-				} else if (currentLocation >= nav.section3.location){
-					window.history.pushState('glam-section', 'updateURL', '/#' + nav.section3.name);
-					$('#navigation li').removeClass('active');
-					$('#navigation li a#nav-' + nav.section3.name).parent().addClass('active');
-				} else if (currentLocation >= nav.section2.location){
-					window.history.pushState('glam-section', 'updateURL', '/#' + nav.section2.name);
-					$('#navigation li').removeClass('active');
-					$('#navigation li a#nav-' + nav.section2.name).parent().addClass('active');
-				} else if (currentLocation >= nav.section1.location){
-					window.history.pushState('glam-section', 'updateURL', '/#' + nav.section1.name);
-					$('#navigation li').removeClass('active');
-					$('#navigation li a#nav-' + nav.section1.name).parent().addClass('active');
-				} else {
-					window.history.pushState('glam-section','updateURL', '/');
-				}
-			});
 		});
 		
 
@@ -123,7 +64,7 @@ jQuery(document).ready(function($){
 				/*  Temporarily Hidden  */
 				//Youtube Carousel Script
 				$('#yt-controls .next').click(function(){
-			    	$('#carousel-container').hide().load('/Suave/youtube_carousel_ajax.html #youtube').fadeIn();
+			    	$('#yt-carousel #carousel-container').hide().load('/Suave/youtube_carousel_ajax.html #youtube').fadeIn();
 			    	return false;
 			  	});
 
@@ -137,15 +78,8 @@ jQuery(document).ready(function($){
 				}
 			}
 
-			var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
-          	var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
 
-          	$(window).on(messageEvent, function (e) {
-  				var data = e.originalEvent.data;
-				if (data === 'resize') {
-					$('#get-a-sample').addClass('after-sign-up')
-				}
-          	});
+
 
           	/******************/
           	/* Touch to Share */
@@ -162,35 +96,30 @@ jQuery(document).ready(function($){
 			}
 
 			    $touchGif.on(eventStart, function () {
-			        var currentLink = $touchGif.attr('src');
-			        if (currentLink.indexOf('x4VLtX') > -1){
-			            return true;
-			        } else{
-			            $touchGif.attr('src','https://s3.amazonaws.com/com.offerpop.datastore/438279/kZkbxi.gif');
-			            startTime = new Date().getTime();
-			        }
+			    	var currentLink = $touchGif.attr('src');
+			        	if (currentLink.indexOf('x4VLtX') > -1){
+			            	return true;
+			        	} else{
+			            	$touchGif.attr('src','https://s3.amazonaws.com/com.offerpop.datastore/438279/kZkbxi.gif');
+			    			setTimeout(function(){
+			    				$touchGif.animate({'opacity':'0.6'}, 'fast');	
+			    				$touchGif.attr('src','https://s3.amazonaws.com/com.offerpop.datastore/438279/x4VLtX.png');
+								$('#social-container').fadeIn();
+			    			},1000);
+			    		}
 			    });
 
-			    $touchGif.on(eventEnd, function () {
-			        endTime = new Date().getTime();
-			        if (endTime - startTime < 1000) {
-			            $touchGif.attr('src','https://s3.amazonaws.com/com.offerpop.datastore/438279/5msNih.png');
-			        }
-			        else if (endTime - startTime > 1000){
-			            $touchGif.animate({'opacity':'0.6'}, 'fast');
-			            $touchGif.attr('src','https://s3.amazonaws.com/com.offerpop.datastore/438279/x4VLtX.png');
-						$('#social-container').fadeIn();
-			       }
-			    });
-
-	          	//Update Share copy
-				// $('#s-facebook').click(function(){
-				// FB.ui({
-				//   method: 'feed',
-				//   link: 'https://developers.facebook.com/docs/dialogs/',
-				//   caption: 'An example caption',
-				// }, function(response){});
-				// });
+			var $emailEnvelope = $('#email-envelope');
+			//Email Trigger
+			$('#s-email').click(function(){
+				$emailEnvelope.show().animate({left: "+=500"}, 1800);
+				$emailEnvelope.fadeOut();
+				$emailEnvelope.css('left','0px');
+			
+			setTimeout(function(){
+				window.location = "mailto:?body=Hey%20there!%0A%0AI%20wanted%20to%20let%20you%20know%20I%E2%80%99m%20getting%20a%20%23TouchofGlam%20with%20NEW%20Suave%20Professionals%C2%AE%20Natural%20Infusion.%20Each%20collection%20is%20infused%20with%20specially-chosen%20exotic%20ingredients%20that%20deliver%20noticeable%20results%20and%20contains%20no%20parabens%20or%20dyes.%0A%0AYou%20can%20get%20your%20free%20sample%20of%20NEW%20Suave%20Professionals%C2%AE%20Natural%20Infusion%20by%20clicking%20here%20http%3A%2F%2Fbit.ly%2F1m0wwyH%0A%0ANo%20purchase%20necessary.%20Void%20where%20prohibited.%20Open%20to%2050%20U.S.%20%26%20D.C.%2C%2018%2B.%20Ends%205%2F31%2F14%20or%20while%20supplies%20last.%20For%20rules%2C%20visit%20bit.ly%2F1cVkp3h&subject=Your%20gift%20of%20glam";
+				}, 1800);
+			});
 
 
 		/**************
@@ -254,22 +183,6 @@ jQuery(document).ready(function($){
 			});
 		//END Glam4Good Header Sizing
 
-		/************
-		*****PARALLAX
-		************/		
-		//PARALLAX SCROLLING 
-			$window = $(window);	          
-	     	var $bgobj = $('body'); // assigning the object
-	      	
-	      	$(window).scroll(function() {     
-				// Scroll the background at var speed
-				// the yPos is a negative value because we're scrolling it UP!	
-				var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
-				// Put together our final background position
-				var coords = '50% '+ yPos + 'px';
-				// Move the background
-				$bgobj.css({ backgroundPosition: coords });
-			});
 
 
 		/************
@@ -282,6 +195,14 @@ jQuery(document).ready(function($){
 			}, 1500);
 		});
 
+		
+		//Load Glam4Good Image Carousel on Page load
+		$('#glam4good-carousel #glam4good-carousel-load').load('/Suave/glam4good_ajax.html #glam4good-gallery-1');
+		//Load new content for Glam4Good Image Carousel on click
+		$('#yt-controls .next').click(function(){
+			$('#glam4good-carousel #glam4good-carousel-load').hide().load('/Suave/glam4good_ajax.html #glam4good-gallery-1').fadeIn();
+			return false;
+		});
 
 	});
 });
