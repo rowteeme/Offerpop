@@ -517,7 +517,8 @@ padding-top: 10px;
   float:left;
 }
 #glam4good-header {
-  background: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/qMG8oR.jpg') no-repeat;
+  /*background: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/qMG8oR.jpg') no-repeat;*/
+  background: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/mu_xfE.jpg') no-repeat;
   background-size: 100% auto;
   height:134px;
   padding-top:5%;
