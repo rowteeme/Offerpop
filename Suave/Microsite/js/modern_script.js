@@ -15,10 +15,12 @@ jQuery(document).ready(function($){
 				}, 'section3' : {
 					'name' : 'get-a-coupon'
 					,'location' : $('#get-a-coupon').offset().top
-				}, 'section4' : {
+				}
+				/*, 'section4' : {
 					'name' : 'glam-gallery'
 					,'location' : $('#glam-gallery').offset().top
-				}, 'section5' : {
+				}*/
+				, 'section5' : {
 					'name' : 'our-products'
 					,'location' : $('#our-products').offset().top
 				}, 'section6' : {
@@ -38,11 +40,13 @@ jQuery(document).ready(function($){
 					window.history.pushState('glam-section', 'updateURL', '/#' + nav.section5.name);
 					$('#navigation li').removeClass('active');
 					$('#navigation li a#nav-' + nav.section5.name).parent().addClass('active');
-				} else if (currentLocation >= nav.section4.location){
+				} 
+				/*else if (currentLocation >= nav.section4.location){
 					window.history.pushState('glam-section', 'updateURL', '/#' + nav.section4.name);
 					$('#navigation li').removeClass('active');
 					$('#navigation li a#nav-' + nav.section4.name).parent().addClass('active');
-				} else if (currentLocation >= nav.section3.location){
+				}*/ 
+				else if (currentLocation >= nav.section3.location){
 					window.history.pushState('glam-section', 'updateURL', '/#' + nav.section3.name);
 					$('#navigation li').removeClass('active');
 					$('#navigation li a#nav-' + nav.section3.name).parent().addClass('active');
