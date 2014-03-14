@@ -1,0 +1,227 @@
+/************************/
+/************************/
+/* CUSTOM MEDIA QUERIES */
+/************************/
+@media (max-width: 979px) {
+  #navigation{
+    display:none;
+  }
+  .navbar-fixed-top, .navbar-fixed-bottom{
+    position:absolute;
+  }
+  .navbar-inverse .navbar-inner {
+    background: #fff;
+    border: 0px;
+  }
+  .navbar-inverse .nav > li > a, .navbar-inverse .nav > li > a:focus, .navbar-inverse .nav > li > a:hover{
+    color:#999;
+    font-family: Arial;
+    font-size: 11px;
+    font-weight: 400;
+    text-shadow:none;
+  }
+  .navbar .nav{
+    margin:20px 10px 0 0;
+    height:100%;
+  }
+  .navbar .nav > li {
+    border-left: 0px;
+  }
+  .nav-collapse .nav a {
+    margin-top: -12px;
+  }
+  .navbar .btn-navbar .icon-bar, .navbar .btn-navbar .icon-bar:hover, .navbar-inverse .btn-navbar:active{
+    background-color:#999;
+  }
+  .btn.btn-navbar, .btn.btn-navbar:hover, .navbar-inverse .btn-navbar:active, .navbar-inverse .btn-navbar:focus {
+    background: #fff;
+    border: 1px solid #999;
+  }
+  .navbar-inverse .nav-collapse .nav > li > a:hover{
+    background:#999;
+    color:#fff;
+  }
+  .navbar .btn-navbar{
+    margin-right:35px;
+  }
+}
+@media (max-width: 800px) {
+    #get-a-sample{
+      height:1400px;
+    }
+}
+@media (max-width: 767px) {
+    body{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top{
+      margin-left:0px;
+      margin-right:0px;
+    }
+    .jumbotron h1{
+      font-size:250%;
+    }
+    .jumbotron .lead {
+        font-size: 120%;
+        line-height: 150%;
+    }
+    #yt-carousel .span3{
+        width:39%;
+        margin:auto;
+        display:none;
+    }
+    #yt-carousel .span3:first-child{
+        display:block;
+    }
+    #carousel-container{
+        margin-top:0px;  
+    }
+    #carousel-container, #yt-carousel{
+        height:100%;
+    }
+    .yt-play{
+        top: -90px;
+        left: 90px;
+    }
+    /* iFramed Sign Up App CSS - Tablets */
+    #get-a-sample > iframe {
+      margin-top: 0px;
+    }
+    /* Three Step 767px CSS - Tablets */
+    #product-info-container{
+        clear:both;
+    }
+    .product-thumb {
+        display: none;
+    }
+    #three-selection-container{
+        margin:-70px 0px 0px 0px;
+        padding-top:140px;
+        padding-bottom: 30px;
+    }
+    #three-selection-container .span3 {
+        margin-left: 0px;
+        width: 90%;
+        text-align: center;
+        margin: auto;
+    }
+    #our-products #header{
+        background: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/dnzcg9.jpg') center 100%;
+        margin-top: -20px;
+        padding-top:20px;
+        width:90%;
+        padding-left:5%;
+        padding-right:5%;
+    }
+    #three-controls .next, #three-controls .previous{
+        top:-110px;
+    }
+    .product-thumb{
+        width:100%;
+        margin-left:0px;
+        cursor:pointer;
+    }
+    .product-arrow{
+        display:none;
+    }
+    #three-image-container{
+        margin-top:-50px;
+    }
+    #cta-container{
+        margin:0 auto;
+    }
+    #cta-container img.arrow{
+        width:5%;
+    }
+    #three-selection-container .span8#product-info-container{
+        width:90%;
+        margin:auto;
+        text-align:center;
+        height:100%;
+        margin-top:-30px;
+    }
+    #product-info-description{
+        margin:auto;
+        width:86%;
+    }
+    #product-info-youtube .span7 {
+        width: 90%;
+        margin: auto;
+    }
+    #product-info-youtube .span4 {
+        width: 90%;
+        margin: auto;
+    }
+
+    /* Glam 4 Good */
+    #glam4good-header{
+      padding-top:4%;
+    }
+    #glam4good-header p{
+      font-size:13px;
+    }
+    #glam4good-left {
+      margin: 0px;
+      text-align: center;
+    }
+    #about-mary-stephenson{
+      width:73%;
+    }
+    #about-mary-stephenson, #mary-description{
+      margin:auto;
+    }
+    #glam4good-body-header {
+      text-align: center;
+      padding: 20px;
+    }
+}
+@media (max-width: 550px){
+  #glam4good-header{
+    padding-top:3%;
+  }
+  #glam4good-header p{
+    line-height:14px;
+  }
+}
+@media (max-width: 480px) {
+  .navbar .brand{
+    left:0px;
+  }
+  .navbar .nav {
+    text-align: center;
+    padding-top: 30%;
+  }
+  .jumbotron h1{
+    font-size:350%;
+  }
+  .jumbotron .lead {
+    font-size: 100%;
+    line-height: 140%;
+  }
+  #get-a-sample {
+    margin-left: 0px;
+    overflow: hidden;
+    float:left;
+  }
+  #yt-controls .previous, #yt-controls .next{
+    top:-110px;
+  }
+  /* Three Step 480px CSS - Smartphones */
+  #three-image-container{
+    margin-top:0px;
+  }
+  #three-controls .next, #three-controls .previous{
+    top:-50px;
+  }
+
+  /* Glam 4 Good */
+  #glam4good-header{
+    padding-top:2%;
+  }
+  #glam4good-header p{
+    line-height:13px;
+    font-size:11px;
+  }
+}
+
