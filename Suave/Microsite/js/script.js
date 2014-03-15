@@ -121,6 +121,27 @@ jQuery(document).ready(function($){
 				}, 1800);
 			});
 
+			//Twitter Trigger
+			$('#s-twitter').click(function(){
+                    $emailEnvelope.show().animate({left: "+=500"}, 1800);
+                    $emailEnvelope.fadeOut();
+                    $emailEnvelope.css('left','0px');
+              
+               setTimeout(function(){
+                    window.location = "http://twitter.com/share?text=I%20got%20a%20%23TouchofGlam%20from%20%40SuaveBeauty!%20Get%20your%20free%20sample%3A%20bit.ly%2F1m0wwyH%20NoPurNec%2018%2B%20Ends%205%2F31%2F14%20Rules%20bit.ly%2F1cVkp3h&url=";
+                    }, 1800);
+               }); 
+
+			//Facebook Trigger
+			$('#s-facebook').click(function(){
+                    $emailEnvelope.show().animate({left: "+=500"}, 1800);
+                    $emailEnvelope.fadeOut();
+                    $emailEnvelope.css('left','0px');
+              
+               setTimeout(function(){
+                    window.location = "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fsuave.microsite.offerpop.com";
+                    }, 1800);
+               });
 
 		/**************
 		*****THREE STEP
