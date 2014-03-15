@@ -1,48 +1,144 @@
-#app_canvas_header, #FanTab > div.CHeader, #facebook-profile-connect, div.CFooterDivider, .CFooterDivider + div, div.CFooter, div.CShare{
-	display:none;
+</style>
+
+<link href='http://fonts.googleapis.com/css?family=Belleza' rel='stylesheet' type='text/css'>
+
+<style>
+#app_canvas_header, #FanTab > div.CHeader, #facebook-profile-connect, div.CFooterDivider, .CFooterDivider + div, div.CFooter, div.CShare, .SDeclare span, #After > div.CTopNote, div.did_not_signup.print-hidden, .CHeadline{
+display:none;
+}
+#AboutPage{
+background:url('https://s3.amazonaws.com/com.offerpop.datastore/438279/dnzcg9.jpg') center 100%;
 }
 body{
-	background:url('https://s3.amazonaws.com/com.offerpop.datastore/438279/dnzcg9.jpg') center 100%;
+background:url('https://s3.amazonaws.com/com.offerpop.datastore/438279/dnzcg9.jpg') center 100%;
+font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+font-weight:normal;
+}
+#sign-up-product-image {
+width: 30%;
+float: left;
+}
+#sign-up-product-image > img {
+width: 100%;
+}
+#sign-up-header{
+color:#1a7549;
+text-align:center;
+width:70%;
+float:left;
+}
+#sign-up-header h1 {
+font-family:Belleza;
+font-size: 270%;
+line-height:100%;
+text-shadow: none;
+margin-top: 10%;
+}
+#sign-up-header p{
+color:#000;
+font-size: 14px;
+}
+#gold-line {
+border-top: 1px solid #b5812b;
+width: 70%;
+border-bottom: 0px;
+}
+#sign-up-instructions{
+width:90%;
+clear:both;
+margin:auto;
+}
+#sign-up-instructions h2{
+color:#1a7549;
+font-size:200%;
+font-family:Belleza;
+}
+#sign-up-instructions p{
+color:#000;
+font-size:13px;
+}
+
+#FanTab > div.SBox {
+clear: both;
 }
 #frmSignUp > div.SFields, #frmSignUp > div.SSubmit {
-	width: 90%;
-	margin: 0 auto;
+width: 90%;
+margin: 0 auto;
 }
 div.SField input{
-	border:1px solid #d1bb8e;
+border:1px solid #d1bb8e;
 }
 #sfield_firstname, #firstname, #sfield_lastname, #lastname, #sfield_address, #address, #sfield_address2, #address2, #sfield_post, #post, #sfield_email, #email {
-	width: 300px;
+width: 300px;
 }
-#sfield_city, #city {
-	width: 150px;
+#sfield_city, #city{
+width: 150px;
 }
-#sfield_state, #state {
-	width: 136px;
+#sfield_gender {
+margin-left: 15px;
+}
+#gender {
+border: 1px solid #d1bb8e;
+height: 30px;
+}
+#sfield_state, #state, #sfield_gender, #gender  {
+width: 136px;
 }
 #sfield_zip, #zip {
-	width: 150px;
+width: 150px;
 }
-#sfield_firstname, #sfield_lastname, #sfield_address, #sfield_address2, #sfield_city, #city, #sfield_state, #state, #sfield_zip, #zip, #sfield_email, #sfield_post {
-	display:inline-block;
+#sfield_firstname, #sfield_lastname, #sfield_address, #sfield_address2, #sfield_city, #city, #sfield_state, #state, #sfield_zip, #zip, #sfield_email, #sfield_post, #sfield_gender, #gender {
+display:inline-block;
 }
 #sfield_address2, #sfield_state, #sfield_zip, #sfield_post {
-	margin-left: 10px;
+margin-left: 10px;
 }
 #sfield_optin1, #sfield_optin2 {
-	width: 100%;
+width: 100%;
+}
+#frmSignUp > div.SReCAPTCHA {
+margin-left: 40px;
+}
+#form_submit_button {
+border: 0px;
+background: none;
+outline: none;
+cursor:pointer;
+}
+#no-purchase {
+width: 90%;
+margin: auto;
+font-size: 9px;
+color: gray;
 }
 
 @media (max-width: 767px) {
-	#FanTab {
-		width: 100%;
-	}
-	#sfield_firstname, #firstname, #sfield_lastname, #lastname, #sfield_address, #address, #sfield_address2, #address2, #sfield_post, #post, #sfield_email, #email, #sfield_city, #city, #sfield_state, #state, #sfield_zip, #zip {
-		width: 100%;
-		margin-left: 0px !important;
-	}
+#FanTab, div.SDescription {
+width: 100%;
+}
+#sfield_firstname, #firstname, #sfield_lastname, #lastname, #sfield_address, #address, #sfield_address2, #address2, #sfield_post, #post, #sfield_email, #email, #sfield_city, #city, #sfield_state, #state, #sfield_zip, #zip {
+width: 100%;
+margin-left: 0px !important;
+}
+#sfield_gender {
+margin-left: 0px !important;
+}
+#sfield_gender, #gender {
+width: 100% !important;
+}
+}
+@media (max-width: 480px) {
+#sign-up-header > h1{
+margin-top:0px;
+}
+#frmSignUp > div.SReCAPTCHA {
+margin: auto;
+}
 }
 </style>
+
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 <script>
 jQuery(function($){
@@ -56,6 +152,7 @@ $('#sfield_email').insertAfter('#sfield_zip');
     color: red;
     width: 50%;
     display:none;
+margin-bottom:10px;
 }
 .submit-fields #errorMessage {
     margin: 0 auto;
@@ -63,10 +160,21 @@ $('#sfield_email').insertAfter('#sfield_zip');
 #errorMessage span {
     text-decoration:underline;
 }
-.s-box input.Invalid{
+.SField select{
+border-radius:0px;
+}
+.s-box input.Invalid, .SField select.Invalid{
     border:1px solid red !important;
     background:pink !important;
 }
 </style>
 <script type="text/javascript" src="https://opop.cachefly.net/RobLum/Validation/Form_Validation_MI_v1.js"></script>
-<script type="text/javascript" src="https://opop.cachefly.net/RobLum/Validation/Form_Validation_Unilever.js"></script>
+<script type="text/javascript" src="https://opop.cachefly.net/RobLum/Validation/Suave_Hub_Form_Validation.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+jQuery(function($){
+//Disable autocomplete
+$('.SFields .SField input').attr('autocomplete','off');
+
+});
+</script>
