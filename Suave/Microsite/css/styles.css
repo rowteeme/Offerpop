@@ -508,6 +508,12 @@ padding-top: 10px;
     color:#105a2c;
 }
 
+.vid-caption {
+  font-size: 12px;
+  line-height: 13px;
+  font-weight: bold;
+}
+
 /***************/
 /* GLAM 4 GOOD */
 /***************/
