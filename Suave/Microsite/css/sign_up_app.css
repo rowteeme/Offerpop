@@ -115,28 +115,34 @@ color: gray;
 }
 
 @media (max-width: 767px) {
-#FanTab, div.SDescription {
-width: 100%;
+	#FanTab, div.SDescription {
+	width: 100%;
+	}
+	#sfield_firstname, #firstname, #sfield_lastname, #lastname, #sfield_address, #address, #sfield_address2, #address2, #sfield_post, #post, #sfield_email, #email, #sfield_city, #city, #sfield_state, #state, #sfield_zip, #zip {
+	width: 100%;
+	margin-left: 0px !important;
+	}
+	#sfield_gender {
+	margin-left: 0px !important;
+	}
+	#sfield_gender, #gender {
+	width: 100% !important;
+	}
+	}
+	@media (max-width: 480px) {
+	#sign-up-header > h1{
+	margin-top:0px;
+	}
+	#frmSignUp > div.SReCAPTCHA {
+	margin: auto;
+	}
+	#sign-up-product-image img{
+	width:40%;
+	text-align: center;
+	}
 }
-#sfield_firstname, #firstname, #sfield_lastname, #lastname, #sfield_address, #address, #sfield_address2, #address2, #sfield_post, #post, #sfield_email, #email, #sfield_city, #city, #sfield_state, #state, #sfield_zip, #zip {
-width: 100%;
-margin-left: 0px !important;
-}
-#sfield_gender {
-margin-left: 0px !important;
-}
-#sfield_gender, #gender {
-width: 100% !important;
-}
-}
-@media (max-width: 480px) {
-#sign-up-header > h1{
-margin-top:0px;
-}
-#frmSignUp > div.SReCAPTCHA {
-margin: auto;
-}
-}
+
+
 </style>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
