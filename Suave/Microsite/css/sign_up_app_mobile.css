@@ -1,0 +1,68 @@
+</style>
+
+<link href='http://fonts.googleapis.com/css?family=Belleza' rel='stylesheet' type='text/css'>
+
+<style>
+.footer_divider, .footer_divider + div, .footer_share, #facebook-profile-connect, .ui-header.ui-bar-c[role=banner], .ui-content .headline_text.container.container-full{
+display:none;
+}
+.ui-content[role=main] {
+background: url('https://s3.amazonaws.com/com.offerpop.datastore/438279/dnzcg9.jpg') center;
+}
+#sign-up-product-image {
+float: left;
+width: 30%;
+}
+#sign-up-header {
+text-align:center;
+
+}
+#sign-up-header h1, #sign-up-instructions h2{
+color:#1a7549;
+font-family:Belleza;
+font-weight: normal;
+}
+#sign-up-header p, #sign-up-instructions p{
+color:#000;
+}
+#sign-up-instructions{
+text-align:center;
+}
+.ui-input-text.ui-shadow-inset.ui-corner-all.ui-btn-shadow.ui-body-c.ui-mini {
+border-radius: 0px;
+border: 1px solid #d1bb8e;
+}
+
+#no-purchase {
+	font-size: .7em;
+}
+
+/* Error Handling CSS */
+#errorMessage {
+    padding: 10px;
+    border: 1px solid red;
+    color: red;
+    width: 50%;
+    display:none;
+}
+.submit-fields #errorMessage {
+    margin: 0 auto;
+}
+#errorMessage span {
+    text-decoration:underline;
+}
+.s-box input.Invalid{
+    border:1px solid red !important;
+    background:pink !important;
+}
+</style>
+<script type="text/javascript" src="https://opop.cachefly.net/RobLum/Validation/Form_Validation_MI_v1.js"></script>
+<script type="text/javascript" src="https://opop.cachefly.net/RobLum/Validation/Form_Validation_Unilever.js"></script>
+
+<script>
+jQuery(function($) {
+	$('<div style="clear: both;"></div>').insertAfter('#sign-up-header');
+	$('#no-purchase').insertBefore('.s-submit');
+
+});
+</script>
