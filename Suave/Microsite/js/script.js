@@ -74,7 +74,7 @@ jQuery(document).ready(function($){
 			if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|OperaMini/i.test(navigator.userAgent)){
 				var signUpWidth = $('#get-a-sample').width();
 				if (signUpWidth < 480){
-					$('#get-a-sample').height('1534px');
+					$('#get-a-sample').height('1600px');
 				}
 			}
 

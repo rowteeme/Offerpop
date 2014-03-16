@@ -33,9 +33,9 @@ border-radius: 0px;
 border: 1px solid #d1bb8e;
 }
 
-#no-purchase {
+/*#no-purchase {
 	font-size: .7em;
-}
+}*/
 
 /* Error Handling CSS */
 #errorMessage {
