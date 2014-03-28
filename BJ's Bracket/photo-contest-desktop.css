@@ -1,0 +1,204 @@
+/***** Gives element 100% width *****/
+.width {
+    width: 100%;
+}
+
+
+/**** Floats element to left or right*****/
+
+.left {
+    float: left;
+width: 48% !important;
+}
+
+.right {
+    float: right;
+width: 48% !important;
+}
+
+
+.war_left {
+float:left;
+width: 48% !important;
+margin-left: 2%;
+}
+
+.war_right {
+float:right;
+width: 48% !important;
+margin-right: 2%;
+}
+
+/***bracket borders ****/
+.labels {
+text-align: center;
+font-size: 16px;
+font-weight: bold;
+clear:both; 
+}
+
+
+/**** hide navigation tabs ****/
+#cnav_view, #cnav_submit {
+display:none; 
+}
+
+
+/**** hide elements ****/
+.CFooterDivider {
+display: none !important; 
+}
+
+.CAction {
+display: none;
+}
+#app_canvas, body {
+overflow:hidden; 
+}
+
+.CFooterDivider + div {
+padding-top: 30px !important;
+}
+/* Share section positioning */
+
+#share-section {
+width: 810px !important;
+margin: 0 0 0 4px;
+}
+
+#share-section > a > img {
+padding: 0 11px 8px 0;
+}
+
+#charity-share {
+position: relative;
+}
+
+#charity-share > div:nth-child(1) {
+position: relative;
+top: 200px;
+left: 333px;
+}
+
+#charity-share > div:nth-child(2) {
+position: absolute;
+top: 730px;
+left: 333px;
+}
+
+#charity-share > div:nth-child(3) {
+position: absolute;
+top: 1095px;
+left: 333px;
+}
+
+#charity-share > div:nth-child(4) {
+position: absolute;
+top: 1460px;
+left: 333px;
+}
+
+#share-section-1, #share-section-2, #share-section-3, #share-section-4, #share-section-5, #share-section-6, #share-section-7, #share-section-8, #share-section-9, #share-section-10, #share-section-11, #share-section-12, #share-section-13, #share-section-14, #share-section-15, #share-section-16 {
+width: 100px;
+}
+
+#share-section-1 {
+position: absolute;
+top: 155px;
+}
+
+#share-section-2 {
+position: absolute;
+top: 155px;
+left: 383px;
+}
+
+#share-section-3 {
+position: absolute;
+top: 325px;
+}
+
+#share-section-4 {
+position: absolute;
+top: 325px;
+left: 383px;
+}
+
+#share-section-5 {
+position: absolute;
+top: 0;
+left: 0;
+}
+
+#share-section-6 {
+position: absolute;
+top: 0;
+left: 383px;
+}
+
+#share-section-7 {
+position: absolute;
+top: 170px;
+left: 0;
+}
+
+#share-section-8 {
+position: absolute;
+top: 170px;
+left: 383px;
+}
+
+#share-section-9 {
+position: absolute;
+top: 0;
+left: 0;
+}
+
+#share-section-10 {
+position: absolute;
+top: 0;
+left: 383px;
+}
+
+#share-section-11 {
+position: absolute;
+top: 170px;
+left: 0;
+}
+
+#share-section-12 {
+position: absolute;
+top: 170px;
+left: 383px;
+}
+
+#share-section-13 {
+position: absolute;
+top: 0;
+left: 0;
+}
+
+#share-section-14 {
+position: absolute;
+top: 0;
+left: 383px;
+}
+
+#share-section-15 {
+position: absolute;
+top: 170px;
+left: 0;
+}
+
+#share-section-16 {
+position: absolute;
+top: 170px;
+left: 383px;
+}
+
+#clock-iframe {
+height: 80px;
+margin: 0 30%;
+}
+
+</style>

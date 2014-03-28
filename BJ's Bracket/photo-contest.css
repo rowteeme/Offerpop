@@ -1,0 +1,59 @@
+/***** Gives element 100% width *****/
+.width {
+    width: 100%;
+}
+
+/**** Floats element to left or right*****/
+
+.left {
+width: 100% !important;
+}
+
+.right {
+width: 100% !important;
+}
+
+
+.war_left {
+width: 100% !important;
+}
+
+.war_right {
+width: 100% !important;
+}
+
+
+/**** hide navigation tabs ****/
+#cnav_view, #cnav_submit {
+display:none; 
+}
+
+
+/**** start mobile specific code ****/
+
+iframe {
+width: 100% !important;
+height: 330px !important; 
+}
+
+a#cbut_view {
+display:none; 
+}
+
+li.ui-block-a {
+display:none; 
+}
+
+div#contest-results img {
+width: 100% !important;
+padding: 0px !important; 
+margin: 0px !important; 
+}
+
+.app_header {
+height: 45px;
+}
+
+.page_logo {
+display: none;
+}
