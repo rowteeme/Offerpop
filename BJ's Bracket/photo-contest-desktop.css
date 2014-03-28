@@ -77,25 +77,25 @@ position: relative;
 #charity-share > div:nth-child(1) {
 position: relative;
 top: 200px;
-left: 333px;
 }
 
 #charity-share > div:nth-child(2) {
 position: absolute;
 top: 730px;
-left: 333px;
 }
 
 #charity-share > div:nth-child(3) {
 position: absolute;
 top: 1095px;
-left: 333px;
 }
 
 #charity-share > div:nth-child(4) {
 position: absolute;
 top: 1460px;
-left: 333px;
+}
+
+.bracket-category {
+	left: 230px;
 }
 
 #share-section-1, #share-section-2, #share-section-3, #share-section-4, #share-section-5, #share-section-6, #share-section-7, #share-section-8, #share-section-9, #share-section-10, #share-section-11, #share-section-12, #share-section-13, #share-section-14, #share-section-15, #share-section-16 {
