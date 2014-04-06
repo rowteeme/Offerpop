@@ -1,6 +1,6 @@
 <script>
 	jQuery(document).ready(function(){
-		var bitlyLink = '1lTtOIa';
+		var bitlyLink = '1hbk8UK';
 	jQuery(function($) {
 		var charity = {
 			'redCross' : {
@@ -70,8 +70,8 @@
 			}
 		};
 
-		jQuery('.charity-fb-share').click(function(){
-			
+		jQuery('.charity-fb-share').click(function(e){
+			e.preventDefault();
 			var charityName = this.id
 				,shareImage = charity[charityName].image
 				,charityMessage = charity[charityName].message
@@ -80,21 +80,20 @@
 			FB.ui({
 				method: 'feed',
 				name: 'My Favorite Charity | BJ\'s Charity Championship',
-				link: 'http://bit.ly/' + bitlyLink,
-				// caption: ,
+				link: 'http://bit.ly/1hbk8UK',
+				caption: 'http://bit.ly/1hbk8UK',
 				description: 'Vote for ' + charityName + ' in BJ\'s Charity Championship. Your support could help ' + charityMessage,
 				picture: shareImage
 			});
 		});
 
-		jQuery('.large-fb').click(function(){
-			
-
+		jQuery('.large-fb').click(function(e){
+			e.preventDefault();
 			FB.ui({
 				method: 'feed',
 				name: 'BJ\'s Charity Championship',
-				link: 'http://bit.ly/' + bitlyLink,
-				// caption: ,
+				link: 'http://bit.ly/1hbk8UK',
+				caption: 'http://bit.ly/1hbk8UK',
 				description: 'Join a different kind of madness this March. In our tournament, 16 charities go toe-to-toe to strengthen communities. We\'ll be giving out 45K in donations! Vote today and '
 			});
 		});

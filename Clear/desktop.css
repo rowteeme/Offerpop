@@ -1,0 +1,312 @@
+
+
+* {
+font-family: 'champagne__limousinesregular', Arial, sans-serif;
+}
+
+.strong {
+font-family: 'champagne__limousinesbold', Arial, sans-serif;
+}
+
+#prize {
+width: 375px;
+padding: 0 5px 0 5px;
+}
+
+.prize-header {
+	width: 375px;
+	height: 48px;
+	background-color: #272727;
+	-webkit-box-shadow: 0 2px #fff;
+	-moz-box-shadow: 0 2px #fff;
+	box-shadow: 0 2px #fff;
+	background-image: -webkit-linear-gradient(7deg, #67194f, #8e2584 25%, #67194f 50%, #8e2584 75%, #67194f);
+	background-image: -moz-linear-gradient(7deg, #67194f, #8e2584 25%, #67194f 50%, #8e2584 75%, #67194f);
+	background-image: -o-linear-gradient(7deg, #67194f, #8e2584 25%, #67194f 50%, #8e2584 75%, #67194f);
+	background-image: linear-gradient(83deg, #67194f, #8e2584 25%, #67194f 50%, #8e2584 75%, #67194f);
+border-bottom: 2px solid #fff;
+}
+
+.SDescription, .CDescription {
+background: url('https://opop.cachefly.net/Clear/description-bg.png');
+width: 810px !important;
+color: #fff;
+}
+
+#top-section {
+width: 448px;
+padding: 110px 0 0 40px;
+color: #fff;
+}
+
+#top-section p {
+font-size: 22px;
+font-weight: 100;
+line-height: 1.4;
+}
+/*
+#top-section > p {
+font-size: 16px;
+line-height: 1.4;
+}*/
+
+.CNav { 
+margin: 0 0 -52px 0;
+background: #fff;
+}
+
+.prize {
+float: left;
+height: 515px;
+width: 375px;
+padding: 0 5px 0 20px;
+}
+
+#prizes {
+margin: 130px 0 0 0;
+overflow: hidden;
+}
+
+#prizes h4 {
+text-transform: uppercase;
+padding: 15px;
+font-size: 16px;
+text-align: center;
+}
+
+.prize-list {
+background: #272727;
+margin: 0;
+height: 500px;
+padding: 20px 25px;
+}
+
+li {
+list-style: none;
+padding: 7px 14px 5px 0px;
+font-size: 15px;
+font-weight: 100;
+}
+
+#select-entrants {
+background: #272727;
+margin: 20px;
+padding: 4px 4px 4px 35px;
+font-size: 16px;
+visibility: hidden;
+}
+
+a {
+color: #fff;
+text-decoration: underline;
+}
+
+#prizes a {
+color: #fff;
+text-decoration: underline;
+}
+
+#tune-in {
+background: #a02d96;
+font-size: 20px;
+line-height: 1;
+padding: 3px 25px;
+}
+
+#enter-cta {
+position: relative;
+}
+
+#enter {
+position: absolute;
+top: 18px;
+left: 230px;
+}
+
+.CAction {
+display: none;
+}
+
+
+div.CNav a{
+width:270px;
+padding:0px; /* May need to change */
+background: transparent !important;
+}
+
+#cnav_view{
+left:270px;
+}
+#cnav_submit {
+left: 0px;
+}
+#cnav_winners {
+left: 540px;
+}
+#cnav_about {
+display: none;
+}
+
+.CNav a {
+position: absolute;
+}
+
+.CNav a.Sel {
+border: 0 !important;
+}
+
+#gallery-controls {
+	display: none;
+
+}
+
+#thevoice-video {
+margin: 0 21px;
+}
+
+/*#entry_submit, .SBox {display:none;}
+
+#submit-instructions {display: none;}
+*/
+
+.CSub {
+background: url('https://opop.cachefly.net/Clear/submit-bg.png') no-repeat;
+height: 1200px;
+margin: 140px 0 0 0;
+}
+
+.SFields {
+color: #FFF;
+padding: 20px;
+}
+
+
+.numberList {
+display: inline;
+padding: 0 18px 0 0;
+vertical-align: middle;
+}
+
+#facebook-profile-connect {
+display: none;
+}
+
+#submit-instructions {
+	padding: 40px;
+}
+
+#submit-instructions p {
+	font-size: 16px;
+}
+
+#submit-instructions h2 {
+	font-size: 26px;
+}
+
+
+#gallery-content-wrapper > img {
+margin-top: -30px;
+}
+
+.CResults > img {
+margin: -41px -10px;
+}
+
+#instructions {
+color: #fff;
+margin: 0 0 0 0;
+width: 810px !important;
+}
+
+#firstname, #lastname, #email, #address, #address2, #city, #zip, #gender, #post, #cell  {
+background: #333333;
+border: 0;
+border-radius: 2px;
+color: #808080;
+padding: 16px 25px;
+font-size: 16px;
+width: 205px;
+}
+
+#sfield_firstname, #sfield_lastname {
+width: 365px;
+display: inline-block;
+padding-right: 10px;
+}
+
+#firstname, #lastname {
+	width: 300px;
+}
+
+#sfield_address, #sfield_address2 {
+width: 700px;
+display: inline-block;
+padding-right: 10px;
+}
+
+#address, #address2 {
+	width: 700px;
+}
+
+#sfield_gender {
+	width: 160px;
+	display: inline-block;
+}
+
+#gender {
+	width: 120px;
+	height: 45px;
+}
+
+#zip, #post {
+	width: 120px;
+	display: inline-block;
+}
+
+#sfield_city, #sfield_zip {
+	width: 300px;
+	display: inline-block;
+}
+
+#city {
+	width: 200px;
+}
+
+ #sfield_cell, #sfield_post {
+	width: 215px;
+	display: inline-block;
+}
+
+#cell {
+	width: 150px;
+}
+
+#post {
+	width: 150px;
+}
+
+
+#sfield_email {
+	width: 280px;
+	display: inline-block;
+}
+#email {
+	width: 200px;
+}
+
+
+#sfield_caption, #sfield_state, .SRules {display: none;}
+
+.SDeclare {
+width: 600px;
+font-size: 18px;
+vertical-align: middle;
+margin: 17px;
+}
+
+#privacyText {
+width: 600px;
+padding: 20px;
+}
+
+</style>
