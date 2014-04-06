@@ -169,6 +169,8 @@ margin: 0 21px;
 #submit-instructions {display: none;}
 */
 
+/**** SUBMIT PAGE STYLES ****/
+
 .CSub {
 background: url('https://opop.cachefly.net/Clear/submit-bg.png') no-repeat;
 height: 1200px;
@@ -307,6 +309,10 @@ margin: 17px;
 #privacyText {
 width: 600px;
 padding: 20px;
+}
+
+.SReCAPTCHA {
+padding: 10px;
 }
 
 </style>
