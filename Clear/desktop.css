@@ -1,7 +1,7 @@
 
 
 * {
-font-family: 'champagne__limousinesregular', Arial, sans-serif !important;
+font-family: 'champagne__limousinesregular', Arial, sans-serif;
 text-rendering: optimizeLegibility;
 }
 
@@ -10,20 +10,6 @@ font-family: 'champagne__limousinesbold', Arial, sans-serif;
 text-rendering: optimizeLegibility;
 }
 
-li {
-font-family: 'champagne__limousinesbold', Arial, sans-serif;
-text-rendering: optimizeLegibility;
-}
-
-h3 {
-font-family: 'champagne__limousinesbold', Arial, sans-serif;
-text-rendering: optimizeLegibility;
-}
-
-span {
-font-family: 'champagne__limousinesbold', Arial, sans-serif;
-text-rendering: optimizeLegibility;
-}
 
 #prize {
 width: 375px;
@@ -205,23 +191,40 @@ padding: 50px 0 0 0;
 margin: -42px 0;
 }
 
-#share-buttons {
+.share-buttons {
 position: absolute;
 right: 80px;
 top: 18px;
 }
 
-#share-buttons > a > img {
+.share-buttons > a > img {
 margin: 0 5px;
 }
 
-#share-buttons > span {
+.share-buttons > span {
 font-size: 20px;
 text-transform: uppercase;
 vertical-align: super;
 color: #fff !important;
 }
 
+.CHeader {
+	position: relative;
+}
+
+.CHeader > img {
+	width: 750px;
+}
+
+.share-buttons img{
+	width: 32px !important;
+}
+
+.CHeader > .share-buttons {
+	position: absolute;
+	right: 130px;
+	top: 175px;
+}
 
 
 .CFooterDivider, .CFooterDivider + div, #report_spam_div, .CShare {display: none;}
@@ -450,6 +453,11 @@ label, #upload_entry {
 	font-size: 15px !important;
 	color: #fff !important;
 }
+
+a img {
+	border: none !important;
+}
+
 
 
 </style>
