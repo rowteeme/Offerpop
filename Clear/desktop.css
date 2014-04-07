@@ -1,11 +1,28 @@
 
 
 * {
-font-family: 'champagne__limousinesregular', Arial, sans-serif;
+font-family: 'champagne__limousinesregular', Arial, sans-serif !important;
+text-rendering: optimizeLegibility;
 }
 
 .strong {
 font-family: 'champagne__limousinesbold', Arial, sans-serif;
+text-rendering: optimizeLegibility;
+}
+
+li {
+font-family: 'champagne__limousinesbold', Arial, sans-serif;
+text-rendering: optimizeLegibility;
+}
+
+h3 {
+font-family: 'champagne__limousinesbold', Arial, sans-serif;
+text-rendering: optimizeLegibility;
+}
+
+span {
+font-family: 'champagne__limousinesbold', Arial, sans-serif;
+text-rendering: optimizeLegibility;
 }
 
 #prize {
@@ -24,7 +41,7 @@ padding: 0 5px 0 5px;
 	background-image: -moz-linear-gradient(7deg, #67194f, #8e2584 25%, #67194f 50%, #8e2584 75%, #67194f);
 	background-image: -o-linear-gradient(7deg, #67194f, #8e2584 25%, #67194f 50%, #8e2584 75%, #67194f);
 	background-image: linear-gradient(83deg, #67194f, #8e2584 25%, #67194f 50%, #8e2584 75%, #67194f);
-border-bottom: 2px solid #fff;
+	border-bottom: 2px solid #fff;
 }
 
 .SDescription, .CDescription {
@@ -164,12 +181,15 @@ border: 0 !important;
 margin: 0 21px;
 }
 
+/**** FOOTER STYLES ****/
+
 #clear-footer {
 background: url('https://opop.cachefly.net/Clear/clear-footer.png') no-repeat #272727;
 height: 150px;
 width: 810px;
 padding: 50px 0 0 0;
 margin: 40px 0;
+position: relative;
 }
 
 #clear-footer p {
@@ -183,6 +203,23 @@ height: 150px;
 width: 810px;
 padding: 50px 0 0 0;
 margin: -42px 0;
+}
+
+#share-buttons {
+position: absolute;
+right: 80px;
+top: 18px;
+}
+
+#share-buttons > a > img {
+margin: 0 5px;
+}
+
+#share-buttons > span {
+font-size: 20px;
+text-transform: uppercase;
+vertical-align: super;
+color: #fff !important;
 }
 
 
@@ -355,13 +392,19 @@ padding: 4px;
 }
 
 .recaptchatable {
-line-height: 4em;
-border: none;
+line-height: 1em;
+border: none !important;
 }
 
 #recaptcha_logo {
 background: white;
 border-radius: 3px;
+padding: 6px;
+}
+
+.recaptchatable {
+line-height: 1em;
+border: none;
 }
 
 button {
@@ -410,4 +453,3 @@ label, #upload_entry {
 
 
 </style>
-
