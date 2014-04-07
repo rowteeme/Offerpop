@@ -164,22 +164,56 @@ border: 0 !important;
 margin: 0 21px;
 }
 
-/*#entry_submit, .SBox {display:none;}
+#clear-footer {
+background: url('https://opop.cachefly.net/Clear/clear-footer.png') no-repeat #272727;
+height: 150px;
+width: 810px;
+padding: 50px 0 0 0;
+margin: 40px 0;
+}
 
-#submit-instructions {display: none;}
-*/
+#clear-footer p {
+color: #fff !important;
+padding: 11px 43px 0;
+}
+
+.SBox + #clear-footer {
+background: url('https://opop.cachefly.net/Clear/clear-footer.png') no-repeat #272727;
+height: 150px;
+width: 810px;
+padding: 50px 0 0 0;
+margin: -42px 0;
+}
+
+
+
+.CFooterDivider, .CFooterDivider + div, #report_spam_div, .CShare {display: none;}
+
 
 /**** SUBMIT PAGE STYLES ****/
+
+#app_canvas {
+	overflow: hidden;
+}
 
 .CSub {
 background: url('https://opop.cachefly.net/Clear/submit-bg.png') no-repeat;
 height: 1200px;
+width: 810px;
 margin: 140px 0 0 0;
 }
 
 .SFields {
 color: #FFF;
 padding: 20px;
+}
+
+#entry_submit {
+padding: 0 20px;
+}
+
+#back {
+	padding: 20px;
 }
 
 
@@ -312,7 +346,68 @@ padding: 20px;
 }
 
 .SReCAPTCHA {
-padding: 10px;
+padding: 10px 178px;
 }
 
+.SReCAPTCHA input {
+font-size: 20px;
+padding: 4px;
+}
+
+.recaptchatable {
+line-height: 4em;
+border: none;
+}
+
+#recaptcha_logo {
+background: white;
+border-radius: 3px;
+}
+
+button {
+	cursor: pointer;
+}
+
+#errorMessage {
+    padding: 10px;
+    border: 1px solid red;
+    color: red;
+    width: 50%;
+    display:none;
+}
+.submit-fields #errorMessage {
+    margin: 0 auto;
+}
+#errorMessage span {
+    text-decoration:underline;
+}
+.s-box input.Invalid, div.SField input.Invalid{
+    border:1px solid red !important;
+    background:pink !important;
+}
+
+#frmSignUp {
+background: black;
+margin-bottom: 40px;
+}
+
+#form_submit_button > img {
+margin: 0 240px;
+}
+
+.SSubmit button {
+margin: 0 auto;
+padding: 0;
+font-size: 18px;
+border: none;
+background: transparent;
+}
+
+label, #upload_entry {
+	font-size: 15px !important;
+	color: #fff !important;
+}
+
+
 </style>
+
