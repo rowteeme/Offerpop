@@ -7,8 +7,13 @@ jQuery(function($) {
 
     var shareButtons = '<div class="share-buttons"><span>Share This:&nbsp&nbsp</span><a class="fb-share" href="#" target="_parent"><img src="https://opop.cachefly.net/Clear/fb-share.png" /></a><a class="twitter-share" href="https://twitter.com/intent/tweet?text=Win%20an%20express%20pass%20to%20a%20casting%20audition%20for%20%40NBCTheVoice.%20Upload%20a%20video%20for%20a%20chance!%20http%3A%2F%2Fbit.ly%2FOq3Tfu" data-lang="en" data-related="NBCTheVoice,clearhair" target="_blank"><img src="https://opop.cachefly.net/Clear/twitter-share.png" /></a><a class="email-share" href="mailto:?subject=%23TeamCLEAR%20-%20Sing%20Your%20Way%20To%20The%20Stage&body=Want%20to%20show%20the%20world%20that%20you%E2%80%99ve%20got%20what%20it%20takes%20to%20make%20it%20on%20THE%20VOICE%3F%20Upload%20a%20video%20that%20shows%20off%20your%20strong%20singing%20voice%20and%20show-stopping%20hair%20on%20the%20CLEAR%20Facebook%20page%20and%20you%20could%20be%20on%20your%20way%20to%20an%20express%20pass%20to%20a%20casting%20audition%20for%20an%20upcoming%20season%20of%20THE%20VOICE.%20Enter%20now%3A%20http%3A%2F%2Fbit.ly%2F1kBLK9l" target="_blank"><img src="https://opop.cachefly.net/Clear/email-share.png" /></a><a class="insta-share" href="http://instagram.com/clearhaircare" target="_blank" ><img src="https://opop.cachefly.net/Clear/instagram-off.png" /></a></div>';
 
+    // var footer = jQuery('<div id="clear-footer">' + shareButtons + '<p class="legal">No purchase necessary. Void where prohibited. The #TeamCLEAR Contest is sponsored by Conopco, Inc., d/b/a Unilever. Open to legal residents of the 50 U.S. & D.C., 18 or older. Begins 4/7/14 at 4:00 p.m. ET & ends 4/27/14 at 11:59 p.m. ET. For official rules, <a href="https://opop.cachefly.net/Clear/the-voice-contest-rules.pdf">click here</a>.</p><p class="legal">NBCUniversal Media, LLC is not a Sponsor of the Contest and is not associated with the administration of the Contest in any way.</p></div>');
 
-    var footer = jQuery('<div id="clear-footer">' + shareButtons + '<p class="legal">No purchase necessary. Void where prohibited. The #TeamCLEAR Contest is sponsored by Conopco, Inc., d/b/a Unilever. Open to legal residents of the 50 U.S. & D.C., 18 or older. Begins 4/7/14 at 4:00 p.m. ET & ends 4/27/14 at 11:59 p.m. ET. For official rules, <a href="https://opop.cachefly.net/Clear/the-voice-contest-rules.pdf">click here</a>.</p><p class="legal">NBCUniversal Media, LLC is not a Sponsor of the Contest and is not associated with the administration of the Contest in any way.</p></div>');
+    var footer = jQuery('<div id="clear-footer">' + shareButtons + '<p class="legal">No purchase necessary. Void where prohibited. The #TeamCLEAR Contest is sponsored by Conopco, Inc., d/b/a Unilever. Open to legal residents of the 50 U.S. & D.C., 18 or older. Begins 4/7/14 at 4:00 p.m. ET & ends 4/27/14 at 11:59 p.m. ET. See <a href="https://opop.cachefly.net/Clear/the-voice-contest-rules2.pdf">official rules</a> to learn how to win a year supply of CLEAR Scalp & Hair<sup>&#8482;</sup> products without submitting a video.</p><p class="legal">NBCUniversal Media, LLC is not a Sponsor of the Contest and is not associated with the administration of the Contest in any way.</p></div>');
+
+
+
+    // var footer = jQuery('<div id="clear-footer">' + shareButtons + '<p class="legal">No purchase necessary. Void where prohibited. The #TeamCLEAR Contest is sponsored by Conopco, Inc., d/b/a Unilever. Open to legal residents of the 50 U.S. & D.C., 18 or older. Begins 4/7/14 at 4:00 p.m. ET & ends 4/27/14 at 11:59 p.m. ET. See <a href="https://opop.cachefly.net/Clear/the-voice-contest-rules1.pdf">official rules</a> to learn how to win a year supply of CLEAR Scalp & Hair<sup>™</sup> products without submitting a video.</p><p class="legal">NBCUniversal Media, LLC is not a Sponsor of the Contest and is not associated with the administration of the Contest in any way.</p></div>');
 
 
 
@@ -95,7 +100,7 @@ jQuery(function($){
     $('.fb-share').click(function(e){
 
         // var bitly = 'http://bit.ly/1sr656M'; 
-        var bitly = 'http://bit.ly/NxrESI';
+        var bitly = 'http://bit.ly/OtampX';
         e.preventDefault();
 
         FB.ui({
@@ -103,7 +108,8 @@ jQuery(function($){
             name: '#TeamCLEAR - Sing Your Way To The Stage',
             link: 'http://bit.ly/NxrESI',
             caption: 'THE VOICE Contest',
-            description: 'Want to show the world that you’ve got what it takes to make it on THE VOICE? Upload a video that shows off your strong singing voice and show-stopping hair here on Facebook and you could be on your way to an express pass to a casting audition for an upcoming season of THE VOICE.'
+            description: 'Want to show the world that you’ve got what it takes to make it on THE VOICE? Upload a video that shows off your strong singing voice and show-stopping hair here on Facebook and you could be on your way to an express pass to a casting audition for an upcoming season of THE VOICE.',
+            picture: 'https://opop.cachefly.net/Clear/fb-share.png'
         });
     });
 });
