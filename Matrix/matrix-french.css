@@ -1,0 +1,119 @@
+/* General Styles */
+
+.uppercase {text-transform: uppercase;}
+
+.pink {color: #d24379;}
+
+/* Background Images */
+
+.SBox {
+background: url('https://opop.cachefly.net/Matrix/bg-with-sidebar-french2.png') no-repeat;
+height: 900px;
+width: 810px !important;
+}
+
+
+/* Above Form */
+
+.SDescription {position: relative;}
+
+.above-form {
+width: 400px;
+position: absolute;
+top: -18px;
+left: 55px;
+}
+
+/* Form Styles */
+
+#frmSignUp {
+position: relative;
+padding: 170px 0 0 55px;
+}
+
+.SFields {
+width: 400px;
+
+}
+
+.SField { 
+height: 50px;
+}
+
+#facebook-profile-connect, .Notes {
+display: none !important;
+}
+
+#custom-submit {
+background: url('https://opop.cachefly.net/Matrix/submit-french.png') no-repeat;
+padding: 35px 100px !important;
+border: none !important;
+cursor: pointer;
+}
+
+#form_submit_button {
+display: none !important;
+}
+
+div.SDeclare {
+width: 400px;
+vertical-align: middle;
+margin: 10px 0 !important;
+}
+
+div.SDeclare label {
+font-weight: normal;
+vertical-align: middle;
+font-weight: 100;
+font-size: 12px;
+}
+
+.SDeclare a {
+font-weight: bold;
+color: white;
+text-decoration: underline;
+}
+
+#firstname, #lastname, #email {
+width: 280px;
+}
+
+#birthday {
+width: 230px;
+}
+
+#zip {
+width: 160px;
+}
+
+#address {
+width: 335px;
+}
+
+#state {
+width: 200px;
+}
+
+#city { width: 225px; }
+
+#sfield_birthday {
+margin: 20px 0 20px 0 !important;
+}
+
+.SSubmit { float: left; }
+
+
+
+#legal {
+width: 500px;
+float: left;
+font-size: 10px;
+color: #7fa4bd;
+padding: 24px;
+}
+
+img a { 
+border: 0 !important;
+}
+
+</style>
