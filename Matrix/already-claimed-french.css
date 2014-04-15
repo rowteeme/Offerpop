@@ -13,7 +13,7 @@ body {
     font-weight: 300;
 }
 
-img a { 
+a img { 
 border: 0 !important;
 }
 
@@ -23,6 +23,7 @@ border: 0 !important;
 background: url('https://opop.cachefly.net/Matrix/bg-with-sidebar-french2.png') no-repeat;
 height: 900px;
 width: 810px !important;
+margin-top: -31px;
 }
 
 
@@ -54,7 +55,7 @@ line-height: 1.2em;
 
 #frmSignUp {
 position: relative;
-padding: 170px 0 0 55px;
+padding: 255px 0 0 55px;
 }
 
 .SFields {
@@ -138,9 +139,29 @@ width: 600px;
 font-size: 0.8em;
 }
 
+
+
+/* Already Claimed Styles */
+#app_canvas_header {
+	display: none;
+}
+
+.legal {
+clear: both;
+width: 350px;
+font-size: 0.8em;
+}
+
+.SBox {
+	background: url('https://opop.cachefly.net/Matrix/bg-already-claimed-french.png');
+}
+
+
+
+
 /* After Sign Up Styles */
 
-#After {
+/*#After {
 	background: url("https://opop.cachefly.net/Matrix/bg-aftersignup-french.png");
 	position: relative;
 	height: 1656px;
@@ -214,9 +235,11 @@ a.fb-button, a.tweet-button {
 .youtube-section iframe {
 	padding: 50px 0;
 }
-
+*/
 </style>
 
 <link href='https://fonts.googleapis.com/css?family=Roboto:700,400,100|Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
 
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<style>
