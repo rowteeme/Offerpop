@@ -1,0 +1,17 @@
+#share-bar{
+display:none;
+}
+#fine-print {
+font-size: 9px;
+}
+.congrats{
+text-align:center;
+}
+</style>
+
+<script>
+jQuery(function($){
+$('.legal.left p').insertAfter('.s-submit');
+});
+
+</script>

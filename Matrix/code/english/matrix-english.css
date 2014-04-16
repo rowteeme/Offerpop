@@ -1,0 +1,222 @@
+/* General Styles */
+
+.uppercase {text-transform: uppercase !important;}
+
+.pink {color: #d24379;}
+
+.left {float: left;}
+
+.right {float: right;}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+}
+
+img a {
+border: 0 !important;
+}
+
+/* Background Images */
+
+.SBox {
+background: url('https://opop.cachefly.net/Matrix/bg-with-sidebar-french2.png') no-repeat;
+height: 900px;
+width: 810px !important;
+}
+
+
+/* Above Form */
+
+.SDescription {position: relative;}
+
+.above-form {
+width: 400px;
+position: absolute;
+top: -18px;
+left: 55px;
+}
+
+.above-form > h2 {
+font-weight: 100;
+line-height: 1.4em;
+font-size: 1.8em;
+}
+
+.above-form > p {
+font-size: 1.3em;
+font-family: 'Roboto',sans-serif;
+font-weight: 400 !important;
+line-height: 1.2em;
+}
+
+/* Form Styles */
+
+#frmSignUp {
+position: relative;
+padding: 170px 0 0 55px;
+}
+
+.SFields {
+width: 400px;
+}
+
+.SField {
+height: 50px;
+}
+
+.SField label {
+	font-weight: 100 !important;
+}
+
+#facebook-profile-connect, .Notes {
+display: none !important;
+}
+
+#custom-submit {
+background: url('https://opop.cachefly.net/Matrix/submit-french.png') no-repeat;
+padding: 25px 100px !important;
+border: none !important;
+cursor: pointer;
+}
+
+#form_submit_button {
+display: none !important;
+}
+
+div.SDeclare {
+width: 400px;
+vertical-align: middle;
+margin: 10px 0 !important;
+}
+
+div.SDeclare label {
+font-weight: normal;
+vertical-align: middle;
+font-weight: 100 !important;
+font-size: 12px;
+}
+
+.SDeclare a {
+font-weight: bold;
+color: white;
+text-decoration: underline;
+}
+
+#firstname, #lastname, #email {
+width: 280px;
+}
+
+#birthday {
+width: 230px;
+}
+
+#zip {
+width: 160px;
+}
+
+#address {
+width: 335px;
+}
+
+#state {
+width: 200px;
+}
+
+#city { width: 225px; }
+
+#sfield_birthday {
+margin: 20px 0 20px 0 !important;
+}
+
+.SSubmit { float: left; }
+
+
+.legal {
+float: left;
+width: 600px;
+font-size: 0.8em;
+}
+
+/* After Sign Up Styles */
+
+#After {
+	background: url("https://opop.cachefly.net/Matrix/bg-aftersignup-french.png");
+	position: relative;
+	height: 1656px;
+}
+
+.congrats {
+position: absolute;
+top: 525px;
+left: 30px;
+}
+
+.congratulations {
+width: 465px;
+text-align: center;
+}
+
+.congratulations h1 {
+font-size: 4em;
+letter-spacing: 1.8;
+line-height: 0.1em;
+}
+
+.locate {
+padding: 0 40px;
+width: 230px;
+text-align: center;
+}
+
+.locate p {
+font-size: 1.3em;
+}
+
+.clear {
+	clear: both;
+}
+
+.pelicure {}
+
+.share-text {
+	float: right;
+	width: 400px;
+}
+
+.share-portion {
+padding: 40px;
+}
+
+p.pink.uppercase {
+font-size: 1.4em;
+font-family: 'Roboto';
+font-weight: 700;
+line-height: 1.3em;
+margin: 0;
+display: inline-block;
+}
+
+.share-ctas > p {
+width: 200px;
+display: inline;
+}
+
+a.fb-button, a.tweet-button {
+	padding: 0 5px;
+}
+
+.youtube-section {
+	width: 780px;
+	height: 400px;
+}
+
+.youtube-section iframe {
+	padding: 50px 0;
+}
+
+</style>
+
+<link href='https://fonts.googleapis.com/css?family=Roboto:700,400,100|Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
