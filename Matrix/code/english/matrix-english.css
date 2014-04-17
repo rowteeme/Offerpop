@@ -13,14 +13,14 @@ body {
     font-weight: 300;
 }
 
-img a {
+a img {
 border: 0 !important;
 }
 
 /* Background Images */
 
 .SBox {
-background: url('https://opop.cachefly.net/Matrix/bg-with-sidebar-french2.png') no-repeat;
+background: url('https://opop.cachefly.net/Matrix/bg-with-sidebar-english.png') no-repeat;
 height: 900px;
 width: 810px !important;
 }
@@ -74,7 +74,7 @@ display: none !important;
 }
 
 #custom-submit {
-background: url('https://opop.cachefly.net/Matrix/submit-french.png') no-repeat;
+background: url('https://opop.cachefly.net/Matrix/submit-english.png') no-repeat;
 padding: 25px 100px !important;
 border: none !important;
 cursor: pointer;
@@ -141,7 +141,7 @@ font-size: 0.8em;
 /* After Sign Up Styles */
 
 #After {
-	background: url("https://opop.cachefly.net/Matrix/bg-aftersignup-french.png");
+	background: url("https://opop.cachefly.net/Matrix/bg-aftersignup-english.png");
 	position: relative;
 	height: 1656px;
 }
