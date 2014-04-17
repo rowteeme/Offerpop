@@ -17,6 +17,8 @@ img a {
 border: 0 !important;
 }
 
+#signup-share, .CShare {display: none;}
+
 /* Background Images */
 
 .SBox {

@@ -1,0 +1,15 @@
+.legal.left{
+font-size:9px;
+}
+
+</style>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script>
+jQuery(function($){
+$('<div><h1>YOU'VE ALREADY CLAIMED YOUR SAMPLES</h1></div><div><p>Visit our website to learn more about the new, reinvented BIOLAGE. Register for our newsletter to be the first to learn about product launches, events, and special offers.</p></div>').prependTo('.campaign_description.html-allowed');
+
+$('.legal.left').insertAfter('.s-submit');
+});
+</script>

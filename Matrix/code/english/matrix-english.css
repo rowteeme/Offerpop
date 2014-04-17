@@ -17,12 +17,17 @@ a img {
 border: 0 !important;
 }
 
+/*Hide unused elements*/
+
+#signup-share, .CShare {display: none;}
+
 /* Background Images */
 
 .SBox {
 background: url('https://opop.cachefly.net/Matrix/bg-with-sidebar-english.png') no-repeat;
 height: 900px;
 width: 810px !important;
+margin: -31px 0;
 }
 
 
@@ -33,7 +38,6 @@ width: 810px !important;
 .above-form {
 width: 400px;
 position: absolute;
-top: -18px;
 left: 55px;
 }
 
@@ -99,7 +103,7 @@ font-size: 12px;
 
 .SDeclare a {
 font-weight: bold;
-color: white;
+color: black;
 text-decoration: underline;
 }
 
@@ -141,7 +145,7 @@ font-size: 0.8em;
 /* After Sign Up Styles */
 
 #After {
-	background: url("https://opop.cachefly.net/Matrix/bg-aftersignup-english.png");
+	background: url("https://opop.cachefly.net/Matrix/bg-aftersignup-english2.png");
 	position: relative;
 	height: 1656px;
 }

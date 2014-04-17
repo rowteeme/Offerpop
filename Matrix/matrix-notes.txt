@@ -8,7 +8,11 @@ English Exclusive App:
 
 English Sign Up:
     Coupon ID: 599514
-    Staging link:
+    Staging link: http://bit.ly/QeQ8SA
+    English Already Signed Up iframe:
+        <iframe src="//offerpop.com/Contest.psp?c=600300&u=54823&a=194975693850063&p=643783498974952&rest=1" width="100%" height="1500" frameborder="0"></iframe>
+    English All Samples Out iframe:
+
 
 #############################
 
@@ -21,17 +25,19 @@ French Sign Up:
         Coupon ID: 594524
         Staging link: http://bit.ly/OB6d3B
         French Already Signed Up iframe:
-        <iframe src="//offerpop.com/Contest.psp?c=595336&u=54823&a=194975693850063&p=643783498974952&rest=1" width="100%" height="1500" frameborder="0"></iframe>
+            <iframe src="//offerpop.com/Contest.psp?c=595336&u=54823&a=194975693850063&p=643783498974952&rest=1" width="100%" height="1500" frameborder="0"></iframe>
         French All Samples Out iframe:
-        <iframe src="//offerpop.com/Contest.psp?c=595928&u=54823&a=194975693850063&p=643783498974952&rest=1" width="100%" height="1500" frameborder="0"></iframe>
+            <iframe src="//offerpop.com/Contest.psp?c=595928&u=54823&a=194975693850063&p=643783498974952&rest=1" width="100%" height="1500" frameborder="0"></iframe>
 
 
 French Contest Over iframe:
 
 
-English Already Signed Up iframe:
 
-English All Samples Out iframe:
+
+
+
+
 
 
 
