@@ -2,35 +2,54 @@ Matrix Notes:
 
 
 English Exclusive App:
-    Coupon ID:
-    Staging bit.ly link:
-    Live bit.ly link:
+    Coupon ID: 601507
+    Live link: http://offerpop.com/ad.psp?cid=601507&ref=fb-en
 
 English Sign Up:
     Coupon ID: 599514
     Staging link: http://bit.ly/QeQ8SA
+    iframe: <iframe src="//offerpop.com/Contest.psp?c=599514&u=54823&a=194975693850063&p=643783498974952&rest=1" width="100%" height="1500" frameborder="0"></iframe>
+
+
     English Already Signed Up iframe:
         <iframe src="//offerpop.com/Contest.psp?c=600300&u=54823&a=194975693850063&p=643783498974952&rest=1" width="100%" height="1500" frameborder="0"></iframe>
     English All Samples Out iframe:
+        <iframe src="//offerpop.com/Contest.psp?c=601612&u=54823&a=194975693850063&p=643783498974952&rest=1" width="100%" height="1500" frameborder="0"></iframe>
 
 
 #############################
 
 French Exclusive App:
-    Coupon ID:
-    Staging bit.ly link:
-    Live bit.ly link:
+    Coupon ID: 601510
+    Live Link: http://offerpop.com/ad.psp?cid=601510&ref=fb-fr
+
 
 French Sign Up:
-        Coupon ID: 594524
-        Staging link: http://bit.ly/OB6d3B
-        French Already Signed Up iframe:
-            <iframe src="//offerpop.com/Contest.psp?c=595336&u=54823&a=194975693850063&p=643783498974952&rest=1" width="100%" height="1500" frameborder="0"></iframe>
-        French All Samples Out iframe:
-            <iframe src="//offerpop.com/Contest.psp?c=595928&u=54823&a=194975693850063&p=643783498974952&rest=1" width="100%" height="1500" frameborder="0"></iframe>
+    Coupon ID: 594524
+    iframe:
+        <iframe src="//offerpop.com/Contest.psp?c=594524&u=54823&a=194975693850063&p=643783498974952&rest=1" width="760" height="1500" frameborder="0"></iframe>
+
+    Staging link: http://bit.ly/OB6d3B
+    French Already Signed Up iframe:
+        <iframe src="//offerpop.com/Contest.psp?c=595336&u=54823&a=194975693850063&p=643783498974952&rest=1" width="100%" height="1500" frameborder="0"></iframe>
+    French All Samples Out iframe:
+        <iframe src="//offerpop.com/Contest.psp?c=595928&u=54823&a=194975693850063&p=643783498974952&rest=1" width="100%" height="1500" frameborder="0"></iframe>
 
 
 French Contest Over iframe:
+
+
+
+#########################
+SAMPLE UPDATE SCHEDULE
+#########################
+
+Test Entries English: 4
+Test Entries French: 11
+
+Day 1 -
+    French - 1611
+    English - 2604
 
 
 

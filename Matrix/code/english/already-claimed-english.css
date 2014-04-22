@@ -17,6 +17,10 @@ a img {
 border: 0 !important;
 }
 
+/*Hide unused elements*/
+
+#signup-share, .CShare {display: none;}
+
 /* Background Images */
 
 .SBox {

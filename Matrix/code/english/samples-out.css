@@ -13,7 +13,7 @@ body {
     font-weight: 300;
 }
 
-a img { 
+a img {
 border: 0 !important;
 }
 
@@ -62,7 +62,7 @@ padding: 255px 0 0 55px;
 width: 400px;
 }
 
-.SField { 
+.SField {
 height: 50px;
 }
 
@@ -75,7 +75,7 @@ display: none !important;
 }
 
 #custom-submit {
-background: url('https://opop.cachefly.net/Matrix/submit-french.png') no-repeat;
+background: url('https://opop.cachefly.net/Matrix/submit-english.png') no-repeat;
 padding: 25px 100px !important;
 border: none !important;
 cursor: pointer;
@@ -153,7 +153,7 @@ font-size: 0.8em;
 }
 
 .SBox {
-	background: url('https://opop.cachefly.net/Matrix/bg-sorry1-french.png');
+	background: url('https://opop.cachefly.net/Matrix/bg-sorry1-english.png');
 }
 
 
