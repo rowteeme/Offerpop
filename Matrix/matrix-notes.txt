@@ -47,12 +47,50 @@ SAMPLE UPDATE SCHEDULE
 Test Entries English: 4
 Test Entries French: 11
 
-Day 1 -
-    French - 1611
+Day 1 - 4/21
+    French - 1061
     English - 2604
 
 
+Day 2 - 4/22
+    French - (+583) = 1644
+    English - (+1083) = 3037
 
+Day 3 - 4/23
+    French - (+583) = 2277
+    English - (+1083) = 4120
+
+Day 4 - 4/24
+    French - (+583) = 2810
+    English - (+1083) = 5203
+
+Day 5 - 4/25
+    French - (+583) = 3393
+    English - (+1083) = 6286
+
+Day 6 - 4/26
+    French - (+583) = 3976
+    English - (+1083) = 7369
+
+Day 7 - 4/27
+    French - (+583) = 4559
+    English - (+1083) = 8452
+
+Day 8 - 4/28
+    French - (+583) = 5142
+    English - (+1083) = 9535
+
+Day 9 - 4/29
+    French - (+583) = 5725
+    English - (+1083) = 10618
+
+Day 10 - 4/30
+    French - (+583) = 6308
+    English - (+1083) = 11701
+
+Day 11 (Final Day) - 5/1
+    French - (+700) = 7008
+    English - (+1300) = 13001
 
 
 
